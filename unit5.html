@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unit 5: Public Goods — Fiscal Issues</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="nav-brand">📚 Fiscal Issues</span>
+  <a href="index.html">Home</a>
+  <a href="unit1.html">Unit 1</a>
+  <a href="unit2.html">Unit 2</a>
+  <a href="unit3.html">Unit 3</a>
+  <a href="unit4.html">Unit 4</a>
+  <a href="unit5.html" class="active">Unit 5</a>
+  <button class="lang-toggle">🇯🇵 日本語</button>
+</nav>
+
+<div class="unit-hero unit-color-5">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="sep">›</span>
+      <span>Unit 5</span>
+    </div>
+    <div class="unit-badge">Unit 5</div>
+    <h1 class="en">Public Goods</h1>
+    <h1 class="jp">公共財</h1>
+    <p style="color:var(--text-secondary);max-width:640px;margin-top:12px" class="en">Why can't markets provide national defense or street lights efficiently? Understand the two defining characteristics of public goods, the free rider problem, and how to find the optimal provision level.</p>
+    <p style="color:var(--text-secondary);max-width:640px;margin-top:12px" class="jp">なぜ市場は国防や街灯を効率的に供給できないのか？公共財の2つの特性、フリーライダー問題、最適供給水準の求め方を理解する。</p>
+  </div>
+</div>
+
+<main class="container section">
+
+  <!-- Section 1: Definition -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2 class="en">Definition of Public Goods</h2>
+      <h2 class="jp">公共財の定義</h2>
+    </div>
+
+    <div class="key-concept" style="border-color:var(--unit5)">
+      <h4 style="color:var(--unit5)" class="en">Samuelson's Definition (1954)</h4>
+      <h4 style="color:var(--unit5)" class="jp">サミュエルソンの定義（1954年）</h4>
+      <p class="en">A public good is one "which all enjoy in common in the sense that each individual's consumption of such a good leads to <strong style="color:var(--text-primary)">no subtraction</strong> from other individual's consumption of that good."</p>
+      <p class="jp">公共財とは「ある個人がその財を消費しても、他の個人の消費量が<strong style="color:var(--text-primary)">減少しない</strong>という意味で、みんなが共同で享受する財」（サミュエルソン, 1954, p.387）</p>
+    </div>
+
+    <p class="en" style="margin-top:20px;margin-bottom:8px"><strong style="color:var(--text-primary)">Pure public goods</strong> have two key characteristics:</p>
+    <p class="jp" style="margin-top:20px;margin-bottom:8px"><strong style="color:var(--text-primary)">純粋公共財</strong>は2つの重要な特性を持つ：</p>
+
+    <div class="concept-grid">
+      <div class="card" style="border-top:4px solid var(--unit5)">
+        <h3 style="color:var(--unit5);margin-bottom:12px">① <span class="en">Non-Rivalness</span><span class="jp">非競合性</span></h3>
+        <p class="en">"Once the good is provided, the <strong style="color:var(--text-primary)">additional resource cost of another person consuming the good is zero</strong>." (Rosen & Gayer, 2010)</p>
+        <p class="jp">「財が一度供給されれば、<strong style="color:var(--text-primary)">追加的な人がその財を消費するための追加的資源コストはゼロ</strong>」（ローゼン＆ゲイヤー, 2010）</p>
+        <div style="margin-top:12px;padding:12px;background:rgba(239,68,68,0.07);border-radius:8px;border:1px solid rgba(239,68,68,0.15)">
+          <p style="font-size:0.85rem" class="en">→ <strong style="color:var(--text-primary)">Joint consumption</strong>: All individuals can consume the same quantity simultaneously: G<sub>A</sub> = G<sub>B</sub> = G</p>
+          <p style="font-size:0.85rem" class="jp">→ <strong style="color:var(--text-primary)">共同消費</strong>：全員が同時に同量を消費できる：G<sub>A</sub> = G<sub>B</sub> = G</p>
+        </div>
+        <p style="margin-top:10px;font-size:0.85rem" class="en">Example: National defense, broadcast TV signals, lighthouse</p>
+        <p style="margin-top:10px;font-size:0.85rem" class="jp">例：国防、テレビ放送電波、灯台</p>
+      </div>
+
+      <div class="card" style="border-top:4px solid var(--accent)">
+        <h3 style="color:var(--accent);margin-bottom:12px">② <span class="en">Non-Excludability</span><span class="jp">非排除性</span></h3>
+        <p class="en">"To <strong style="color:var(--text-primary)">prevent anyone consuming the good is either very expensive or impossible</strong>." (Rosen & Gayer, 2010)</p>
+        <p class="jp">「<strong style="color:var(--text-primary)">誰かがその財を消費することを妨げることが非常に高コストか不可能</strong>」（ローゼン＆ゲイヤー, 2010）</p>
+        <div style="margin-top:12px;padding:12px;background:rgba(240,165,0,0.07);border-radius:8px;border:1px solid rgba(240,165,0,0.15)">
+          <p style="font-size:0.85rem" class="en">→ You cannot charge for the good or exclude non-payers → leads to the <strong style="color:var(--text-primary)">free rider problem</strong></p>
+          <p style="font-size:0.85rem" class="jp">→ 財の対価を請求したり非支払者を排除できない → <strong style="color:var(--text-primary)">フリーライダー問題</strong>につながる</p>
+        </div>
+        <p style="margin-top:10px;font-size:0.85rem" class="en">Example: National defense, clean air, street lighting</p>
+        <p style="margin-top:10px;font-size:0.85rem" class="jp">例：国防、清潔な空気、街灯</p>
+      </div>
+    </div>
+
+    <div class="callout callout-info" style="margin-top:20px">
+      <span class="callout-icon">ℹ️</span>
+      <div>
+        <strong style="color:var(--info)" class="en">Important Qualifications</strong>
+        <strong style="color:var(--info)" class="jp">重要な但し書き</strong>
+        <ul style="padding-left:16px;margin-top:6px;font-size:0.88rem;color:var(--text-secondary)">
+          <li class="en">Classification can change with technology and context (e.g. a park becomes crowded)</li>
+          <li class="jp">技術・状況により分類が変わりうる（例：公園が混雑するようになる）</li>
+          <li class="en">Publicly <em>provided</em> goods are not always public goods (e.g. public housing = private good provided publicly)</li>
+          <li class="jp">公的に<em>供給される</em>財が必ずしも公共財とは限らない（例：公営住宅＝公的に供給される私的財）</li>
+          <li class="en">Private individuals can provide public goods (e.g. a private library open to all)</li>
+          <li class="jp">民間個人も公共財を供給できる（例：すべての人に開放される私立図書館）</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Taxonomy -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h2 class="en">A Taxonomy of Goods</h2>
+      <h2 class="jp">財のタクソノミー（分類）</h2>
+    </div>
+
+    <p class="en" style="margin-bottom:20px">Goods can be classified along two dimensions: rivalry and excludability. This gives four categories:</p>
+    <p class="jp" style="margin-bottom:20px">財は競合性と排除性の2軸で分類できる。これにより4つのカテゴリーが生まれる：</p>
+
+    <!-- 2x2 Matrix -->
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 560 360" width="560" height="360">
+        <!-- Column headers -->
+        <text x="220" y="25" text-anchor="middle" fill="#34d399" font-size="13" font-weight="700">Non-Rival / 非競合</text>
+        <text x="420" y="25" text-anchor="middle" fill="#f87171" font-size="13" font-weight="700">Rival / 競合</text>
+
+        <!-- Row headers -->
+        <text x="80" y="135" text-anchor="middle" fill="#34d399" font-size="12" font-weight="700">Non-Excl.</text>
+        <text x="80" y="150" text-anchor="middle" fill="#34d399" font-size="12" font-weight="700">非排除</text>
+        <text x="80" y="285" text-anchor="middle" fill="#f87171" font-size="12" font-weight="700">Excludable</text>
+        <text x="80" y="300" text-anchor="middle" fill="#f87171" font-size="12" font-weight="700">排除可能</text>
+
+        <!-- Grid -->
+        <rect x="120" y="40" width="200" height="150" rx="10" fill="#1a3a2a" stroke="#10b981" stroke-width="2"/>
+        <rect x="330" y="40" width="200" height="150" rx="10" fill="#2a1a1a" stroke="#ef4444" stroke-width="2"/>
+        <rect x="120" y="200" width="200" height="150" rx="10" fill="#1a2a3a" stroke="#3b82f6" stroke-width="2"/>
+        <rect x="330" y="200" width="200" height="150" rx="10" fill="#2a2a1a" stroke="#f59e0b" stroke-width="2"/>
+
+        <!-- Cell: Non-rival + Non-excl = Pure Public Good -->
+        <text x="220" y="80" text-anchor="middle" fill="#34d399" font-size="13" font-weight="800">Pure Public Goods</text>
+        <text x="220" y="97" text-anchor="middle" fill="#637a94" font-size="10">純粋公共財</text>
+        <text x="220" y="118" text-anchor="middle" fill="#9db0c8" font-size="11">National defense</text>
+        <text x="220" y="133" text-anchor="middle" fill="#9db0c8" font-size="11">Street lighting</text>
+        <text x="220" y="148" text-anchor="middle" fill="#637a94" font-size="10">国防・街灯</text>
+        <text x="220" y="170" text-anchor="middle" fill="#34d399" font-size="10" font-weight="700">← This unit's focus</text>
+
+        <!-- Cell: Rival + Non-excl = Common Resources -->
+        <text x="430" y="80" text-anchor="middle" fill="#f87171" font-size="13" font-weight="800">Common Resources</text>
+        <text x="430" y="97" text-anchor="middle" fill="#637a94" font-size="10">コモンプール財</text>
+        <text x="430" y="118" text-anchor="middle" fill="#9db0c8" font-size="11">Fish in the ocean</text>
+        <text x="430" y="133" text-anchor="middle" fill="#9db0c8" font-size="11">Clean rivers</text>
+        <text x="430" y="148" text-anchor="middle" fill="#637a94" font-size="10">海の魚・河川水</text>
+        <text x="430" y="168" text-anchor="middle" fill="#f87171" font-size="10">"Tragedy of the commons"</text>
+
+        <!-- Cell: Non-rival + Excl = Club Goods -->
+        <text x="220" y="240" text-anchor="middle" fill="#60a5fa" font-size="13" font-weight="800">Club Goods</text>
+        <text x="220" y="257" text-anchor="middle" fill="#637a94" font-size="10">クラブ財</text>
+        <text x="220" y="278" text-anchor="middle" fill="#9db0c8" font-size="11">Cable TV, Netflix</text>
+        <text x="220" y="293" text-anchor="middle" fill="#9db0c8" font-size="11">Golf club, Toll road</text>
+        <text x="220" y="308" text-anchor="middle" fill="#637a94" font-size="10">ケーブルTV・有料道路</text>
+
+        <!-- Cell: Rival + Excl = Pure Private Good -->
+        <text x="430" y="240" text-anchor="middle" fill="#fbbf24" font-size="13" font-weight="800">Pure Private Goods</text>
+        <text x="430" y="257" text-anchor="middle" fill="#637a94" font-size="10">純粋私的財</text>
+        <text x="430" y="278" text-anchor="middle" fill="#9db0c8" font-size="11">Food, Clothing</text>
+        <text x="430" y="293" text-anchor="middle" fill="#9db0c8" font-size="11">Cars, Houses</text>
+        <text x="430" y="308" text-anchor="middle" fill="#637a94" font-size="10">食料・衣服・自動車</text>
+        <text x="430" y="328" text-anchor="middle" fill="#fbbf24" font-size="10">Market provides optimally</text>
+      </svg>
+      <figcaption class="en">Four categories of goods based on rivalry and excludability. Public goods occupy the top-left cell.</figcaption>
+      <figcaption class="jp">競合性と排除性に基づく4つの財カテゴリー。公共財は左上のセル。</figcaption>
+    </div>
+  </div>
+
+  <!-- Section 3: Free Rider Problem -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2 class="en">The Free Rider Problem</h2>
+      <h2 class="jp">フリーライダー問題</h2>
+    </div>
+
+    <p class="en" style="margin-bottom:16px">Non-excludability creates a <strong style="color:var(--text-primary)">free rider problem</strong>: each individual has an incentive to let others pay for the public good while enjoying its benefits for free. This leads to <strong style="color:var(--text-primary)">under-provision</strong> by private markets.</p>
+    <p class="jp" style="margin-bottom:16px">非排除性は<strong style="color:var(--text-primary)">フリーライダー問題</strong>を生む：各個人は他者にコストを負担させながら無料で利益を享受しようとするインセンティブを持つ。これにより私的市場では<strong style="color:var(--text-primary)">過少供給</strong>が生じる。</p>
+
+    <!-- Payoff Matrix -->
+    <h4 style="color:var(--text-secondary);margin-bottom:14px" class="en">Example: Voluntary Contribution vs. Free Riding</h4>
+    <h4 style="color:var(--text-secondary);margin-bottom:14px" class="jp">例：自発的拠出 vs フリーライド</h4>
+    <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:16px" class="en">A public good costs $10 per person to provide. Each individual gains $20 if it is provided. Due to non-excludability, you benefit even if you don't contribute.</p>
+    <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:16px" class="jp">公共財の供給コストは1人あたり10ドル。供給されれば各個人は20ドルの便益を得る。非排除性により、拠出しなくても利益を得られる。</p>
+
+    <div class="matrix-wrap">
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <td class="corner"></td>
+            <th colspan="2" class="en">Person B</th>
+            <th colspan="2" class="jp">Bさん</th>
+          </tr>
+          <tr>
+            <td class="corner"></td>
+            <th class="en">Contribute ($10)</th><th class="jp">拠出（$10）</th>
+            <th class="en">Free Ride ($0)</th><th class="jp">フリーライド（$0）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="en">Person A: Contribute ($10)</th>
+            <th class="jp">Aさん：拠出</th>
+            <td class="en">A: $10 net gain<br>B: $10 net gain<br><span style="color:var(--success);font-size:0.8rem">Both contribute</span></td>
+            <td class="jp">A: +$10<br>B: +$10<br><span style="color:var(--success);font-size:0.8rem">双方拠出</span></td>
+            <td class="en">A: $10 net gain<br><span class="lowlight">B: $20 free gain!</span><br><span style="color:var(--error);font-size:0.8rem">B free rides</span></td>
+            <td class="jp">A: +$10<br><span class="lowlight">B: +$20（無料）</span><br><span style="color:var(--error);font-size:0.8rem">Bがフリーライド</span></td>
+          </tr>
+          <tr>
+            <th class="en">Person A: Free Ride ($0)</th>
+            <th class="jp">Aさん：フリーライド</th>
+            <td class="en"><span class="lowlight">A: $20 free gain!</span><br>B: $10 net gain<br><span style="color:var(--error);font-size:0.8rem">A free rides</span></td>
+            <td class="jp"><span class="lowlight">A: +$20（無料）</span><br>B: +$10<br><span style="color:var(--error);font-size:0.8rem">Aがフリーライド</span></td>
+            <td class="en" style="background:rgba(248,113,113,0.1)"><strong style="color:var(--error)">A: $0<br>B: $0</strong><br><span style="color:var(--error);font-size:0.8rem">Neither → NO good!</span></td>
+            <td class="jp" style="background:rgba(248,113,113,0.1)"><strong style="color:var(--error)">A: $0<br>B: $0</strong><br><span style="color:var(--error);font-size:0.8rem">双方フリーライド→供給なし！</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout callout-warn" style="margin-top:20px">
+      <span class="callout-icon">⚠️</span>
+      <div>
+        <strong style="color:var(--accent-light)" class="en">Nash Equilibrium = Both Free Ride</strong>
+        <strong style="color:var(--accent-light)" class="jp">ナッシュ均衡 = 双方フリーライド</strong>
+        <p class="en">Each person's dominant strategy is to free ride (regardless of what the other does, you're better off not contributing). The Nash equilibrium is both free riding — and the public good is not provided. <strong style="color:var(--text-primary)">This is why government intervention is needed.</strong></p>
+        <p class="jp">各個人の支配戦略はフリーライド（相手がどうであれ拠出しない方が得）。ナッシュ均衡は双方フリーライド — 公共財は供給されない。<strong style="color:var(--text-primary)">これが政府介入が必要な理由。</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Optimal Provision -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h2 class="en">Optimal Provision of Public Goods</h2>
+      <h2 class="jp">公共財の最適供給</h2>
+    </div>
+
+    <p class="en" style="margin-bottom:20px">How should the efficient (optimal) quantity of a public good be determined? The key insight is that demand aggregation for public goods differs fundamentally from private goods.</p>
+    <p class="jp" style="margin-bottom:20px">公共財の効率的（最適）な量はどう決定されるか？重要な洞察は、公共財の需要集計が私的財と根本的に異なる点にある。</p>
+
+    <!-- Private vs Public Demand Aggregation -->
+    <div class="concept-grid">
+      <div class="card" style="border-top:3px solid var(--unit1)">
+        <h4 style="color:var(--unit1);margin-bottom:12px" class="en">Private Goods: Horizontal Summation</h4>
+        <h4 style="color:var(--unit1);margin-bottom:12px" class="jp">私的財：水平方向の合計</h4>
+        <p class="en" style="font-size:0.88rem;margin-bottom:12px">Each unit is consumed by only ONE person. Market demand = sum of individual quantities at each price.</p>
+        <p class="jp" style="font-size:0.88rem;margin-bottom:12px">各単位は1人のみが消費。市場需要 = 各価格での個人ごとの数量の合計。</p>
+        <div class="math-box" style="font-size:0.85rem;padding:10px 14px">
+          <span class="en">Efficiency: MB<sub>A</sub> = MB<sub>B</sub> = MC</span>
+          <span class="jp">効率条件：MB<sub>A</sub> = MB<sub>B</sub> = MC</span>
+        </div>
+        <!-- Horizontal summation diagram -->
+        <svg viewBox="0 0 280 160" width="280" height="160" style="margin-top:12px">
+          <line x1="20" y1="10" x2="20" y2="135" stroke="#9db0c8" stroke-width="1"/>
+          <line x1="20" y1="135" x2="260" y2="135" stroke="#9db0c8" stroke-width="1"/>
+          <text x="14" y="8" fill="#9db0c8" font-size="10">P</text>
+          <text x="262" y="138" fill="#9db0c8" font-size="10">Q</text>
+          <!-- D_A -->
+          <line x1="25" y1="25" x2="90" y2="135" stroke="#3b82f6" stroke-width="1.5"/>
+          <text x="88" y="130" fill="#60a5fa" font-size="9">D_A</text>
+          <!-- D_B -->
+          <line x1="50" y1="25" x2="115" y2="135" stroke="#8b5cf6" stroke-width="1.5"/>
+          <text x="113" y="130" fill="#a78bfa" font-size="9">D_B</text>
+          <!-- D_A+B (horizontal sum) -->
+          <line x1="75" y1="25" x2="200" y2="135" stroke="#f0a500" stroke-width="2"/>
+          <text x="195" y="128" fill="#ffc940" font-size="9">D_{A+B}</text>
+          <!-- Arrow showing horizontal -->
+          <text x="120" y="90" fill="#637a94" font-size="8">← add quantities →</text>
+          <text x="120" y="102" fill="#637a94" font-size="8">at each price P</text>
+        </svg>
+      </div>
+
+      <div class="card" style="border-top:3px solid var(--unit5)">
+        <h4 style="color:var(--unit5);margin-bottom:12px" class="en">Public Goods: Vertical Summation</h4>
+        <h4 style="color:var(--unit5);margin-bottom:12px" class="jp">公共財：垂直方向の合計</h4>
+        <p class="en" style="font-size:0.88rem;margin-bottom:12px">Every unit is consumed by ALL persons simultaneously (G<sub>A</sub>=G<sub>B</sub>=G). Social demand = sum of individuals' valuations for the same quantity.</p>
+        <p class="jp" style="font-size:0.88rem;margin-bottom:12px">全員が同時に同量を消費（G<sub>A</sub>=G<sub>B</sub>=G）。社会的需要 = 同量に対する個人の評価額の合計。</p>
+        <div class="math-box" style="font-size:0.85rem;padding:10px 14px;border-color:var(--unit5)">
+          <span class="en">Efficiency: MB<sub>A</sub> + MB<sub>B</sub> = MC</span>
+          <span class="jp">効率条件：MB<sub>A</sub> + MB<sub>B</sub> = MC</span>
+        </div>
+        <!-- Vertical summation diagram -->
+        <svg viewBox="0 0 280 160" width="280" height="160" style="margin-top:12px">
+          <line x1="20" y1="10" x2="20" y2="135" stroke="#9db0c8" stroke-width="1"/>
+          <line x1="20" y1="135" x2="260" y2="135" stroke="#9db0c8" stroke-width="1"/>
+          <text x="14" y="8" fill="#9db0c8" font-size="10">MB</text>
+          <text x="262" y="138" fill="#9db0c8" font-size="10">G</text>
+          <!-- MB_A -->
+          <line x1="25" y1="55" x2="200" y2="135" stroke="#3b82f6" stroke-width="1.5"/>
+          <text x="205" y="130" fill="#60a5fa" font-size="9">MB_A</text>
+          <!-- MB_B -->
+          <line x1="25" y1="80" x2="200" y2="135" stroke="#8b5cf6" stroke-width="1.5"/>
+          <text x="205" y="138" fill="#a78bfa" font-size="9">MB_B</text>
+          <!-- MB_A+B (vertical sum) -->
+          <line x1="25" y1="25" x2="200" y2="135" stroke="#ef4444" stroke-width="2"/>
+          <text x="205" y="110" fill="#f87171" font-size="9" font-weight="700">MB_A+MB_B</text>
+          <!-- MC line -->
+          <line x1="20" y1="80" x2="260" y2="80" stroke="#f0a500" stroke-width="1.5" stroke-dasharray="4,3"/>
+          <text x="210" y="76" fill="#ffc940" font-size="9">MC</text>
+          <!-- Arrow showing vertical -->
+          <text x="35" y="48" fill="#637a94" font-size="8">↑ add MBs</text>
+          <text x="35" y="58" fill="#637a94" font-size="8">at each Q</text>
+          <!-- Equilibrium -->
+          <circle cx="113" cy="80" r="3" fill="#f0a500"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Samuelson Condition -->
+    <div class="card" style="border-left:4px solid var(--unit5);margin-top:24px">
+      <h3 style="color:var(--unit5);margin-bottom:12px" class="en">The Samuelson Condition for Optimal Public Goods Provision</h3>
+      <h3 style="color:var(--unit5);margin-bottom:12px" class="jp">最適公共財供給のサミュエルソン条件</h3>
+      <div class="math-box" style="border-color:var(--unit5);font-size:1rem">
+        <div class="label">Samuelson Condition (General Equilibrium)</div>
+        Σ MRS<sup>i</sup><sub>GX</sub> = MRT<sub>GX</sub>
+        <br><br>
+        <span style="color:var(--text-secondary);font-size:0.88rem">
+          <span class="en">i.e.: MRS<sup>A</sup><sub>GX</sub> + MRS<sup>B</sup><sub>GX</sub> = MRT<sub>GX</sub></span>
+          <span class="jp">すなわち：MRS<sup>A</sup><sub>GX</sub> + MRS<sup>B</sup><sub>GX</sub> = MRT<sub>GX</sub></span>
+        </span>
+        <br><br>
+        <span style="color:var(--text-muted);font-size:0.82rem">
+          <span class="en">Compare with private goods: MRS<sup>A</sup><sub>XY</sub> = MRS<sup>B</sup><sub>XY</sub> = MRT<sub>XY</sub></span>
+          <span class="jp">私的財との比較：MRS<sup>A</sup><sub>XY</sub> = MRS<sup>B</sup><sub>XY</sub> = MRT<sub>XY</sub></span>
+        </span>
+      </div>
+      <p class="en" style="margin-top:14px;font-size:0.88rem">The sum of all individuals' marginal willingness to pay for the public good (G) equals the marginal rate of transformation (= marginal cost of producing G). Unlike private goods, MRS is <em>summed</em>, not equated individually.</p>
+      <p class="jp" style="margin-top:14px;font-size:0.88rem">公共財(G)に対するすべての個人の限界支払意思額の合計が限界変換率（Gの限界生産費）に等しい。私的財と異なり、MRSは個別に等しくなるのではなく<em>合計</em>される。</p>
+    </div>
+  </div>
+
+  <!-- Section 5: Caveats -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <h2 class="en">Caveats & Challenges</h2>
+      <h2 class="jp">留意点と課題</h2>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color:var(--accent-light);margin-bottom:8px">① <span class="en">Preference Revelation Problem</span><span class="jp">選好顕示問題</span></h4>
+        <p class="en" style="font-size:0.88rem">Samuelson condition works only if individuals reveal their <strong style="color:var(--text-primary)">true preferences</strong> for the public good. But individuals have an incentive to understate their preferences to free ride on others' contributions.</p>
+        <p class="jp" style="font-size:0.88rem">サミュエルソン条件は個人が公共財への<strong style="color:var(--text-primary)">真の選好</strong>を顕示した場合のみ機能。しかし個人は他者の拠出にフリーライドするために選好を過少申告するインセンティブを持つ。</p>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--accent-light);margin-bottom:8px">② <span class="en">Free Rider Problem (Again)</span><span class="jp">フリーライダー問題（再確認）</span></h4>
+        <p class="en" style="font-size:0.88rem">Non-excludability means private provision leads to under-supply. Government must compulsorily finance public goods through taxation — but this may create <strong style="color:var(--text-primary)">excess burden (deadweight loss)</strong>.</p>
+        <p class="jp" style="font-size:0.88rem">非排除性により私的供給では過少供給。政府は課税で強制的に公共財を調達するが、これは<strong style="color:var(--text-primary)">超過負担（死荷重）</strong>を生む可能性がある。</p>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--accent-light);margin-bottom:8px">③ <span class="en">Collective Decision Making</span><span class="jp">集団意思決定</span></h4>
+        <p class="en" style="font-size:0.88rem">The provision of public goods requires collective decisions about quantity and financing — deeply linked to <strong style="color:var(--text-primary)">public choice theory</strong> (voting, political economy, Arrow's Impossibility Theorem).</p>
+        <p class="jp" style="font-size:0.88rem">公共財の供給には数量と財源についての集団的決定が必要 — <strong style="color:var(--text-primary)">公共選択理論</strong>（投票・政治経済学・アローの不可能性定理）と深く連関。</p>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--accent-light);margin-bottom:8px">④ <span class="en">Quality of Preferences</span><span class="jp">選好の質的相違</span></h4>
+        <p class="en" style="font-size:0.88rem">The individualist approach assumes MRS<sub>GX</sub> for public goods is similar in nature to MRS<sub>XY</sub> for private goods. But preferences for public goods (e.g. national defense) may be qualitatively different.</p>
+        <p class="jp" style="font-size:0.88rem">個人主義的アプローチは公共財のMRS<sub>GX</sub>が私的財のMRS<sub>XY</sub>と性質的に類似と仮定するが、公共財（例：国防）への選好は質的に異なりうる。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Japan Government Expenditure -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <h2 class="en">Government Expenditures & Services in Japan</h2>
+      <h2 class="jp">日本の政府支出とサービス</h2>
+    </div>
+
+    <p class="en" style="margin-bottom:16px">Japan's national expenditure composition has shifted dramatically toward social security, reflecting rapid population aging.</p>
+    <p class="jp" style="margin-bottom:16px">少子高齢化を反映し、日本の国家支出構成は社会保障へと大きくシフトした。</p>
+
+    <div class="concept-grid">
+      <div>
+        <h4 style="color:var(--text-secondary);margin-bottom:12px" class="en">Central Government Services</h4>
+        <h4 style="color:var(--text-secondary);margin-bottom:12px" class="jp">中央政府のサービス</h4>
+        <ul style="padding-left:18px;color:var(--text-secondary);font-size:0.88rem">
+          <li class="en">National defense</li><li class="jp">国防</li>
+          <li class="en">Foreign affairs / diplomacy</li><li class="jp">外交</li>
+          <li class="en">Social security (pensions, health insurance)</li><li class="jp">社会保障（年金・健康保険）</li>
+          <li class="en">National universities</li><li class="jp">国立大学</li>
+          <li class="en">Major infrastructure (highways, ports)</li><li class="jp">主要インフラ（高速道路・港湾）</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:var(--text-secondary);margin-bottom:12px" class="en">Local Government Services</h4>
+        <h4 style="color:var(--text-secondary);margin-bottom:12px" class="jp">地方政府のサービス</h4>
+        <ul style="padding-left:18px;color:var(--text-secondary);font-size:0.88rem">
+          <li class="en">Elementary/secondary education</li><li class="jp">初・中等教育</li>
+          <li class="en">Local welfare programs</li><li class="jp">地域福祉プログラム</li>
+          <li class="en">Local roads, parks, water supply</li><li class="jp">地方道路・公園・上下水道</li>
+          <li class="en">Garbage collection / waste management</li><li class="jp">ごみ収集・廃棄物管理</li>
+          <li class="en">Fire departments, police</li><li class="jp">消防・警察</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="summary-box" style="margin-top:24px">
+      <h3 class="en">Key Trend: Social Security Dominates</h3>
+      <h3 class="jp">重要トレンド：社会保障費の増大</h3>
+      <ul>
+        <li class="en"><strong>1975:</strong> Social security share of national budget ≈ 18% → <strong>2025: ≈ 33%</strong></li>
+        <li class="jp"><strong>1975年：</strong>国家予算に占める社会保障費 ≈ 18% → <strong>2025年：≈ 33%</strong></li>
+        <li class="en">Public works spending has declined significantly as social security rose</li>
+        <li class="jp">社会保障費増大に伴い公共事業費は大幅に減少</li>
+        <li class="en">Japan spends about 33.2% of its general account on social security (FY2025) — the single largest item</li>
+        <li class="jp">日本の一般会計歳出の約33.2%が社会保障費（2025年度）— 最大項目</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Quiz -->
+  <div class="quiz-section" data-quiz>
+    <div class="quiz-header">
+      <h2 class="en">Unit 5 Quiz</h2>
+      <h2 class="jp">Unit 5 クイズ</h2>
+      <span class="quiz-score">0 / 7 answered</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+    <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="en">Click to answer and reveal the explanation.</p>
+    <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="jp">クリックして回答・解説を表示。</p>
+
+    <div class="question-block" data-correct="2">
+      <h4><span class="q-num">Q1</span> <span class="en">Which two characteristics define a pure public good?</span><span class="jp">純粋公共財を定義する2つの特性は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Rival + Excludable</span><span class="jp">競合＋排除可能</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Non-rival + Excludable</span><span class="jp">非競合＋排除可能</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Non-rival + Non-excludable</span><span class="jp">非競合＋非排除</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Rival + Non-excludable</span><span class="jp">競合＋非排除</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Non-rival + Non-excludable</strong><strong class="jp">非競合＋非排除</strong> — <span class="en">Non-rivalness means zero marginal cost of an additional consumer. Non-excludability means you can't prevent anyone from consuming it. Together they create public goods that private markets under-provide.</span><span class="jp">非競合性は追加消費者の限界コストがゼロ。非排除性は誰かの消費を妨げられない。この組み合わせが私的市場で過少供給される公共財を生む。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="1">
+      <h4><span class="q-num">Q2</span> <span class="en">Cable TV is an example of which type of good?</span><span class="jp">ケーブルテレビはどのタイプの財の例か？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Pure public good</span><span class="jp">純粋公共財</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Club good</span><span class="jp">クラブ財</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Common resource</span><span class="jp">コモンプール財</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Pure private good</span><span class="jp">純粋私的財</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Club good</strong><strong class="jp">クラブ財</strong> — <span class="en">Cable TV is non-rival (one person's watching doesn't reduce others' ability to watch) but excludable (you can be cut off for non-payment). This combination = club good. Other examples: toll roads, Netflix, swimming pools.</span><span class="jp">ケーブルテレビは非競合（一人の視聴が他者の視聴を妨げない）だが排除可能（未払いで切断）。この組み合わせ＝クラブ財。他の例：有料道路・Netflix・プール。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="0">
+      <h4><span class="q-num">Q3</span> <span class="en">The free rider problem arises because of:</span><span class="jp">フリーライダー問題が生じる原因は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Non-excludability — you can't prevent non-payers from benefiting</span><span class="jp">非排除性 — 非支払者の利益享受を妨げられない</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Non-rivalness — zero marginal cost of consumption</span><span class="jp">非競合性 — 消費の限界コストがゼロ</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">High production costs</span><span class="jp">高い生産コスト</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Market monopoly</span><span class="jp">市場の独占</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Non-excludability</strong><strong class="jp">非排除性</strong> — <span class="en">Because non-payers cannot be excluded, individuals have an incentive to free ride — letting others pay while enjoying the benefit for free. This leads to under-provision when provision is left to voluntary/private action.</span><span class="jp">非支払者を排除できないため、個人は他者に支払わせながら無料で利益を得るフリーライドのインセンティブを持つ。自発的・私的行動に委ねると過少供給につながる。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="3">
+      <h4><span class="q-num">Q4</span> <span class="en">For private goods, the market equilibrium efficiency condition is:</span><span class="jp">私的財の市場均衡効率条件は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> MB<sub>A</sub> + MB<sub>B</sub> = MC</div>
+        <div class="option"><span class="option-marker">B</span> Σ MRS<sub>GX</sub> = MRT<sub>GX</sub></div>
+        <div class="option"><span class="option-marker">C</span> MB<sub>A</sub> = MB<sub>B</sub> + MC</div>
+        <div class="option"><span class="option-marker">D</span> MB<sub>A</sub> = MB<sub>B</sub> = MC</div>
+      </div>
+      <div class="explanation"><strong>MB<sub>A</sub> = MB<sub>B</sub> = MC</strong> — <span class="en">For private goods, demand curves are horizontally summed. At equilibrium, every consumer's marginal benefit equals the common market price, which equals marginal cost. This is different from public goods where MBs are summed vertically (ΣMB = MC).</span><span class="jp">私的財では需要曲線は水平に合計。均衡では全消費者の限界便益が共通の市場価格（=限界費用）に等しい。公共財ではMBを垂直に合計（ΣMB = MC）する点が異なる。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="1">
+      <h4><span class="q-num">Q5</span> <span class="en">The Samuelson condition for optimal public goods provision states:</span><span class="jp">最適公共財供給のサミュエルソン条件は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> MRS<sup>A</sup><sub>GX</sub> = MRS<sup>B</sup><sub>GX</sub> = MRT<sub>GX</sub></div>
+        <div class="option"><span class="option-marker">B</span> MRS<sup>A</sup><sub>GX</sub> + MRS<sup>B</sup><sub>GX</sub> = MRT<sub>GX</sub></div>
+        <div class="option"><span class="option-marker">C</span> MRS<sup>A</sup><sub>GX</sub> = MRT<sub>GX</sub></div>
+        <div class="option"><span class="option-marker">D</span> MRS<sup>A</sup><sub>GX</sub> × MRS<sup>B</sup><sub>GX</sub> = MRT<sub>GX</sub></div>
+      </div>
+      <div class="explanation"><strong>Σ MRS<sub>GX</sub> = MRT<sub>GX</sub></strong> (i.e. MRS<sup>A</sup> + MRS<sup>B</sup> = MRT) — <span class="en">Because all individuals consume the same quantity of the public good, the sum of their marginal rates of substitution (their individual valuations) must equal the MRT (the marginal cost). This is the general equilibrium version of ΣMB = MC.</span><span class="jp">すべての個人が同量の公共財を消費するため、個人の限界代替率（評価額）の合計がMRT（限界費用）に等しくなる必要がある。ΣMB = MCの一般均衡版。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="2">
+      <h4><span class="q-num">Q6</span> <span class="en">National defense is a classic public good because:</span><span class="jp">国防が典型的な公共財である理由は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">It is very expensive to produce</span><span class="jp">生産コストが非常に高い</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Only the government has the military technology</span><span class="jp">政府だけが軍事技術を持つ</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">One person's protection does not reduce another's, and you cannot exclude anyone from protection</span><span class="jp">一人の保護が他者の保護を減らさず、誰かを保護から排除できない</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">It generates positive externalities</span><span class="jp">正の外部性を生む</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Non-rival + Non-excludable</strong><strong class="jp">非競合＋非排除</strong> — <span class="en">The two key characteristics: (1) Non-rival — one person being defended doesn't reduce defense for others; (2) Non-excludable — once a country is defended, all residents benefit regardless of whether they paid taxes. Together these create the free rider problem requiring government provision.</span><span class="jp">2つの特性：①非競合性 — ある人の防衛が他者の防衛を減らさない；②非排除性 — 一国が防衛されると、税を払ったかどうかに関わらず全居住者が恩恵を受ける。この組み合わせがフリーライダー問題を生み、政府供給が必要となる。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="0">
+      <h4><span class="q-num">Q7</span> <span class="en">In Japan's FY2025 general account, social security's share is approximately:</span><span class="jp">日本の2025年度一般会計に占める社会保障費の割合は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> 33.2%</div>
+        <div class="option"><span class="option-marker">B</span> 15.0%</div>
+        <div class="option"><span class="option-marker">C</span> 24.5%</div>
+        <div class="option"><span class="option-marker">D</span> 7.5%</div>
+      </div>
+      <div class="explanation"><strong>33.2%</strong> — <span class="en">Social security is the single largest expenditure category in Japan's budget at 33.2%, reflecting the rapidly aging population. The second largest is national debt service at 24.5%. This is why this course focuses on the fiscal sustainability of social security.</span><span class="jp">社会保障費は33.2%で最大の歳出項目。急速な高齢化を反映。第2位は国債費の24.5%。本コースが社会保障の財政持続可能性に焦点を当てる理由でもある。</span></div>
+    </div>
+
+    <button class="quiz-submit">Submit All Answers</button>
+    <div class="quiz-result"></div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;justify-content:space-between;margin-top:24px;flex-wrap:wrap;gap:12px">
+    <a href="unit4.html" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:14px 24px;color:var(--text-primary);display:flex;align-items:center;gap:8px;font-weight:600;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+      ← <span class="en">Unit 4</span><span class="jp">Unit 4</span>
+    </a>
+    <a href="index.html" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:14px 24px;color:var(--text-primary);display:flex;align-items:center;gap:8px;font-weight:600;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+      🏠 <span class="en">Back to Home</span><span class="jp">ホームへ戻る</span>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <p class="en">Fiscal Issues on Social Security — Waseda University Spring 2026 · Unit 5</p>
+  <p class="jp">社会保障の財政問題 — 早稲田大学 2026年春学期 · Unit 5</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

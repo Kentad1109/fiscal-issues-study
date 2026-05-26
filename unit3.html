@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unit 3: Pareto Optimality & Efficiency — Fiscal Issues</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="nav-brand">📚 Fiscal Issues</span>
+  <a href="index.html">Home</a>
+  <a href="unit1.html">Unit 1</a>
+  <a href="unit2.html">Unit 2</a>
+  <a href="unit3.html" class="active">Unit 3</a>
+  <a href="unit4.html">Unit 4</a>
+  <a href="unit5.html">Unit 5</a>
+  <button class="lang-toggle">🇯🇵 日本語</button>
+</nav>
+
+<div class="unit-hero unit-color-3">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="sep">›</span>
+      <span>Unit 3</span>
+    </div>
+    <div class="unit-badge">Unit 3</div>
+    <h1 class="en">Pareto Optimality & Market Efficiency</h1>
+    <h1 class="jp">パレート最適と市場効率性</h1>
+    <p style="color:var(--text-secondary);max-width:640px;margin-top:12px" class="en">Master the core concepts of welfare economics: production & consumption efficiency, the Edgeworth box, PPF, and both Welfare Theorems.</p>
+    <p style="color:var(--text-secondary);max-width:640px;margin-top:12px" class="jp">厚生経済学の核心概念をマスターする：生産・消費の効率性、エッジワースボックス、PPF、両厚生定理。</p>
+  </div>
+</div>
+
+<main class="container section">
+
+  <!-- Model Setup -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">0</div>
+      <h2 class="en">The 2×2×2 Model</h2>
+      <h2 class="jp">2×2×2モデル</h2>
+    </div>
+    <div class="callout callout-info">
+      <span class="callout-icon">📐</span>
+      <div>
+        <p class="en">Throughout this unit we use a simplified general equilibrium model with:<br>
+        <strong style="color:var(--text-primary)">2 Inputs:</strong> Labor (L) and Capital (K) &nbsp;|&nbsp;
+        <strong style="color:var(--text-primary)">2 Goods:</strong> X and Y &nbsp;|&nbsp;
+        <strong style="color:var(--text-primary)">2 Consumers:</strong> A and B</p>
+        <p class="jp">本ユニット全体で以下の簡略化された一般均衡モデルを使用：<br>
+        <strong style="color:var(--text-primary)">2生産要素：</strong>労働(L)・資本(K) &nbsp;|&nbsp;
+        <strong style="color:var(--text-primary)">2財：</strong>X・Y &nbsp;|&nbsp;
+        <strong style="color:var(--text-primary)">2消費者：</strong>A・B</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 1: Production Concepts -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2 class="en">Production: Isoquant Curves & MRTS</h2>
+      <h2 class="jp">生産：等産量曲線とMRTS</h2>
+    </div>
+
+    <div class="concept-grid">
+      <div class="key-concept">
+        <h4 class="en">Isoquant Curve (IQ)</h4>
+        <h4 class="jp">等産量曲線（IQ）</h4>
+        <p class="en">The locus of all input combinations (L, K) that produce the <strong style="color:var(--text-primary)">same quantity</strong> of output. Higher IQs represent higher output levels. Convex to origin.</p>
+        <p class="jp">同一の産出量を達成するすべての投入物の組み合わせの軌跡。より上位のIQはより高い産出水準を示す。原点に向かって凸型。</p>
+      </div>
+      <div class="key-concept">
+        <h4 class="en">MRTS<sub>LK</sub> — Marginal Rate of Technical Substitution</h4>
+        <h4 class="jp">MRTS<sub>LK</sub> — 限界技術代替率</h4>
+        <p class="en">The number of units of K that can be given up in exchange for one additional unit of L while keeping output constant. Equals the <strong style="color:var(--text-primary)">slope of the IQ</strong> (negative).</p>
+        <p class="jp">産出量を一定に保ちながら、Lを1単位増加させる代わりに放棄できるKの単位数。<strong style="color:var(--text-primary)">IQの傾き</strong>（マイナス）に等しい。</p>
+      </div>
+    </div>
+
+    <div class="math-box">
+      <div class="label">Key Formula</div>
+      MRTS<sub>LK</sub> = −ΔK/ΔL = MP<sub>L</sub> / MP<sub>K</sub><br>
+      <span style="color:var(--text-muted);font-size:0.85rem">where MP<sub>L</sub> = ∂Q/∂L (Marginal Product of Labor) | MP<sub>K</sub> = ∂Q/∂K (Marginal Product of Capital)</span>
+    </div>
+
+    <!-- IQ Diagram -->
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 380 280" width="380" height="280">
+        <!-- Axes -->
+        <line x1="50" y1="20" x2="50" y2="240" stroke="#9db0c8" stroke-width="1.5" marker-end="url(#arr3)"/>
+        <line x1="50" y1="240" x2="340" y2="240" stroke="#9db0c8" stroke-width="1.5" marker-end="url(#arr3)"/>
+        <text x="44" y="16" fill="#9db0c8" font-size="13" font-weight="600">K</text>
+        <text x="345" y="244" fill="#9db0c8" font-size="13" font-weight="600">L</text>
+
+        <!-- IQ curves -->
+        <path d="M 70 210 Q 110 130 200 80 Q 260 60 320 50" fill="none" stroke="#10b981" stroke-width="2"/>
+        <path d="M 70 240 Q 115 170 210 115 Q 270 90 330 82" fill="none" stroke="#10b981" stroke-width="2" opacity="0.6"/>
+        <path d="M 85 240 Q 135 200 230 150 Q 290 125 335 118" fill="none" stroke="#10b981" stroke-width="2" opacity="0.35"/>
+
+        <text x="325" y="45" fill="#34d399" font-size="11" font-weight="700">IQ₃</text>
+        <text x="325" y="77" fill="#34d399" font-size="11" font-weight="700">IQ₂</text>
+        <text x="325" y="113" fill="#34d399" font-size="11" font-weight="700">IQ₁</text>
+
+        <!-- Tangent slope at point on IQ₃ -->
+        <circle cx="155" cy="113" r="4" fill="#f0a500"/>
+        <line x1="100" y1="140" x2="210" y2="86" stroke="#f0a500" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <text x="215" y="82" fill="#ffc940" font-size="10">slope = −MRTS<tspan font-size="8" baseline-shift="sub">LK</tspan></text>
+
+        <!-- Diminishing returns annotations -->
+        <text x="60" y="260" fill="#637a94" font-size="9">↑ As L increases, slope flattens = diminishing MRTS</text>
+
+        <defs>
+          <marker id="arr3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L7,3 Z" fill="#9db0c8"/>
+          </marker>
+        </defs>
+      </svg>
+      <figcaption class="en">Isoquant curves: higher curves = more output. The slope at any point = −MRTS<sub>LK</sub></figcaption>
+      <figcaption class="jp">等産量曲線：上位ほど産出量大。各点の傾き = −MRTS<sub>LK</sub></figcaption>
+    </div>
+  </div>
+
+  <!-- Section 2: Consumption -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h2 class="en">Consumption: Indifference Curves & MRS</h2>
+      <h2 class="jp">消費：無差別曲線とMRS</h2>
+    </div>
+
+    <div class="concept-grid">
+      <div class="key-concept">
+        <h4 class="en">Indifference Curve (IC)</h4>
+        <h4 class="jp">無差別曲線（IC）</h4>
+        <p class="en">The locus of all consumption bundles (X, Y) that give the consumer the <strong style="color:var(--text-primary)">same utility</strong>. Higher ICs represent higher utility. Convex to origin (diminishing MRS).</p>
+        <p class="jp">消費者に同一の効用を与えるすべての消費束の軌跡。上位ほど高い効用。原点に向かって凸型（限界代替率逓減）。</p>
+      </div>
+      <div class="key-concept">
+        <h4 class="en">MRS<sub>XY</sub> — Marginal Rate of Substitution</h4>
+        <h4 class="jp">MRS<sub>XY</sub> — 限界代替率</h4>
+        <p class="en">The rate at which a consumer is willing to trade Y for X while maintaining the <strong style="color:var(--text-primary)">same utility</strong>. Equals the <strong style="color:var(--text-primary)">slope of the IC</strong> (negative).</p>
+        <p class="jp">効用を一定に保ちながら、XとYを交換する比率。<strong style="color:var(--text-primary)">ICの傾き</strong>（マイナス）に等しい。</p>
+      </div>
+    </div>
+
+    <div class="math-box">
+      <div class="label">Key Formula</div>
+      MRS<sub>XY</sub> = −ΔY/ΔX = MU<sub>X</sub> / MU<sub>Y</sub><br>
+      <span style="color:var(--text-muted);font-size:0.85rem">where MU<sub>X</sub> = ∂U/∂X (Marginal Utility of X) | MU<sub>Y</sub> = ∂U/∂Y (Marginal Utility of Y)</span>
+    </div>
+  </div>
+
+  <!-- Section 3: Three Pareto Conditions -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2 class="en">Three Conditions for Pareto Optimality</h2>
+      <h2 class="jp">パレート最適の3条件</h2>
+    </div>
+
+    <p class="en" style="margin-bottom:24px"><strong style="color:var(--text-primary)">Pareto Optimality</strong>: An allocation where it is impossible to make any one person better off without making someone else worse off.</p>
+    <p class="jp" style="margin-bottom:24px"><strong style="color:var(--text-primary)">パレート最適</strong>：誰かを悪化させることなく、誰かをより良くすることが不可能な資源配分。</p>
+
+    <!-- Condition (a) -->
+    <div class="card" style="border-left:4px solid var(--unit3);margin-bottom:20px">
+      <h3 style="color:var(--unit3);margin-bottom:12px">(a) <span class="en">Production Efficiency</span><span class="jp">生産効率性</span></h3>
+      <p class="en" style="margin-bottom:12px">Also called the <em>Marginal Condition for Factor Substitution</em>. Achieved when it is impossible to reallocate inputs (L, K) between goods X and Y to increase one output without decreasing the other.</p>
+      <p class="jp" style="margin-bottom:12px">「要素代替の限界条件」とも呼ばれる。一方の産出物を減らさずに他方を増やせない状態。</p>
+      <div class="math-box" style="border-color:var(--unit3)">
+        <div class="label">Condition (a)</div>
+        MRTS<sup>X</sup><sub>LK</sub> = MRTS<sup>Y</sup><sub>LK</sub>
+        <br><span style="color:var(--text-muted);font-size:0.85rem">The MRTS must be equal across all production activities → Points on the <strong style="color:var(--text-primary)">Production Contract Curve</strong></span>
+      </div>
+
+      <!-- Edgeworth Box Production -->
+      <div class="diagram-wrap" style="background:transparent;border:none;padding:0;margin-top:16px">
+        <svg viewBox="0 0 420 300" width="420" height="300">
+          <!-- Box outline -->
+          <rect x="60" y="30" width="300" height="220" fill="none" stroke="#2a3d55" stroke-width="2"/>
+          <!-- Origin labels -->
+          <text x="54" y="260" fill="#9db0c8" font-size="12" font-weight="700">O<tspan font-size="9">X</tspan></text>
+          <text x="355" y="38" fill="#9db0c8" font-size="12" font-weight="700">O<tspan font-size="9">Y</tspan></text>
+
+          <!-- IQ curves for X (from bottom-left) -->
+          <path d="M 60 230 Q 130 160 220 130 Q 280 118 360 115" fill="none" stroke="#3b82f6" stroke-width="1.8"/>
+          <path d="M 60 255 Q 140 190 240 160 Q 300 148 360 145" fill="none" stroke="#3b82f6" stroke-width="1.8" opacity="0.6"/>
+          <text x="363" y="113" fill="#60a5fa" font-size="10">IQ<tspan font-size="8">X</tspan></text>
+
+          <!-- IQ curves for Y (from top-right, flipped) -->
+          <path d="M 360 80 Q 290 140 200 170 Q 140 182 60 185" fill="none" stroke="#10b981" stroke-width="1.8"/>
+          <path d="M 360 50 Q 285 115 190 148 Q 130 163 60 167" fill="none" stroke="#10b981" stroke-width="1.8" opacity="0.6"/>
+          <text x="30" y="188" fill="#34d399" font-size="10">IQ<tspan font-size="8">Y</tspan></text>
+
+          <!-- Contract curve -->
+          <path d="M 60 250 Q 150 180 210 150 Q 270 125 360 50" fill="none" stroke="#f0a500" stroke-width="2.5" stroke-dasharray="7,3"/>
+          <text x="200" y="100" fill="#ffc940" font-size="11" font-weight="700">Contract Curve</text>
+
+          <!-- Tangency point -->
+          <circle cx="210" cy="152" r="5" fill="#f0a500"/>
+          <text x="218" y="148" fill="#ffc940" font-size="10">MRTS<tspan font-size="8">LK</tspan><tspan font-size="8">X</tspan>=MRTS<tspan font-size="8">LK</tspan><tspan font-size="8">Y</tspan></text>
+
+          <!-- Off-curve point J -->
+          <circle cx="175" cy="190" r="4" fill="#f87171"/>
+          <text x="160" y="206" fill="#f87171" font-size="11" font-weight="700">J</text>
+          <text x="130" y="220" fill="#f87171" font-size="9">(inefficient — off curve)</text>
+
+          <!-- Axes labels -->
+          <text x="205" y="268" text-anchor="middle" fill="#637a94" font-size="10">→ L for X increases →</text>
+          <text x="22" y="143" fill="#637a94" font-size="10" transform="rotate(-90,22,143)">→ K for X increases →</text>
+
+          <text x="205" y="22" text-anchor="middle" fill="#637a94" font-size="10">← L for Y increases ←</text>
+        </svg>
+        <figcaption class="en">Edgeworth Box (Production): The contract curve is the locus of all efficient allocations where IQˣ and IQʸ are tangent</figcaption>
+        <figcaption class="jp">エッジワースボックス（生産）：契約曲線はIQˣとIQʸが接するすべての効率的配分の軌跡</figcaption>
+      </div>
+    </div>
+
+    <!-- Condition (b) -->
+    <div class="card" style="border-left:4px solid var(--unit4);margin-bottom:20px">
+      <h3 style="color:var(--unit4);margin-bottom:12px">(b) <span class="en">Consumption Efficiency</span><span class="jp">消費効率性</span></h3>
+      <p class="en" style="margin-bottom:12px">Also called the <em>Marginal Condition for Exchange</em>. Achieved when it is impossible to redistribute X and Y between A and B to make one person better off without harming the other.</p>
+      <p class="jp" style="margin-bottom:12px">「交換の限界条件」とも呼ばれる。一方を悪化させずに他方を改善できない状態。</p>
+      <div class="math-box" style="border-color:var(--unit4)">
+        <div class="label">Condition (b)</div>
+        MRS<sup>A</sup><sub>XY</sub> = MRS<sup>B</sup><sub>XY</sub>
+        <br><span style="color:var(--text-muted);font-size:0.85rem">The MRS must be equal for all consumers → Points on the <strong style="color:var(--text-primary)">Consumption Contract Curve</strong></span>
+      </div>
+    </div>
+
+    <!-- Condition (c) -->
+    <div class="card" style="border-left:4px solid var(--unit5);margin-bottom:20px">
+      <h3 style="color:var(--unit5);margin-bottom:12px">(c) <span class="en">Production-Consumption Efficiency</span><span class="jp">生産＝消費効率性</span></h3>
+      <p class="en" style="margin-bottom:12px">Also called the <em>Marginal Condition for Product Substitution</em>. Links the production side (PPF/MRT) with the consumption side (IC/MRS).</p>
+      <p class="jp" style="margin-bottom:12px">「生産物代替の限界条件」とも呼ばれる。生産側（PPF/MRT）と消費側（IC/MRS）を結びつける。</p>
+      <div class="math-box" style="border-color:var(--unit5)">
+        <div class="label">Condition (c) — The Key Pareto Condition</div>
+        MRS<sub>XY</sub> = MRT<sub>XY</sub>
+        <br><span style="color:var(--text-muted);font-size:0.85rem">MRT<sub>XY</sub> = slope of PPF = MC<sub>X</sub>/MC<sub>Y</sub> &nbsp;|&nbsp; MRS<sub>XY</sub> = slope of IC = MU<sub>X</sub>/MU<sub>Y</sub></span>
+      </div>
+
+      <!-- PPF Diagram -->
+      <div class="diagram-wrap" style="background:transparent;border:none;padding:0;margin-top:16px">
+        <svg viewBox="0 0 380 280" width="380" height="280">
+          <!-- Axes -->
+          <line x1="50" y1="20" x2="50" y2="240" stroke="#9db0c8" stroke-width="1.5" marker-end="url(#pArr)"/>
+          <line x1="50" y1="240" x2="340" y2="240" stroke="#9db0c8" stroke-width="1.5" marker-end="url(#pArr)"/>
+          <text x="44" y="16" fill="#9db0c8" font-size="13" font-weight="600">Y</text>
+          <text x="345" y="244" fill="#9db0c8" font-size="13" font-weight="600">X</text>
+
+          <!-- PPF curve -->
+          <path d="M 65 55 Q 130 65 200 120 Q 260 175 310 240" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+          <text x="65" y="48" fill="#f87171" font-size="12" font-weight="700">T</text>
+          <text x="315" y="240" fill="#f87171" font-size="12" font-weight="700">T</text>
+          <text x="290" y="170" fill="#f87171" font-size="11">PPF</text>
+
+          <!-- IC curves for A -->
+          <path d="M 80 240 Q 130 165 200 130 Q 255 108 310 100" fill="none" stroke="#3b82f6" stroke-width="1.8"/>
+          <path d="M 110 240 Q 165 185 230 158 Q 280 142 330 138" fill="none" stroke="#3b82f6" stroke-width="1.8" opacity="0.5"/>
+          <text x="315" y="98" fill="#60a5fa" font-size="10">I<tspan font-size="8">A</tspan></text>
+
+          <!-- Optimal point -->
+          <circle cx="175" cy="148" r="5" fill="#f0a500"/>
+          <text x="183" y="143" fill="#ffc940" font-size="11" font-weight="700">E*</text>
+
+          <!-- Dashed lines to axes -->
+          <line x1="50" y1="148" x2="175" y2="148" stroke="#f0a500" stroke-width="1" stroke-dasharray="4,3"/>
+          <line x1="175" y1="148" x2="175" y2="240" stroke="#f0a500" stroke-width="1" stroke-dasharray="4,3"/>
+          <text x="42" y="152" text-anchor="end" fill="#ffc940" font-size="10">Y*</text>
+          <text x="175" y="256" text-anchor="middle" fill="#ffc940" font-size="10">X*</text>
+
+          <!-- Tangency labels -->
+          <text x="90" y="200" fill="#9db0c8" font-size="10">MRS<tspan font-size="8">XY</tspan> = MRT<tspan font-size="8">XY</tspan></text>
+          <text x="90" y="215" fill="#637a94" font-size="9">at E* (optimal)</text>
+
+          <defs>
+            <marker id="pArr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L0,6 L7,3 Z" fill="#9db0c8"/>
+            </marker>
+          </defs>
+        </svg>
+        <figcaption class="en">PPF (TT) and Indifference Curve (Iₐ) are tangent at E*: MRS<sub>XY</sub> = MRT<sub>XY</sub></figcaption>
+        <figcaption class="jp">PPF(TT)と無差別曲線(Iₐ)がE*で接線：MRS<sub>XY</sub> = MRT<sub>XY</sub></figcaption>
+      </div>
+    </div>
+
+    <!-- Summary of 3 conditions -->
+    <div class="summary-box">
+      <h3 class="en">Summary: Three Pareto Conditions</h3>
+      <h3 class="jp">まとめ：パレート最適の3条件</h3>
+      <ul>
+        <li class="en"><strong>(a) Production Efficiency:</strong> MRTS<sup>X</sup><sub>LK</sub> = MRTS<sup>Y</sup><sub>LK</sub> — inputs are efficiently allocated between goods</li>
+        <li class="jp"><strong>(a) 生産効率性：</strong> MRTS<sup>X</sup><sub>LK</sub> = MRTS<sup>Y</sup><sub>LK</sub> — 生産要素が財間で効率的に配分</li>
+        <li class="en"><strong>(b) Consumption Efficiency:</strong> MRS<sup>A</sup><sub>XY</sub> = MRS<sup>B</sup><sub>XY</sub> — goods are efficiently distributed between consumers</li>
+        <li class="jp"><strong>(b) 消費効率性：</strong> MRS<sup>A</sup><sub>XY</sub> = MRS<sup>B</sup><sub>XY</sub> — 財が消費者間で効率的に分配</li>
+        <li class="en"><strong>(c) Production-Consumption Efficiency:</strong> MRS<sub>XY</sub> = MRT<sub>XY</sub> — production mix matches consumer preferences</li>
+        <li class="jp"><strong>(c) 生産＝消費効率性：</strong> MRS<sub>XY</sub> = MRT<sub>XY</sub> — 生産の組み合わせが消費者の選好に一致</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 4: Welfare Theorems -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h2 class="en">The Two Fundamental Welfare Theorems</h2>
+      <h2 class="jp">2つの基本的厚生定理</h2>
+    </div>
+
+    <div class="concept-grid">
+      <div class="card" style="border-top:4px solid var(--unit3)">
+        <h3 style="color:var(--unit3);margin-bottom:12px">🥇 <span class="en">First Welfare Theorem</span><span class="jp">第1厚生定理</span></h3>
+        <p class="en" style="margin-bottom:12px">A <strong style="color:var(--text-primary)">perfectly competitive equilibrium guarantees Pareto optimality</strong>. That is, conditions (a), (b), and (c) are all satisfied at a competitive equilibrium.</p>
+        <p class="jp" style="margin-bottom:12px"><strong style="color:var(--text-primary)">完全競争均衡はパレート最適を保証</strong>する。すなわち、条件(a)(b)(c)はすべて競争均衡で満たされる。</p>
+        <div class="math-box" style="background:transparent;border:none;padding:10px 0 0 0;font-size:0.85rem">
+          <span class="en">Why condition (a)?</span><span class="jp">なぜ条件(a)か？</span><br>
+          <span style="color:var(--text-secondary)">Firms minimize cost: w/r = MRTS<sub>LK</sub> → same for all firms → MRTS<sup>X</sup>=MRTS<sup>Y</sup></span><br><br>
+          <span class="en">Why condition (b)?</span><span class="jp">なぜ条件(b)か？</span><br>
+          <span style="color:var(--text-secondary)">Consumers maximize utility: P<sub>X</sub>/P<sub>Y</sub> = MRS<sub>XY</sub> → same for all consumers → MRS<sup>A</sup>=MRS<sup>B</sup></span><br><br>
+          <span class="en">Why condition (c)?</span><span class="jp">なぜ条件(c)か？</span><br>
+          <span style="color:var(--text-secondary)">Profit maximization: P=MC → P<sub>X</sub>/P<sub>Y</sub> = MC<sub>X</sub>/MC<sub>Y</sub> = MRT<sub>XY</sub> = MRS<sub>XY</sub></span>
+        </div>
+      </div>
+
+      <div class="card" style="border-top:4px solid var(--unit4)">
+        <h3 style="color:var(--unit4);margin-bottom:12px">🥈 <span class="en">Second Welfare Theorem</span><span class="jp">第2厚生定理</span></h3>
+        <p class="en" style="margin-bottom:12px"><strong style="color:var(--text-primary)">Any Pareto-efficient allocation can be achieved</strong> as a competitive equilibrium — given a suitable <strong style="color:var(--text-primary)">redistribution of initial endowments</strong>.</p>
+        <p class="jp" style="margin-bottom:12px">適切な<strong style="color:var(--text-primary)">初期賦存量の再分配</strong>を行えば、<strong style="color:var(--text-primary)">あらゆるパレート効率的な配分</strong>を競争均衡として実現できる。</p>
+        <div class="callout callout-warn" style="margin-top:12px">
+          <span class="callout-icon">⚠️</span>
+          <div>
+            <p style="font-size:0.85rem" class="en"><strong style="color:var(--accent-light)">Limitation:</strong> Redistribution requires lump-sum transfers (taxes/subsidies) that are in practice difficult and costly. Also, the "right" distribution requires value judgments about equity — which the second theorem alone cannot determine.</p>
+            <p style="font-size:0.85rem" class="jp"><strong style="color:var(--accent-light)">限界：</strong>再分配には一括移転（税・補助金）が必要だが、実際は困難・費用大。また「望ましい」分配は公平性についての価値判断を要する。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- First Theorem Proof Visual -->
+    <div class="diagram-wrap" style="margin-top:28px">
+      <svg viewBox="0 0 600 140" width="600" height="140">
+        <text x="300" y="20" text-anchor="middle" fill="#9db0c8" font-size="12" font-weight="600">First Welfare Theorem: Chain of Proof</text>
+
+        <!-- Box 1 -->
+        <rect x="10" y="35" width="130" height="55" rx="8" fill="#1a2d3a" stroke="#3b82f6" stroke-width="1.5"/>
+        <text x="75" y="58" text-anchor="middle" fill="#60a5fa" font-size="10" font-weight="600">Perfect</text>
+        <text x="75" y="72" text-anchor="middle" fill="#60a5fa" font-size="10" font-weight="600">Competition</text>
+        <text x="75" y="85" text-anchor="middle" fill="#637a94" font-size="9">完全競争</text>
+
+        <text x="151" y="65" fill="#637a94" font-size="18">→</text>
+
+        <!-- Box 2 -->
+        <rect x="165" y="35" width="130" height="55" rx="8" fill="#1a2d3a" stroke="#10b981" stroke-width="1.5"/>
+        <text x="230" y="55" text-anchor="middle" fill="#34d399" font-size="10" font-weight="600">All three</text>
+        <text x="230" y="69" text-anchor="middle" fill="#34d399" font-size="10" font-weight="600">conditions</text>
+        <text x="230" y="81" text-anchor="middle" fill="#34d399" font-size="10" font-weight="600">satisfied</text>
+
+        <text x="306" y="65" fill="#637a94" font-size="18">→</text>
+
+        <!-- Box 3 -->
+        <rect x="320" y="35" width="130" height="55" rx="8" fill="#1a2d3a" stroke="#f0a500" stroke-width="1.5"/>
+        <text x="385" y="58" text-anchor="middle" fill="#ffc940" font-size="10" font-weight="600">Pareto</text>
+        <text x="385" y="72" text-anchor="middle" fill="#ffc940" font-size="10" font-weight="600">Optimality</text>
+        <text x="385" y="85" text-anchor="middle" fill="#637a94" font-size="9">パレート最適</text>
+
+        <text x="461" y="65" fill="#637a94" font-size="18">→</text>
+
+        <!-- Box 4 -->
+        <rect x="475" y="35" width="115" height="55" rx="8" fill="#1a3a2a" stroke="#34d399" stroke-width="2"/>
+        <text x="533" y="56" text-anchor="middle" fill="#34d399" font-size="10" font-weight="600">Social</text>
+        <text x="533" y="70" text-anchor="middle" fill="#34d399" font-size="10" font-weight="600">Efficiency</text>
+        <text x="533" y="83" text-anchor="middle" fill="#637a94" font-size="9">社会的効率性</text>
+
+        <text x="300" y="125" text-anchor="middle" fill="#637a94" font-size="10">"The invisible hand leads to social efficiency" (Adam Smith's insight, formalized)</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Key Terms -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">📖</div>
+      <h2 class="en">Key Terms</h2>
+      <h2 class="jp">重要用語</h2>
+    </div>
+    <table class="styled-table">
+      <thead><tr>
+        <th><span class="en">Term</span><span class="jp">用語</span></th>
+        <th><span class="en">Meaning</span><span class="jp">意味</span></th>
+      </tr></thead>
+      <tbody>
+        <tr><td>MRTS<sub>LK</sub></td><td class="en">Rate at which K can be substituted by L keeping output constant = −ΔK/ΔL = MP<sub>L</sub>/MP<sub>K</sub></td><td class="jp">産出量一定でKをLに代替する比率 = MP<sub>L</sub>/MP<sub>K</sub></td></tr>
+        <tr><td>MRS<sub>XY</sub></td><td class="en">Rate at which Y can be substituted by X keeping utility constant = −ΔY/ΔX = MU<sub>X</sub>/MU<sub>Y</sub></td><td class="jp">効用一定でYをXに代替する比率 = MU<sub>X</sub>/MU<sub>Y</sub></td></tr>
+        <tr><td>MRT<sub>XY</sub></td><td class="en">Slope of PPF = MC<sub>X</sub>/MC<sub>Y</sub> — the opportunity cost of producing X in terms of Y</td><td class="jp">PPFの傾き = MC<sub>X</sub>/MC<sub>Y</sub> — X生産のY単位での機会費用</td></tr>
+        <tr><td><span class="en">Pareto Improvement</span><span class="jp">パレート改善</span></td><td class="en">A reallocation that makes at least one person better off without making anyone worse off</td><td class="jp">誰かを悪化させずに少なくとも1人を改善する再配分</td></tr>
+        <tr><td><span class="en">Contract Curve</span><span class="jp">契約曲線</span></td><td class="en">Locus of all Pareto-optimal allocations in the Edgeworth box — where IQs (or ICs) are tangent</td><td class="jp">エッジワースボックス内のすべてのパレート最適点の軌跡（IQまたはICが接する点）</td></tr>
+        <tr><td>PPF</td><td class="en">Production Possibilities Frontier — maximum Y given X (and given inputs). Concave due to increasing opportunity cost.</td><td class="jp">生産可能性フロンティア — 生産要素所与のもとでXに対するYの最大産出量。機会費用逓増で凹型。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Quiz -->
+  <div class="quiz-section" data-quiz>
+    <div class="quiz-header">
+      <h2 class="en">Unit 3 Quiz</h2>
+      <h2 class="jp">Unit 3 クイズ</h2>
+      <span class="quiz-score">0 / 7 answered</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+    <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="en">Click an option to see the answer and explanation.</p>
+    <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="jp">選択肢をクリックして答えと解説を確認。</p>
+
+    <div class="question-block" data-correct="1">
+      <h4><span class="q-num">Q1</span> <span class="en">The Marginal Rate of Technical Substitution (MRTS<sub>LK</sub>) equals:</span><span class="jp">限界技術代替率(MRTS<sub>LK</sub>)は何に等しいか？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> MU<sub>X</sub> / MU<sub>Y</sub></div>
+        <div class="option"><span class="option-marker">B</span> MP<sub>L</sub> / MP<sub>K</sub></div>
+        <div class="option"><span class="option-marker">C</span> MC<sub>X</sub> / MC<sub>Y</sub></div>
+        <div class="option"><span class="option-marker">D</span> P<sub>X</sub> / P<sub>Y</sub></div>
+      </div>
+      <div class="explanation"><strong>MP<sub>L</sub>/MP<sub>K</sub></strong> — <span class="en">MRTS<sub>LK</sub> = −ΔK/ΔL = MP<sub>L</sub>/MP<sub>K</sub>. It represents how much capital K can be replaced by labor L while keeping output constant, reflecting the relative productivities of inputs.</span><span class="jp">MRTS<sub>LK</sub> = −ΔK/ΔL = MP<sub>L</sub>/MP<sub>K</sub>。産出量一定でLとKを代替する比率で、投入物の相対的生産性を反映。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="2">
+      <h4><span class="q-num">Q2</span> <span class="en">Production efficiency (Pareto condition a) requires:</span><span class="jp">生産効率性（パレート条件a）の要件は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> MRS<sup>A</sup> = MRS<sup>B</sup></div>
+        <div class="option"><span class="option-marker">B</span> MRS = MRT</div>
+        <div class="option"><span class="option-marker">C</span> MRTS<sup>X</sup><sub>LK</sub> = MRTS<sup>Y</sup><sub>LK</sub></div>
+        <div class="option"><span class="option-marker">D</span> MP<sub>L</sub> = MP<sub>K</sub></div>
+      </div>
+      <div class="explanation"><strong>MRTS<sup>X</sup><sub>LK</sub> = MRTS<sup>Y</sup><sub>LK</sub></strong> — <span class="en">Condition (a) requires that the rate at which L and K can be substituted is equal in the production of X and Y. If not, output could be increased by reallocating inputs.</span><span class="jp">条件(a)はXとYの生産でLとKの代替率が等しいことを要求。等しくなければ投入物の再配分で産出を増加できる。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="0">
+      <h4><span class="q-num">Q3</span> <span class="en">The key production-consumption efficiency condition (Pareto condition c) states:</span><span class="jp">生産消費効率性（パレート条件c）は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> MRS<sub>XY</sub> = MRT<sub>XY</sub></div>
+        <div class="option"><span class="option-marker">B</span> MRTS<sup>X</sup> = MRTS<sup>Y</sup></div>
+        <div class="option"><span class="option-marker">C</span> MRS<sup>A</sup> = MRS<sup>B</sup></div>
+        <div class="option"><span class="option-marker">D</span> MC<sub>X</sub> = MC<sub>Y</sub></div>
+      </div>
+      <div class="explanation"><strong>MRS<sub>XY</sub> = MRT<sub>XY</sub></strong> — <span class="en">This is the grand condition linking consumption (MRS = rate consumers are willing to trade X for Y) with production (MRT = rate the economy can transform X into Y). It's satisfied at the tangency of an IC with the PPF.</span><span class="jp">消費（MRS=消費者がXとYを交換する意思比率）と生産（MRT=経済がXをYに転換する比率）を結ぶ大条件。ICとPPFの接点で満たされる。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="0">
+      <h4><span class="q-num">Q4</span> <span class="en">What does the First Fundamental Theorem of Welfare Economics state?</span><span class="jp">第1基本厚生定理の主張は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">A perfectly competitive equilibrium achieves Pareto optimality</span><span class="jp">完全競争均衡はパレート最適を達成する</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Any Pareto-optimal allocation can be achieved with redistribution</span><span class="jp">あらゆるパレート最適配分は再分配で達成できる</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Government intervention always improves efficiency</span><span class="jp">政府介入は常に効率性を改善する</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Social welfare is maximized when inequality is minimized</span><span class="jp">不平等が最小化される時、社会厚生は最大化される</span></div>
+      </div>
+      <div class="explanation"><strong class="en">A perfectly competitive equilibrium achieves Pareto optimality</strong><strong class="jp">完全競争均衡はパレート最適を達成</strong> — <span class="en">This formalizes Adam Smith's "invisible hand." The decentralized price mechanism, without any central planning, leads to all three Pareto conditions being satisfied simultaneously.</span><span class="jp">アダム・スミスの「見えざる手」を形式化。分散した価格メカニズムにより、中央計画なしに3つのパレート条件が同時に満たされる。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="1">
+      <h4><span class="q-num">Q5</span> <span class="en">In an Edgeworth Box, the Contract Curve is:</span><span class="jp">エッジワースボックスにおける契約曲線とは？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">A straight line from one origin to the other</span><span class="jp">一方の原点から他方への直線</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">The locus of all tangency points of the two sets of IQ (or IC) curves</span><span class="jp">2組のIQ（またはIC）曲線の接点の軌跡</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">The boundary of the box</span><span class="jp">ボックスの境界</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">The PPF of the economy</span><span class="jp">経済のPPF</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Locus of tangency points</strong><strong class="jp">接点の軌跡</strong> — <span class="en">At each point on the Contract Curve, the IQs (in production box) or ICs (in consumption box) of the two firms/consumers are tangent. This means MRTS<sup>X</sup>=MRTS<sup>Y</sup> or MRS<sup>A</sup>=MRS<sup>B</sup> — Pareto efficient.</span><span class="jp">契約曲線の各点で2つのIQ（生産）またはIC（消費）が接する。MRTS<sup>X</sup>=MRTS<sup>Y</sup>またはMRS<sup>A</sup>=MRS<sup>B</sup>が成立 — パレート効率的。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="3">
+      <h4><span class="q-num">Q6</span> <span class="en">The Second Welfare Theorem implies that equity concerns:</span><span class="jp">第2厚生定理が意味する公平性への含意は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Cannot be addressed without destroying efficiency</span><span class="jp">効率性を破壊せずには対処できない</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Are irrelevant to economic analysis</span><span class="jp">経済分析と無関係</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Are automatically solved by competitive markets</span><span class="jp">競争市場によって自動的に解決される</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Can in principle be separated from efficiency — redistribute endowments, then let markets work</span><span class="jp">原理的に効率性と分離可能 — 初期賦存量を再分配し、その後市場に委ねる</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Separate equity from efficiency (in principle)</strong><strong class="jp">原理的に効率性と分離可能</strong> — <span class="en">The 2nd theorem says: choose the desired distribution, redistribute initial endowments as lump sums, then let competitive markets achieve Pareto optimality at that distribution. Equity and efficiency can theoretically coexist.</span><span class="jp">第2定理は「望ましい分配を選択し、初期賦存量を一括移転した後、競争市場にパレート最適を達成させる」ことを示す。公平性と効率性は理論上共存できる。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="2">
+      <h4><span class="q-num">Q7</span> <span class="en">Point J is inside the Edgeworth box but off the contract curve. This means:</span><span class="jp">点JはEdgeworth box内だが契約曲線外にある。これは何を意味するか？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">J is Pareto optimal</span><span class="jp">JはPareto最適</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">J maximizes social welfare</span><span class="jp">Jは社会厚生を最大化する</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">There exist reallocations that can make at least one party better off without harming the other</span><span class="jp">一方を悪化させずに他方を改善できる再配分が存在する</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">J is outside the feasible set</span><span class="jp">Jは実現可能集合の外にある</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Pareto improvement is possible from J</strong><strong class="jp">JからPareto改善が可能</strong> — <span class="en">Off the contract curve, the lens-shaped region between the two tangent IQ (or IC) curves at J contains all allocations that are better for at least one party. Moving to the contract curve within this lens is a Pareto improvement.</span><span class="jp">契約曲線外の点Jでは、2つのIQまたはIC曲線の間のレンズ形領域内に少なくとも一方にとってより良い配分が存在。このレンズ内で契約曲線に移動することがPareto改善。</span></div>
+    </div>
+
+    <button class="quiz-submit">Submit All Answers</button>
+    <div class="quiz-result"></div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;justify-content:space-between;margin-top:24px;flex-wrap:wrap;gap:12px">
+    <a href="unit2.html" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:14px 24px;color:var(--text-primary);display:flex;align-items:center;gap:8px;font-weight:600;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+      ← <span class="en">Unit 2</span><span class="jp">Unit 2</span>
+    </a>
+    <a href="unit4.html" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:14px 24px;color:var(--text-primary);display:flex;align-items:center;gap:8px;font-weight:600;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+      <span class="en">Unit 4: Social Welfare & Equity</span><span class="jp">Unit 4：社会厚生と公平性</span> →
+    </a>
+  </div>
+</main>
+
+<footer>
+  <p class="en">Fiscal Issues on Social Security — Waseda University Spring 2026 · Unit 3</p>
+  <p class="jp">社会保障の財政問題 — 早稲田大学 2026年春学期 · Unit 3</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

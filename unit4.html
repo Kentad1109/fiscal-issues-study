@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unit 4: Social Welfare & Equity — Fiscal Issues</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="nav-brand">📚 Fiscal Issues</span>
+  <a href="index.html">Home</a>
+  <a href="unit1.html">Unit 1</a>
+  <a href="unit2.html">Unit 2</a>
+  <a href="unit3.html">Unit 3</a>
+  <a href="unit4.html" class="active">Unit 4</a>
+  <a href="unit5.html">Unit 5</a>
+  <button class="lang-toggle">🇯🇵 日本語</button>
+</nav>
+
+<div class="unit-hero unit-color-4">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="sep">›</span>
+      <span>Unit 4</span>
+    </div>
+    <div class="unit-badge">Unit 4</div>
+    <h1 class="en">Social Welfare & Equity</h1>
+    <h1 class="jp">社会厚生と公平性</h1>
+    <p style="color:var(--text-secondary);max-width:640px;margin-top:12px" class="en">How do we evaluate policies that affect different people differently? Explore Social Welfare Functions, Utilitarian vs. Rawlsian ethics, and the Grand Utility Possibility Frontier.</p>
+    <p style="color:var(--text-secondary);max-width:640px;margin-top:12px" class="jp">異なる人に異なる影響を与える政策をどう評価するか？社会厚生関数、功利主義 vs ロールズ倫理、大効用可能性フロンティアを学ぶ。</p>
+  </div>
+</div>
+
+<main class="container section">
+
+  <!-- Section 1: Why SWF? -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2 class="en">Why Do We Need a Social Welfare Function?</h2>
+      <h2 class="jp">なぜ社会厚生関数が必要か？</h2>
+    </div>
+
+    <p class="en" style="margin-bottom:16px">Unit 3 showed that competitive markets achieve Pareto efficiency. But Pareto optimality is consistent with <strong style="color:var(--text-primary)">many different distributions</strong> — including very unequal ones. To choose among efficient allocations, we need a way to make inter-personal welfare comparisons.</p>
+    <p class="jp" style="margin-bottom:16px">Unit 3では競争市場がPareto効率性を達成することを示した。しかしPareto最適は<strong style="color:var(--text-primary)">多くの異なる分配</strong>（非常に不平等なものも含む）と両立する。効率的な配分の中から選ぶには、個人間の厚生比較が必要。</p>
+
+    <div class="key-concept">
+      <h4 class="en">Social Welfare Function (SWF: W)</h4>
+      <h4 class="jp">社会厚生関数（SWF: W）</h4>
+      <p class="en">A function that aggregates the utility functions of all individuals into an overall measure of social well-being: <strong style="color:var(--text-primary)">W = W(U<sub>A</sub>, U<sub>B</sub>, …)</strong>. Different SWFs embody different value judgments about equity and the relative importance of individuals.</p>
+      <p class="jp">すべての個人の効用関数を社会全体の厚生の尺度に集約する関数：<strong style="color:var(--text-primary)">W = W(U<sub>A</sub>, U<sub>B</sub>, …)</strong>。異なるSWFは公平性と個人の相対的重要性についての異なる価値判断を体現する。</p>
+    </div>
+
+    <div class="callout callout-info" style="margin-top:20px">
+      <span class="callout-icon">ℹ️</span>
+      <div>
+        <p class="en">There is <strong style="color:var(--text-primary)">no single "correct" SWF</strong> — the choice depends on value judgments or social philosophy. The course covers four main types, each representing a different ethical stance.</p>
+        <p class="jp">「唯一正しい」SWFは<strong style="color:var(--text-primary)">存在しない</strong> — 選択は価値判断や社会哲学に依存する。本授業では4つの主要タイプを扱う。各タイプは異なる倫理的立場を代表する。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Four Types of SWF -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h2 class="en">Four Types of Social Welfare Functions</h2>
+      <h2 class="jp">社会厚生関数の4タイプ</h2>
+    </div>
+
+    <!-- Type 1: Maximize one person -->
+    <div class="card" style="border-left:4px solid var(--unit1);margin-bottom:20px">
+      <h3 style="color:var(--unit1);margin-bottom:10px">① <span class="en">Maximize One Person's Utility</span><span class="jp">一人の効用を最大化</span></h3>
+      <div class="math-box" style="display:inline-block;padding:10px 20px;margin-bottom:12px">
+        W = U<sub>A</sub> &nbsp;&nbsp;or&nbsp;&nbsp; W = U<sub>B</sub>
+      </div>
+      <p class="en">An extreme case — all social weight is placed on one individual. Corresponds to a dictatorial social welfare function. Social indifference curves are horizontal (if maximizing A) or vertical (if maximizing B).</p>
+      <p class="jp">極端なケース — 社会的ウェイトが一人の個人に集中。独裁的な社会厚生関数に対応。社会無差別曲線はAを最大化なら水平、Bなら垂直。</p>
+    </div>
+
+    <!-- Type 2: Utilitarian -->
+    <div class="card" style="border-left:4px solid var(--unit3);margin-bottom:20px">
+      <h3 style="color:var(--unit3);margin-bottom:10px">② <span class="en">Benthamite / Utilitarian SWF</span><span class="jp">功利主義的SWF（ベンサム型）</span></h3>
+      <div class="math-box" style="display:inline-block;padding:10px 20px;margin-bottom:12px">
+        W = U<sub>A</sub> + U<sub>B</sub> &nbsp;&nbsp;&nbsp; (or generalized: W = aU<sub>A</sub> + bU<sub>B</sub>)
+      </div>
+      <p class="en">Maximize the <strong style="color:var(--text-primary)">sum of utilities</strong>. Social indifference curves are downward-sloping straight lines with slope −1 (or −a/b in the generalized form). This SWF is indifferent to distribution — it doesn't matter who gets utility, only the total.</p>
+      <p class="jp"><strong style="color:var(--text-primary)">効用の合計</strong>を最大化。社会無差別曲線は傾き−1（一般型は−a/b）の右下がり直線。分配に無差別 — 誰が効用を得るかではなく、合計のみが重要。</p>
+      <div class="callout callout-tip" style="margin-top:12px">
+        <span class="callout-icon">💡</span>
+        <p style="font-size:0.85rem" class="en"><strong>Implication:</strong> If A and B have the same marginal utility of income, equality is optimal. But if their MU differs, redistribution toward the person with higher MU of income increases social welfare.</p>
+        <p style="font-size:0.85rem" class="jp"><strong>含意：</strong>AとBの所得の限界効用が同じなら平等が最適。異なれば、限界効用の高い人への再分配が社会厚生を高める。</p>
+      </div>
+    </div>
+
+    <!-- Type 3: Rawlsian -->
+    <div class="card" style="border-left:4px solid var(--unit5);margin-bottom:20px">
+      <h3 style="color:var(--unit5);margin-bottom:10px">③ <span class="en">Rawlsian SWF — Maximin Criterion</span><span class="jp">ロールズ型SWF — マキシミン基準</span></h3>
+      <div class="math-box" style="display:inline-block;padding:10px 20px;margin-bottom:12px">
+        W = Min(U<sub>A</sub>, U<sub>B</sub>) &nbsp;&nbsp;&nbsp; [Maximize the minimum utility]
+      </div>
+      <p class="en">Social welfare depends <strong style="color:var(--text-primary)">only on the least well-off person</strong>. Based on John Rawls' "veil of ignorance" argument: rational individuals behind a veil of ignorance (not knowing their position in society) would choose to maximize the minimum welfare.</p>
+      <p class="jp">社会厚生は<strong style="color:var(--text-primary)">最も不遇な人</strong>の効用のみに依存。ジョン・ロールズの「無知のヴェール」論に基づく：社会での自分の立場を知らない状態で合理的個人は最低厚生の最大化を選ぶ。</p>
+      <div style="margin-top:12px;padding:12px;background:rgba(239,68,68,0.08);border-radius:8px;border:1px solid rgba(239,68,68,0.2)">
+        <p style="font-size:0.85rem" class="en"><strong style="color:var(--error)">Example:</strong> Min(20, 30) = 20; Min(30, 40) = 30. Rawlsian W increases only when the worst-off person improves — gains to the well-off don't matter.</p>
+        <p style="font-size:0.85rem" class="jp"><strong style="color:var(--error)">例：</strong>Min(20, 30) = 20; Min(30, 40) = 30。ロールズ型Wは最も不遇な人が改善した時のみ増加。裕福な人の利得は無関係。</p>
+      </div>
+    </div>
+
+    <!-- Type 4: General -->
+    <div class="card" style="border-left:4px solid var(--accent);margin-bottom:20px">
+      <h3 style="color:var(--accent);margin-bottom:10px">④ <span class="en">General SWF (Typical / Social Indifference Curves)</span><span class="jp">一般型SWF（典型的・社会無差別曲線型）</span></h3>
+      <div class="math-box" style="display:inline-block;padding:10px 20px;margin-bottom:12px">
+        W = W(U<sub>A</sub>, U<sub>B</sub>) &nbsp;&nbsp;&nbsp; e.g. W = U<sub>A</sub> · U<sub>B</sub>
+      </div>
+      <p class="en">Shaped like conventional indifference curves — convex to the origin, downward sloping. The utilitarian and Rawlsian SWFs are <strong style="color:var(--text-primary)">special cases</strong> of this general form. The curvature reflects aversion to inequality: greater curvature = greater preference for equality.</p>
+      <p class="jp">通常の無差別曲線と同様の形状 — 原点に向かって凸型・右下がり。功利主義型とロールズ型は一般型の<strong style="color:var(--text-primary)">特殊ケース</strong>。曲率は不平等回避を反映：曲率大 = 平等への選好強。</p>
+    </div>
+
+    <!-- SWF Comparison Diagram -->
+    <div class="diagram-wrap" style="margin-top:8px">
+      <svg viewBox="0 0 560 340" width="560" height="340">
+        <!-- Axes -->
+        <line x1="55" y1="20" x2="55" y2="290" stroke="#9db0c8" stroke-width="1.5" marker-end="url(#swArr)"/>
+        <line x1="55" y1="290" x2="500" y2="290" stroke="#9db0c8" stroke-width="1.5" marker-end="url(#swArr)"/>
+        <text x="48" y="16" fill="#9db0c8" font-size="13" font-weight="600">U<tspan font-size="9">B</tspan></text>
+        <text x="504" y="294" fill="#9db0c8" font-size="13" font-weight="600">U<tspan font-size="9">A</tspan></text>
+
+        <!-- 45-degree equality line -->
+        <line x1="55" y1="290" x2="450" y2="35" stroke="#2a3d55" stroke-width="1" stroke-dasharray="5,5"/>
+        <text x="455" y="30" fill="#2a3d55" font-size="10">45° line</text>
+
+        <!-- Utilitarian: straight lines (slope -1) -->
+        <line x1="55" y1="180" x2="180" y2="290" stroke="#3b82f6" stroke-width="2"/>
+        <line x1="55" y1="120" x2="240" y2="290" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+        <line x1="55" y1="60" x2="300" y2="290" stroke="#3b82f6" stroke-width="2" opacity="0.3"/>
+        <text x="310" y="285" fill="#60a5fa" font-size="11" font-weight="700">② Utilitarian</text>
+        <text x="310" y="298" fill="#637a94" font-size="9">W=U_A+U_B (straight lines)</text>
+
+        <!-- Rawlsian: L-shaped -->
+        <polyline points="55,130 200,130 200,290" fill="none" stroke="#ef4444" stroke-width="2"/>
+        <polyline points="55,90 250,90 250,290" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.6"/>
+        <polyline points="55,50 300,50 300,290" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.3"/>
+        <text x="315" y="135" fill="#f87171" font-size="11" font-weight="700">③ Rawlsian</text>
+        <text x="315" y="148" fill="#637a94" font-size="9">W=Min(U_A,U_B) (L-shape)</text>
+
+        <!-- General: convex curves -->
+        <path d="M 55 160 Q 130 100 200 75 Q 300 55 440 45" fill="none" stroke="#f0a500" stroke-width="2.5"/>
+        <path d="M 55 210 Q 140 145 220 120 Q 320 100 450 95" fill="none" stroke="#f0a500" stroke-width="2.5" opacity="0.6"/>
+        <path d="M 55 255 Q 150 195 240 168 Q 340 147 455 145" fill="none" stroke="#f0a500" stroke-width="2.5" opacity="0.3"/>
+        <text x="445" y="42" fill="#ffc940" font-size="11" font-weight="700">④ General</text>
+        <text x="445" y="55" fill="#637a94" font-size="9">W=W(U_A,U_B) (convex)</text>
+
+        <!-- Point where Rawlsian optimum is on 45-line -->
+        <circle cx="200" cy="130" r="5" fill="#f87171"/>
+        <text x="208" y="126" fill="#f87171" font-size="9">Rawls opt.</text>
+
+        <defs>
+          <marker id="swArr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L7,3 Z" fill="#9db0c8"/>
+          </marker>
+        </defs>
+      </svg>
+      <figcaption class="en">Comparison of four SWF types as social indifference curves. Utilitarians accept any distribution achieving the same total; Rawlsians insist on the 45° line (equality).</figcaption>
+      <figcaption class="jp">4タイプのSWFを社会無差別曲線として比較。功利主義者は同じ合計なら分配を問わず受け入れ、ロールズ主義者は45°線（平等）を重視。</figcaption>
+    </div>
+  </div>
+
+  <!-- Section 3: GUPF -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2 class="en">Grand Utility Possibility Frontier (GUPF)</h2>
+      <h2 class="jp">大効用可能性フロンティア（GUPF）</h2>
+    </div>
+
+    <p class="en" style="margin-bottom:16px">The GUPF is the outer envelope of all Utility Possibility Frontiers (UPFs). Each point on the GUPF is Pareto optimal — it corresponds to a point on the Production Contract Curve combined with the Consumption Contract Curve. Together, it shows all achievable distributions of utility.</p>
+    <p class="jp" style="margin-bottom:16px">GUPFはすべての効用可能性フロンティア（UPF）の外包絡線。GUPF上の各点はPareto最適 — 生産契約曲線と消費契約曲線上の点の組み合わせに対応。達成可能なすべての効用分配を示す。</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 480 340" width="480" height="340">
+        <!-- Axes -->
+        <line x1="55" y1="20" x2="55" y2="295" stroke="#9db0c8" stroke-width="1.5" marker-end="url(#gArr)"/>
+        <line x1="55" y1="295" x2="430" y2="295" stroke="#9db0c8" stroke-width="1.5" marker-end="url(#gArr)"/>
+        <text x="48" y="16" fill="#9db0c8" font-size="13" font-weight="600">U<tspan font-size="9">B</tspan></text>
+        <text x="434" y="299" fill="#9db0c8" font-size="13" font-weight="600">U<tspan font-size="9">A</tspan></text>
+
+        <!-- GUPF -->
+        <path d="M 75 60 Q 160 55 240 100 Q 320 155 390 285" fill="none" stroke="#f0a500" stroke-width="3"/>
+        <text x="80" y="55" fill="#ffc940" font-size="12" font-weight="700">GUPF</text>
+
+        <!-- UPF interior curves (slightly inside GUPF) -->
+        <path d="M 80 200 Q 160 155 230 130 Q 300 115 370 105" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <text x="375" y="102" fill="#a78bfa" font-size="9">UPF₁</text>
+        <path d="M 90 240 Q 170 200 250 178 Q 320 165 380 158" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
+
+        <!-- Social Welfare curves (general type) -->
+        <path d="M 55 185 Q 120 130 185 105 Q 270 80 380 72" fill="none" stroke="#10b981" stroke-width="2"/>
+        <path d="M 55 235 Q 130 178 200 155 Q 285 132 385 128" fill="none" stroke="#10b981" stroke-width="2" opacity="0.6"/>
+        <text x="385" y="69" fill="#34d399" font-size="10" font-weight="700">SWF</text>
+        <text x="385" y="82" fill="#34d399" font-size="10" font-weight="700">curves</text>
+
+        <!-- Optimal point: GUPF tangent to highest SWF -->
+        <circle cx="200" cy="102" r="7" fill="#f0a500" stroke="#fff" stroke-width="2"/>
+        <text x="210" y="97" fill="#ffc940" font-size="12" font-weight="800">W*</text>
+        <text x="210" y="111" fill="#ffc940" font-size="10">Social Optimum</text>
+
+        <!-- Dashed lines to axes -->
+        <line x1="55" y1="102" x2="200" y2="102" stroke="#f0a500" stroke-width="1" stroke-dasharray="4,3"/>
+        <line x1="200" y1="102" x2="200" y2="295" stroke="#f0a500" stroke-width="1" stroke-dasharray="4,3"/>
+        <text x="42" y="106" text-anchor="end" fill="#ffc940" font-size="10">U<tspan font-size="8">B</tspan>*</text>
+        <text x="200" y="312" text-anchor="middle" fill="#ffc940" font-size="10">U<tspan font-size="8">A</tspan>*</text>
+
+        <!-- Feasible region shading -->
+        <path d="M 55 295 Q 200 295 390 285 Q 330 155 240 100 Q 160 55 75 60 L 55 60 Z" fill="rgba(240,165,0,0.05)"/>
+
+        <text x="110" y="240" fill="#637a94" font-size="10">Feasible</text>
+        <text x="115" y="253" fill="#637a94" font-size="10">region</text>
+
+        <defs>
+          <marker id="gArr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L7,3 Z" fill="#9db0c8"/>
+          </marker>
+        </defs>
+      </svg>
+      <figcaption class="en">The social optimum W* is where the highest achievable SWF curve is tangent to the GUPF — maximizing social welfare subject to the feasibility constraint.</figcaption>
+      <figcaption class="jp">社会的最適W*はGUPFに接する最高のSWF曲線上 — 実現可能性制約の下で社会厚生を最大化。</figcaption>
+    </div>
+
+    <div class="summary-box" style="margin-top:24px">
+      <h3 class="en">How the Social Optimum is Reached</h3>
+      <h3 class="jp">社会的最適の達成プロセス</h3>
+      <ul>
+        <li class="en"><strong>Step 1:</strong> Use production & consumption efficiency (Unit 3) to derive the GUPF — the frontier of all feasible utility combinations</li>
+        <li class="jp"><strong>ステップ1：</strong>Unit 3の生産・消費効率性を使ってGUPFを導出 — 実現可能なすべての効用組み合わせの境界</li>
+        <li class="en"><strong>Step 2:</strong> Choose a SWF reflecting society's value judgments about equity</li>
+        <li class="jp"><strong>ステップ2：</strong>社会の公平性についての価値判断を反映したSWFを選択</li>
+        <li class="en"><strong>Step 3:</strong> Find the tangency point W* of the SWF with the GUPF — this is the social optimum, balancing efficiency and equity</li>
+        <li class="jp"><strong>ステップ3：</strong>SWFとGUPFの接点W*を探す — これが効率性と公平性のバランスを取った社会的最適</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 4: Three Questions of Welfare Economics -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h2 class="en">The Three Questions of Welfare Economics</h2>
+      <h2 class="jp">厚生経済学の3つの問い</h2>
+    </div>
+
+    <p class="en" style="margin-bottom:20px">Rosen and Gayer (2010) argue that welfare economics provides a framework for assessing any proposed government intervention. Three key questions must be asked:</p>
+    <p class="jp" style="margin-bottom:20px">ローゼン＆ゲイヤー（2010）は、厚生経済学がいかなる政府介入提案の評価にも有用なフレームワークを提供すると論じる。3つの問いが問われなければならない：</p>
+
+    <div class="card-grid">
+      <div class="card" style="border-top:3px solid var(--unit3)">
+        <div style="font-size:2rem;margin-bottom:12px">⚖️</div>
+        <h4 style="color:var(--unit3);margin-bottom:10px" class="en">① Distribution</h4>
+        <h4 style="color:var(--unit3);margin-bottom:10px" class="jp">①分配</h4>
+        <p class="en">"Will it have <strong style="color:var(--text-primary)">desirable distributional consequences</strong>?" — Does the policy move toward a more equitable distribution of income and welfare?</p>
+        <p class="jp">「<strong style="color:var(--text-primary)">望ましい分配的結果</strong>をもたらすか？」 — 政策は所得・厚生のより公平な分配に向かうか？</p>
+      </div>
+      <div class="card" style="border-top:3px solid var(--unit1)">
+        <div style="font-size:2rem;margin-bottom:12px">📈</div>
+        <h4 style="color:var(--unit1);margin-bottom:10px" class="en">② Efficiency</h4>
+        <h4 style="color:var(--unit1);margin-bottom:10px" class="jp">②効率性</h4>
+        <p class="en">"Will it <strong style="color:var(--text-primary)">enhance efficiency</strong>?" — Does the policy improve resource allocation, correcting market failures or bringing us closer to Pareto optimality?</p>
+        <p class="jp">「<strong style="color:var(--text-primary)">効率性を高める</strong>か？」 — 市場の失敗を是正し、Pareto最適に近づける資源配分の改善か？</p>
+      </div>
+      <div class="card" style="border-top:3px solid var(--unit5)">
+        <div style="font-size:2rem;margin-bottom:12px">💰</div>
+        <h4 style="color:var(--unit5);margin-bottom:10px" class="en">③ Cost</h4>
+        <h4 style="color:var(--unit5);margin-bottom:10px" class="jp">③費用</h4>
+        <p class="en">"Can it be done at a <strong style="color:var(--text-primary)">reasonable cost</strong>?" — Do the benefits justify the administrative costs, deadweight losses, and other costs of implementing the policy?</p>
+        <p class="jp">「<strong style="color:var(--text-primary)">合理的なコスト</strong>で実施できるか？」 — 便益は行政コスト、超過負担、その他の実施コストを正当化するか？</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SWF Comparison Table -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">📊</div>
+      <h2 class="en">Comparing the Four SWFs</h2>
+      <h2 class="jp">4つのSWFの比較</h2>
+    </div>
+    <table class="styled-table">
+      <thead><tr>
+        <th><span class="en">SWF Type</span><span class="jp">SWFタイプ</span></th>
+        <th><span class="en">Formula</span><span class="jp">式</span></th>
+        <th><span class="en">Social Indifference Curves</span><span class="jp">社会無差別曲線</span></th>
+        <th><span class="en">Ethical Basis</span><span class="jp">倫理的基礎</span></th>
+        <th><span class="en">Optimal Distribution?</span><span class="jp">最適分配？</span></th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td style="color:var(--unit1)"><span class="en">① One person</span><span class="jp">①一人最大化</span></td>
+          <td>W = U<sub>A</sub></td>
+          <td class="en">Horizontal lines</td><td class="jp">水平線</td>
+          <td class="en">Dictatorial — all to A</td><td class="jp">独裁的 — すべてAへ</td>
+        </tr>
+        <tr>
+          <td style="color:var(--unit3)"><span class="en">② Utilitarian</span><span class="jp">②功利主義</span></td>
+          <td>W = U<sub>A</sub>+U<sub>B</sub></td>
+          <td class="en">Straight lines (slope −1)</td><td class="jp">直線（傾き−1）</td>
+          <td class="en">Equal only if MU same</td><td class="jp">限界効用が等しい時のみ平等</td>
+        </tr>
+        <tr>
+          <td style="color:var(--unit5)"><span class="en">③ Rawlsian</span><span class="jp">③ロールズ型</span></td>
+          <td>W = Min(U<sub>A</sub>,U<sub>B</sub>)</td>
+          <td class="en">L-shaped (right angles)</td><td class="jp">L字型</td>
+          <td class="en">Always equal (45° line)</td><td class="jp">常に平等（45°線）</td>
+        </tr>
+        <tr>
+          <td style="color:var(--accent)"><span class="en">④ General</span><span class="jp">④一般型</span></td>
+          <td>W = W(U<sub>A</sub>,U<sub>B</sub>)</td>
+          <td class="en">Convex curves (typical IC shape)</td><td class="jp">凸型曲線（典型的IC形状）</td>
+          <td class="en">Depends on curvature</td><td class="jp">曲率による</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="callout callout-tip" style="margin-top:20px">
+      <span class="callout-icon">💡</span>
+      <p class="en">The <strong style="color:var(--text-primary)">general SWF (④)</strong> is most commonly used in public economics because it can represent any degree of inequality aversion, and both ② and ③ are special cases of it. The steeper/more curved the SWF, the greater society's preference for equality.</p>
+      <p class="jp"><strong style="color:var(--text-primary)">一般型SWF（④）</strong>は公共経済学で最もよく使われる。不平等回避の程度を任意に表現でき、②も③も特殊ケースとして含む。SWFの曲率が大きいほど、社会の平等への選好が強い。</p>
+    </div>
+  </div>
+
+  <!-- Quiz -->
+  <div class="quiz-section" data-quiz>
+    <div class="quiz-header">
+      <h2 class="en">Unit 4 Quiz</h2>
+      <h2 class="jp">Unit 4 クイズ</h2>
+      <span class="quiz-score">0 / 6 answered</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+    <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="en">Select an answer to see the explanation.</p>
+    <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="jp">回答を選択して解説を確認。</p>
+
+    <div class="question-block" data-correct="2">
+      <h4><span class="q-num">Q1</span> <span class="en">The Rawlsian (Maximin) Social Welfare Function is:</span><span class="jp">ロールズ型（マキシミン）社会厚生関数は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> W = U<sub>A</sub> + U<sub>B</sub></div>
+        <div class="option"><span class="option-marker">B</span> W = U<sub>A</sub> × U<sub>B</sub></div>
+        <div class="option"><span class="option-marker">C</span> W = Min(U<sub>A</sub>, U<sub>B</sub>)</div>
+        <div class="option"><span class="option-marker">D</span> W = Max(U<sub>A</sub>, U<sub>B</sub>)</div>
+      </div>
+      <div class="explanation"><strong>W = Min(U<sub>A</sub>, U<sub>B</sub>)</strong> — <span class="en">The Rawlsian criterion states that social welfare equals the utility of the worst-off individual. This comes from Rawls' "veil of ignorance": rational agents behind it would choose to maximize the minimum, as insurance against ending up worst-off.</span><span class="jp">ロールズ基準は社会厚生が最も不遇な個人の効用に等しいとする。ロールズの「無知のヴェール」由来：合理的主体は最悪の立場になることへの保険として最低効用を最大化することを選ぶ。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="1">
+      <h4><span class="q-num">Q2</span> <span class="en">Given Rawlsian W = Min(U_A, U_B), what is W when U_A = 40 and U_B = 25?</span><span class="jp">W = Min(U_A, U_B)のとき、U_A=40, U_B=25ならWは？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> 40</div>
+        <div class="option"><span class="option-marker">B</span> 25</div>
+        <div class="option"><span class="option-marker">C</span> 65</div>
+        <div class="option"><span class="option-marker">D</span> 32.5</div>
+      </div>
+      <div class="explanation"><strong>25</strong> — <span class="en">W = Min(40, 25) = 25. The Rawlsian SWF takes the minimum — only the worst-off person's utility matters. Even if A's utility rises to 1000, W stays at 25 unless B also improves.</span><span class="jp">W = Min(40, 25) = 25。ロールズ型SWFは最小値をとる。Aの効用が1000になっても、Bが改善しない限りWは25のまま。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="3">
+      <h4><span class="q-num">Q3</span> <span class="en">The Grand Utility Possibility Frontier (GUPF) represents:</span><span class="jp">大効用可能性フロンティア（GUPF）が示すものは？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">The Production Possibilities Frontier of the economy</span><span class="jp">経済の生産可能性フロンティア</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">The utility of only one consumer</span><span class="jp">一人の消費者の効用のみ</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">The maximum utility achievable given existing technology</span><span class="jp">既存技術で達成可能な最大効用</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">All Pareto-efficient utility combinations achievable in the economy</span><span class="jp">経済で達成可能なすべてのPareto効率的な効用組み合わせ</span></div>
+      </div>
+      <div class="explanation"><strong class="en">All Pareto-efficient utility combinations</strong><strong class="jp">すべてのPareto効率的な効用組み合わせ</strong> — <span class="en">The GUPF is the outer envelope derived from all Utility Possibility Frontiers (UPFs). Each point on it corresponds to a Pareto-optimal resource allocation. The social optimum W* is found by maximizing the SWF subject to the GUPF constraint.</span><span class="jp">GUPFはすべての効用可能性フロンティアの外包絡線。各点はPareto最適な資源配分に対応。社会的最適W*はGUPF制約下でSWFを最大化して求める。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="0">
+      <h4><span class="q-num">Q4</span> <span class="en">The Utilitarian SWF (W = U_A + U_B) has social indifference curves shaped as:</span><span class="jp">功利主義型SWF（W = U_A + U_B）の社会無差別曲線の形状は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Straight lines with slope −1</span><span class="jp">傾き−1の直線</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">L-shaped (right angles at the 45° line)</span><span class="jp">L字型（45°線で直角）</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Convex curves bowing toward the origin</span><span class="jp">原点に向かって凸型の曲線</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Horizontal lines</span><span class="jp">水平線</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Straight lines with slope −1</strong><strong class="jp">傾き−1の直線</strong> — <span class="en">Since W = U_A + U_B = constant, we get U_B = W − U_A, which is a straight line with slope −1. This means the utilitarian SWF is perfectly willing to trade U_A for U_B one-for-one.</span><span class="jp">W = U_A + U_B = 定数 なので U_B = W − U_A となり、傾き−1の直線。功利主義SWFはU_AとU_Bを1対1で交換することに完全に無差別。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="2">
+      <h4><span class="q-num">Q5</span> <span class="en">Which SWF always recommends maximizing utility of the worst-off, implying the social optimum is on the 45° line (perfect equality)?</span><span class="jp">常に最も不遇な人の効用最大化を推奨し、社会的最適が45°線上（完全平等）にあるSWFは？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Utilitarian SWF</span><span class="jp">功利主義型SWF</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">General SWF</span><span class="jp">一般型SWF</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Rawlsian SWF</span><span class="jp">ロールズ型SWF</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">One-person SWF</span><span class="jp">一人最大化型SWF</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Rawlsian SWF</strong><strong class="jp">ロールズ型SWF</strong> — <span class="en">L-shaped Rawlsian indifference curves have their kink on the 45° line. The optimum is always at the corner of the L on this line — meaning perfect equality U_A = U_B is optimal according to Rawls.</span><span class="jp">L字型ロールズ型無差別曲線の折れ点は45°線上。最適は常にこの線上のL字の角 — ロールズによれば完全平等U_A = U_Bが最適。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="1">
+      <h4><span class="q-num">Q6</span> <span class="en">According to Rosen and Gayer (2010), welfare economics asks three questions about proposed government interventions. Which of the following is NOT one of them?</span><span class="jp">ローゼン＆ゲイヤー（2010）による政府介入提案への3つの問いに含まれないのは？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Will it have desirable distributional consequences?</span><span class="jp">望ましい分配的結果をもたらすか？</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Will it maximize the profits of private firms?</span><span class="jp">民間企業の利益を最大化するか？</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Will it enhance efficiency?</span><span class="jp">効率性を高めるか？</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Can it be done at a reasonable cost?</span><span class="jp">合理的なコストで実施できるか？</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Firm profit maximization is NOT one of the three questions</strong><strong class="jp">民間企業利益最大化は含まれない</strong> — <span class="en">The three questions are: (1) desirable distributional consequences, (2) enhance efficiency, (3) reasonable cost. These evaluate policy from a social welfare perspective, not firm profitability.</span><span class="jp">3つの問いは：①望ましい分配的結果、②効率性向上、③合理的コスト。企業利益ではなく社会厚生の観点から政策を評価する。</span></div>
+    </div>
+
+    <button class="quiz-submit">Submit All Answers</button>
+    <div class="quiz-result"></div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;justify-content:space-between;margin-top:24px;flex-wrap:wrap;gap:12px">
+    <a href="unit3.html" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:14px 24px;color:var(--text-primary);display:flex;align-items:center;gap:8px;font-weight:600;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+      ← <span class="en">Unit 3</span><span class="jp">Unit 3</span>
+    </a>
+    <a href="unit5.html" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:14px 24px;color:var(--text-primary);display:flex;align-items:center;gap:8px;font-weight:600;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+      <span class="en">Unit 5: Public Goods</span><span class="jp">Unit 5：公共財</span> →
+    </a>
+  </div>
+</main>
+
+<footer>
+  <p class="en">Fiscal Issues on Social Security — Waseda University Spring 2026 · Unit 4</p>
+  <p class="jp">社会保障の財政問題 — 早稲田大学 2026年春学期 · Unit 4</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

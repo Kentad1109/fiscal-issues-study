@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unit 2: Main Functions of Governments — Fiscal Issues</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="nav-brand">📚 Fiscal Issues</span>
+  <a href="index.html">Home</a>
+  <a href="unit1.html">Unit 1</a>
+  <a href="unit2.html" class="active">Unit 2</a>
+  <a href="unit3.html">Unit 3</a>
+  <a href="unit4.html">Unit 4</a>
+  <a href="unit5.html">Unit 5</a>
+  <button class="lang-toggle">🇯🇵 日本語</button>
+</nav>
+
+<div class="unit-hero unit-color-2">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="sep">›</span>
+      <span class="en">Unit 2</span><span class="jp">Unit 2</span>
+    </div>
+    <div class="unit-badge">Unit 2</div>
+    <h1 class="en">Main Functions of Governments</h1>
+    <h1 class="jp">政府の主要機能</h1>
+    <p style="color:var(--text-secondary);max-width:640px;margin-top:12px" class="en">Why does government exist? Explore market mechanisms, the causes of market failure, equity principles, and Musgrave's three core functions of public finance.</p>
+    <p style="color:var(--text-secondary);max-width:640px;margin-top:12px" class="jp">なぜ政府が必要か？市場メカニズム、市場の失敗の原因、公平原則、マスグレイブの3機能を学ぶ。</p>
+  </div>
+</div>
+
+<main class="container section">
+
+  <!-- Section 1: Market Mechanism -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2 class="en">The Market Mechanism</h2>
+      <h2 class="jp">市場メカニズム</h2>
+    </div>
+
+    <p class="en" style="margin-bottom:20px">In a competitive market, the price mechanism coordinates economic activity. The <strong style="color:var(--text-primary)">demand curve (D)</strong> reflects consumers' willingness to pay (= Marginal Benefit, MB). The <strong style="color:var(--text-primary)">supply curve (S)</strong> reflects producers' willingness to sell (= Marginal Cost, MC). At equilibrium E, social surplus is maximized.</p>
+    <p class="jp" style="margin-bottom:20px">競争市場では価格メカニズムが経済活動を調整する。<strong style="color:var(--text-primary)">需要曲線(D)</strong>は消費者の支払意思額（限界便益MB）を反映。<strong style="color:var(--text-primary)">供給曲線(S)</strong>は生産者の限界費用(MC)を反映。均衡点Eで社会余剰が最大化される。</p>
+
+    <!-- Supply Demand Diagram -->
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 520 320" width="520" height="320">
+        <!-- Axes -->
+        <line x1="60" y1="20" x2="60" y2="270" stroke="#9db0c8" stroke-width="2" marker-end="url(#axArr)"/>
+        <line x1="60" y1="270" x2="460" y2="270" stroke="#9db0c8" stroke-width="2" marker-end="url(#axArr)"/>
+        <text x="55" y="15" fill="#9db0c8" font-size="13" font-weight="600">P</text>
+        <text x="465" y="273" fill="#9db0c8" font-size="13" font-weight="600">Q</text>
+
+        <!-- Demand curve D -->
+        <line x1="100" y1="50" x2="420" y2="240" stroke="#3b82f6" stroke-width="2.5"/>
+        <text x="425" y="243" fill="#60a5fa" font-size="13" font-weight="700">D</text>
+        <text x="415" y="258" fill="#637a94" font-size="10">(MB)</text>
+
+        <!-- Supply curve S -->
+        <line x1="100" y1="240" x2="420" y2="50" stroke="#10b981" stroke-width="2.5"/>
+        <text x="425" y="53" fill="#34d399" font-size="13" font-weight="700">S</text>
+        <text x="415" y="67" fill="#637a94" font-size="10">(MC)</text>
+
+        <!-- Equilibrium point E -->
+        <circle cx="260" cy="145" r="6" fill="#f0a500"/>
+        <text x="268" y="138" fill="#ffc940" font-size="13" font-weight="800">E</text>
+
+        <!-- P0 dashed line -->
+        <line x1="60" y1="145" x2="260" y2="145" stroke="#f0a500" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <text x="52" y="149" text-anchor="end" fill="#ffc940" font-size="12">P₀</text>
+
+        <!-- Q0 dashed line -->
+        <line x1="260" y1="145" x2="260" y2="270" stroke="#f0a500" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <text x="260" y="287" text-anchor="middle" fill="#ffc940" font-size="12">Q₀</text>
+
+        <!-- Consumer Surplus fill -->
+        <polygon points="100,50 260,145 100,145" fill="rgba(59,130,246,0.15)"/>
+        <text x="150" y="120" fill="#60a5fa" font-size="11" font-weight="600">CS</text>
+
+        <!-- Producer Surplus fill -->
+        <polygon points="100,240 260,145 100,145" fill="rgba(16,185,129,0.15)"/>
+        <text x="150" y="200" fill="#34d399" font-size="11" font-weight="600">PS</text>
+
+        <!-- f label at top of D -->
+        <text x="90" y="47" fill="#60a5fa" font-size="12">f</text>
+        <!-- h label at bottom of S -->
+        <text x="90" y="253" fill="#34d399" font-size="12">h</text>
+
+        <!-- Formula -->
+        <text x="310" y="180" fill="#9db0c8" font-size="11">SS = CS + PS</text>
+        <text x="310" y="198" fill="#637a94" font-size="10">(maximized at E)</text>
+
+        <!-- Arrow markers -->
+        <defs>
+          <marker id="axArr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L7,3 Z" fill="#9db0c8"/>
+          </marker>
+        </defs>
+      </svg>
+      <figcaption class="en">Market equilibrium E: Demand (MB) = Supply (MC). Social Surplus (SS = CS + PS) is maximized.</figcaption>
+      <figcaption class="jp">市場均衡E：需要（MB）=供給（MC）。社会余剰（SS=CS+PS）が最大化される。</figcaption>
+    </div>
+
+    <div class="summary-box">
+      <h3 class="en">Key Formulas</h3>
+      <h3 class="jp">重要な式</h3>
+      <ul>
+        <li class="en"><strong>Consumer Surplus (CS)</strong> = Total willingness to pay − Actual payment = Area △fEP₀</li>
+        <li class="jp"><strong>消費者余剰(CS)</strong> = 総支払意思額 − 実際の支払額 = 面積 △fEP₀</li>
+        <li class="en"><strong>Producer Surplus (PS)</strong> = Revenue − Cost = Area △P₀Eh</li>
+        <li class="jp"><strong>生産者余剰(PS)</strong> = 収入 − 費用 = 面積 △P₀Eh</li>
+        <li class="en"><strong>Social Surplus (SS)</strong> = CS + PS → Maximized at competitive equilibrium E</li>
+        <li class="jp"><strong>社会余剰(SS)</strong> = CS + PS → 競争均衡Eで最大化</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 2: Market Failure -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h2 class="en">Market Failure & Inefficiency</h2>
+      <h2 class="jp">市場の失敗と非効率性</h2>
+    </div>
+
+    <p class="en" style="margin-bottom:20px">When markets fail to achieve efficient resource allocation, <strong style="color:var(--text-primary)">government intervention can be justified</strong>. However, even government intervention can fail — this is called <strong style="color:var(--error)">government failure</strong>.</p>
+    <p class="jp" style="margin-bottom:20px">市場が効率的な資源配分を達成できない場合、<strong style="color:var(--text-primary)">政府介入が正当化される</strong>。ただし政府介入も失敗することがある — これを<strong style="color:var(--error)">政府の失敗</strong>という。</p>
+
+    <div class="card-grid">
+      <div class="card" style="border-top:3px solid var(--error)">
+        <h4 style="color:var(--error);margin-bottom:10px">① <span class="en">Market Power</span><span class="jp">市場支配力</span></h4>
+        <p class="en">A single firm (monopoly) or few firms (oligopoly) can influence market price, leading to prices above MC and output below the socially efficient level.</p>
+        <p class="jp">独占・寡占企業が市場価格に影響。価格がMCを上回り、産出量が社会的最適水準を下回る。</p>
+      </div>
+      <div class="card" style="border-top:3px solid var(--accent)">
+        <h4 style="color:var(--accent);margin-bottom:10px">② <span class="en">Externalities</span><span class="jp">外部性</span></h4>
+        <p class="en">A cost or benefit imposed on third parties not reflected in market prices. E.g. pollution (negative), R&D spillovers (positive). Markets over-produce negative externalities and under-produce positive ones.</p>
+        <p class="jp">市場価格に反映されない第三者へのコストまたは便益。例：公害（負）、技術スピルオーバー（正）。</p>
+      </div>
+      <div class="card" style="border-top:3px solid var(--info)">
+        <h4 style="color:var(--info);margin-bottom:10px">③ <span class="en">Asymmetric Information</span><span class="jp">情報の非対称性</span></h4>
+        <p class="en">When one party has more information than another — leads to adverse selection (e.g. insurance markets) and moral hazard. Markets may fail to exist or produce inefficiently.</p>
+        <p class="jp">一方が他方より多くの情報を持つ場合 — 逆選択（例：保険市場）やモラルハザードが生じる。市場が成立しないか非効率に。</p>
+      </div>
+      <div class="card" style="border-top:3px solid var(--success)">
+        <h4 style="color:var(--success);margin-bottom:10px">④ <span class="en">Public Goods</span><span class="jp">公共財</span></h4>
+        <p class="en">Non-rival and non-excludable goods (e.g. national defense, street lights). Private markets under-supply public goods because of the free rider problem. → See Unit 5.</p>
+        <p class="jp">非競合・非排除財（例：国防、街灯）。フリーライダー問題のため私的市場では過少供給される。→ Unit 5参照</p>
+      </div>
+    </div>
+
+    <div class="callout callout-warn" style="margin-top:24px">
+      <span class="callout-icon">⚠️</span>
+      <div>
+        <strong style="color:var(--accent-light)" class="en">Government Failure</strong>
+        <strong style="color:var(--accent-light)" class="jp">政府の失敗</strong>
+        <p class="en">Even when government intervenes to correct market failure, the intervention itself can create inefficiencies — through regulatory capture, bureaucratic inefficiency, or poor information. The net welfare effect must be positive to justify intervention.</p>
+        <p class="jp">市場の失敗を是正するための政府介入も、規制の虜・官僚主義的非効率・情報不足などにより非効率を生むことがある。介入が正当化されるには純厚生効果がプラスでなければならない。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3: Equity -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2 class="en">The Equity Principle</h2>
+      <h2 class="jp">公平原則</h2>
+    </div>
+
+    <p class="en" style="margin-bottom:20px">Beyond efficiency, equity is a key criterion for evaluating government policy. Markets maximize total surplus but may produce highly unequal distributions. Government intervention is needed to pursue equity goals.</p>
+    <p class="jp" style="margin-bottom:20px">効率性に加え、公平性は政策評価の重要な基準。市場は総余剰を最大化するが、分配が著しく不平等になることがある。公平性を追求するために政府介入が必要。</p>
+
+    <div class="concept-grid">
+      <div class="key-concept" style="border-color:var(--unit2)">
+        <h4 style="color:var(--unit2)">↔ <span class="en">Horizontal Equity</span><span class="jp">水平的公平</span></h4>
+        <p class="en">People in <strong style="color:var(--text-primary)">equal positions</strong> should be treated <strong style="color:var(--text-primary)">equally</strong>. Example: two people with the same income should pay the same tax, regardless of source (wages vs. investment).</p>
+        <p class="jp"><strong style="color:var(--text-primary)">同等の立場</strong>にある人は<strong style="color:var(--text-primary)">同等に</strong>扱われるべき。例：同じ所得の2人は、源泉（給与か投資か）に関わらず同じ税を払うべき。</p>
+      </div>
+      <div class="key-concept" style="border-color:var(--unit4)">
+        <h4 style="color:var(--unit4)">↕ <span class="en">Vertical Equity</span><span class="jp">垂直的公平</span></h4>
+        <p class="en">People with <strong style="color:var(--text-primary)">more resources</strong> (higher ability to pay) should bear <strong style="color:var(--text-primary)">higher taxes</strong> than those with fewer resources. Basis for progressive taxation.</p>
+        <p class="jp"><strong style="color:var(--text-primary)">資源の多い</strong>人（支払能力の高い人）は少ない人より<strong style="color:var(--text-primary)">高い税</strong>を負担すべき。累進課税の基礎。</p>
+      </div>
+    </div>
+
+    <!-- Efficiency vs Equity Trade-off -->
+    <div class="diagram-wrap" style="margin-top:24px">
+      <svg viewBox="0 0 500 200" width="500" height="200">
+        <!-- Spectrum bar -->
+        <defs>
+          <linearGradient id="specGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.8"/>
+            <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:0.8"/>
+            <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.8"/>
+          </linearGradient>
+        </defs>
+        <rect x="50" y="80" width="400" height="40" rx="20" fill="url(#specGrad)"/>
+
+        <!-- Labels -->
+        <text x="50" y="68" text-anchor="middle" fill="#60a5fa" font-size="12" font-weight="700">Pure Efficiency</text>
+        <text x="50" y="82" text-anchor="middle" fill="#637a94" font-size="9">効率性重視</text>
+        <text x="450" y="68" text-anchor="middle" fill="#fbbf24" font-size="12" font-weight="700">Pure Equity</text>
+        <text x="450" y="82" text-anchor="middle" fill="#637a94" font-size="9">公平性重視</text>
+
+        <text x="250" y="140" text-anchor="middle" fill="#a78bfa" font-size="11">↑ Policy Design Sweet Spot</text>
+        <text x="250" y="155" text-anchor="middle" fill="#637a94" font-size="10">政策設計の最適点</text>
+
+        <text x="50" y="175" fill="#9db0c8" font-size="10">• Free markets</text>
+        <text x="50" y="188" fill="#637a94" font-size="9">自由市場</text>
+        <text x="370" y="175" fill="#9db0c8" font-size="10">• Full redistribution</text>
+        <text x="370" y="188" fill="#637a94" font-size="9">完全再分配</text>
+
+        <line x1="250" y1="118" x2="250" y2="133" stroke="#a78bfa" stroke-width="1.5"/>
+        <circle cx="250" cy="100" r="8" fill="none" stroke="white" stroke-width="2"/>
+      </svg>
+      <figcaption class="en">The efficiency-equity trade-off: government policy must balance both criteria</figcaption>
+      <figcaption class="jp">効率性と公平性のトレードオフ：政府政策は両基準のバランスが必要</figcaption>
+    </div>
+  </div>
+
+  <!-- Section 4: Macroeconomic Stabilization -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h2 class="en">Macroeconomic Stabilization</h2>
+      <h2 class="jp">マクロ経済安定化</h2>
+    </div>
+
+    <div class="key-concept" style="border-color:var(--unit2)">
+      <h4 class="en">Musgrave & Musgrave (1989) Definition</h4>
+      <h4 class="jp">マスグレイブ定義（1989）</h4>
+      <p class="en">"The use of budget policy as a means of maintaining <strong style="color:var(--text-primary)">high employment</strong>, a reasonable degree of <strong style="color:var(--text-primary)">price stability</strong>, and an appropriate rate of <strong style="color:var(--text-primary)">economic growth</strong> with allowances for effects on trade and the balance of payments."</p>
+      <p class="jp">「<strong style="color:var(--text-primary)">高い雇用</strong>水準の維持、適切な<strong style="color:var(--text-primary)">物価安定</strong>、適切な<strong style="color:var(--text-primary)">経済成長率</strong>を実現するための財政政策の活用（貿易・国際収支への影響を考慮）」</p>
+    </div>
+
+    <div class="concept-grid" style="margin-top:20px">
+      <div class="card">
+        <h4 style="color:var(--text-primary);margin-bottom:8px" class="en">Examples of Negative Shocks</h4>
+        <h4 style="color:var(--text-primary);margin-bottom:8px" class="jp">負のショックの例</h4>
+        <ul style="padding-left:18px;color:var(--text-secondary);font-size:0.9rem">
+          <li class="en">Oil Crisis (1973, 1979)</li><li class="jp">石油危機（1973・1979年）</li>
+          <li class="en">Asian Financial Crisis (1997)</li><li class="jp">アジア金融危機（1997年）</li>
+          <li class="en">Global Financial Crisis (2008)</li><li class="jp">世界金融危機（2008年）</li>
+          <li class="en">COVID-19 pandemic (2020)</li><li class="jp">COVID-19パンデミック（2020年）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--text-primary);margin-bottom:8px" class="en">Government Responses</h4>
+        <h4 style="color:var(--text-primary);margin-bottom:8px" class="jp">政府の対応</h4>
+        <ul style="padding-left:18px;color:var(--text-secondary);font-size:0.9rem">
+          <li class="en">Fiscal stimulus (increased spending)</li><li class="jp">財政刺激策（歳出増加）</li>
+          <li class="en">Automatic stabilizers (unemployment insurance)</li><li class="jp">自動安定化装置（失業保険）</li>
+          <li class="en">Monetary policy coordination</li><li class="jp">金融政策との協調</li>
+          <li class="en">Structural reforms</li><li class="jp">構造改革</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 5: The 3 Functions -->
+  <div class="concept-section">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <h2 class="en">Musgrave's Three Functions + Ihori's Fourth</h2>
+      <h2 class="jp">マスグレイブの3機能＋井堀の第4機能</h2>
+    </div>
+
+    <!-- Three functions visual -->
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 680 200" width="680" height="200">
+        <!-- Function 1 -->
+        <rect x="20" y="20" width="190" height="160" rx="12" fill="#1a2d4a" stroke="#3b82f6" stroke-width="2"/>
+        <text x="115" y="55" text-anchor="middle" fill="#60a5fa" font-size="20">🏗️</text>
+        <text x="115" y="80" text-anchor="middle" fill="#60a5fa" font-size="12" font-weight="800">① Resource</text>
+        <text x="115" y="96" text-anchor="middle" fill="#60a5fa" font-size="12" font-weight="800">Allocation</text>
+        <text x="115" y="113" text-anchor="middle" fill="#637a94" font-size="10">資源配分機能</text>
+        <text x="115" y="133" text-anchor="middle" fill="#9db0c8" font-size="10">Principle: Efficiency</text>
+        <text x="115" y="148" text-anchor="middle" fill="#637a94" font-size="9">効率性の原則</text>
+        <text x="115" y="165" text-anchor="middle" fill="#9db0c8" font-size="10">Public goods, Externalities</text>
+
+        <!-- Function 2 -->
+        <rect x="245" y="20" width="190" height="160" rx="12" fill="#1a3a2a" stroke="#10b981" stroke-width="2"/>
+        <text x="340" y="55" text-anchor="middle" fill="#34d399" font-size="20">⚖️</text>
+        <text x="340" y="80" text-anchor="middle" fill="#34d399" font-size="12" font-weight="800">② Income</text>
+        <text x="340" y="96" text-anchor="middle" fill="#34d399" font-size="12" font-weight="800">Redistribution</text>
+        <text x="340" y="113" text-anchor="middle" fill="#637a94" font-size="10">所得再分配機能</text>
+        <text x="340" y="133" text-anchor="middle" fill="#9db0c8" font-size="10">Principle: Equity</text>
+        <text x="340" y="148" text-anchor="middle" fill="#637a94" font-size="9">公平性の原則</text>
+        <text x="340" y="165" text-anchor="middle" fill="#9db0c8" font-size="10">Social Security ← Focus</text>
+
+        <!-- Function 3 -->
+        <rect x="470" y="20" width="190" height="160" rx="12" fill="#2a1a3a" stroke="#8b5cf6" stroke-width="2"/>
+        <text x="565" y="55" text-anchor="middle" fill="#a78bfa" font-size="20">📊</text>
+        <text x="565" y="80" text-anchor="middle" fill="#a78bfa" font-size="12" font-weight="800">③ Macroeconomic</text>
+        <text x="565" y="96" text-anchor="middle" fill="#a78bfa" font-size="12" font-weight="800">Stabilization</text>
+        <text x="565" y="113" text-anchor="middle" fill="#637a94" font-size="10">安定化機能</text>
+        <text x="565" y="133" text-anchor="middle" fill="#9db0c8" font-size="10">High employment,</text>
+        <text x="565" y="148" text-anchor="middle" fill="#9db0c8" font-size="10">Price stability, Growth</text>
+        <text x="565" y="165" text-anchor="middle" fill="#637a94" font-size="9">高雇用・物価安定・経済成長</text>
+      </svg>
+      <figcaption class="en">Musgrave & Musgrave (1989): The three core functions of public finance</figcaption>
+      <figcaption class="jp">マスグレイブ（1989）：公共財政の3つの核心機能</figcaption>
+    </div>
+
+    <div class="callout callout-tip" style="margin-top:24px">
+      <span class="callout-icon">💡</span>
+      <div>
+        <strong style="color:var(--success)" class="en">Ihori's Fourth Function (2017)</strong>
+        <strong style="color:var(--success)" class="jp">井堀の第4機能（2017年）</strong>
+        <p class="en">Toshihiro Ihori adds a fourth function: <strong style="color:var(--text-primary)">Dynamic Optimization</strong>, which encompasses fiscal deficits, burden of debt across generations, and the productivity of public investment. This is particularly relevant to Japan's current fiscal situation.</p>
+        <p class="jp">井堀利宏は第4機能として<strong style="color:var(--text-primary)">動的最適化</strong>を追加。財政赤字、世代間の債務負担、公共投資の生産性を包括する。現在の日本の財政状況に特に関連する。</p>
+      </div>
+    </div>
+
+    <!-- Comparison Table -->
+    <table class="styled-table" style="margin-top:24px">
+      <thead>
+        <tr>
+          <th><span class="en">Function</span><span class="jp">機能</span></th>
+          <th><span class="en">Principle</span><span class="jp">原則</span></th>
+          <th><span class="en">Policy Tools</span><span class="jp">政策手段</span></th>
+          <th><span class="en">Examples</span><span class="jp">例</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color:var(--unit1)"><span class="en">① Resource Allocation</span><span class="jp">①資源配分</span></td>
+          <td><span class="en">Efficiency</span><span class="jp">効率性</span></td>
+          <td><span class="en">Regulations, subsidies, public provision</span><span class="jp">規制・補助金・公的供給</span></td>
+          <td><span class="en">Public goods, correcting externalities</span><span class="jp">公共財・外部性の是正</span></td>
+        </tr>
+        <tr>
+          <td style="color:var(--unit3)"><span class="en">② Income Redistribution</span><span class="jp">②所得再分配</span></td>
+          <td><span class="en">Equity</span><span class="jp">公平性</span></td>
+          <td><span class="en">Progressive taxes, social transfers</span><span class="jp">累進課税・社会移転</span></td>
+          <td><span class="en">Social security, welfare programs</span><span class="jp">社会保障・福祉プログラム</span></td>
+        </tr>
+        <tr>
+          <td style="color:var(--unit2)"><span class="en">③ Macroeconomic Stabilization</span><span class="jp">③マクロ安定化</span></td>
+          <td><span class="en">Stability</span><span class="jp">安定性</span></td>
+          <td><span class="en">Fiscal policy, automatic stabilizers</span><span class="jp">財政政策・自動安定化装置</span></td>
+          <td><span class="en">Stimulus packages, unemployment insurance</span><span class="jp">景気対策・失業保険</span></td>
+        </tr>
+        <tr>
+          <td style="color:var(--accent)"><span class="en">④ Dynamic Optimization (Ihori)</span><span class="jp">④動的最適化（井堀）</span></td>
+          <td><span class="en">Inter-temporal</span><span class="jp">異時点間</span></td>
+          <td><span class="en">Debt management, investment allocation</span><span class="jp">債務管理・投資配分</span></td>
+          <td><span class="en">Fiscal consolidation, pension reform</span><span class="jp">財政健全化・年金改革</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Quiz -->
+  <div class="quiz-section" data-quiz>
+    <div class="quiz-header">
+      <h2 class="en">Unit 2 Quiz</h2>
+      <h2 class="jp">Unit 2 クイズ</h2>
+      <span class="quiz-score">0 / 6 answered</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+    <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="en">Select your answer to see the explanation.</p>
+    <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="jp">回答を選択すると解説が表示されます。</p>
+
+    <div class="question-block" data-correct="1">
+      <h4><span class="q-num">Q1</span> <span class="en">At competitive equilibrium, Social Surplus (SS) equals:</span><span class="jp">競争均衡における社会余剰(SS)は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Consumer Surplus only</span><span class="jp">消費者余剰のみ</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Consumer Surplus + Producer Surplus</span><span class="jp">消費者余剰＋生産者余剰</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Producer Surplus only</span><span class="jp">生産者余剰のみ</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Total Revenue − Total Cost</span><span class="jp">総収入－総費用</span></div>
+      </div>
+      <div class="explanation"><strong>SS = CS + PS</strong> — <span class="en">Social surplus is the sum of consumer and producer surplus. At competitive equilibrium E (where MB = MC), this is maximized — demonstrating allocative efficiency.</span><span class="jp">社会余剰は消費者余剰と生産者余剰の合計。競争均衡E（MB=MC）で最大化される — 配分効率性を示す。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="2">
+      <h4><span class="q-num">Q2</span> <span class="en">Which of the following is NOT a cause of market failure?</span><span class="jp">次のうち、市場の失敗の原因でないものは？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Monopoly power</span><span class="jp">独占力</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Externalities</span><span class="jp">外部性</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Perfect competition</span><span class="jp">完全競争</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Asymmetric information</span><span class="jp">情報の非対称性</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Perfect competition does NOT cause market failure</strong><strong class="jp">完全競争は市場の失敗の原因ではない</strong> — <span class="en">In fact, perfect competition leads to efficient allocation (as shown by the First Welfare Theorem). Market failures occur when the conditions for perfect competition break down.</span><span class="jp">完全競争は効率的な資源配分をもたらす（第1厚生定理）。市場の失敗は完全競争の条件が崩れる時に起きる。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="0">
+      <h4><span class="q-num">Q3</span> <span class="en">Horizontal equity means:</span><span class="jp">水平的公平とは？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Equal treatment of people in equal positions</span><span class="jp">同等の立場にある人への同等の扱い</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Higher taxes for higher incomes</span><span class="jp">高所得者への高税率</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Equal income for all citizens</span><span class="jp">全市民への同一所得</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Zero taxes for the poor</span><span class="jp">貧困層への無税</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Horizontal equity</strong><strong class="jp">水平的公平</strong> — <span class="en">"Equal treatment for equals." People in the same economic position should pay the same taxes. Vertical equity (B) addresses the different-treatment-for-different-positions principle.</span><span class="jp">「同じ立場には同じ扱い」。同じ経済状況の人は同じ税を払うべき。垂直的公平（B）は異なる立場への異なる扱いを扱う。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="1">
+      <h4><span class="q-num">Q4</span> <span class="en">Which function of government does social security PRIMARILY relate to?</span><span class="jp">社会保障が主に関連する政府の機能は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Resource Allocation</span><span class="jp">資源配分</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Income Redistribution</span><span class="jp">所得再分配</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Macroeconomic Stabilization</span><span class="jp">マクロ経済安定化</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Dynamic Optimization</span><span class="jp">動的最適化</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Income Redistribution (②)</strong><strong class="jp">所得再分配（②）</strong> — <span class="en">Social security systems (pensions, health care, welfare) are the primary policy tool for income redistribution, transferring resources from working-age earners to the elderly, disabled, and poor.</span><span class="jp">社会保障制度（年金・医療・福祉）は所得再分配の主要な政策手段。現役世代から高齢者・障害者・貧困層への資源移転。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="3">
+      <h4><span class="q-num">Q5</span> <span class="en">What did Ihori (2017) add as a fourth function of public finance beyond Musgrave's three?</span><span class="jp">井堀（2017年）がマスグレイブの3機能に追加した第4の機能は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Environmental protection</span><span class="jp">環境保護</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">National defense</span><span class="jp">国防</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Social insurance provision</span><span class="jp">社会保険の供給</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Dynamic optimization (fiscal deficits, debt burden, public investment)</span><span class="jp">動的最適化（財政赤字・債務負担・公共投資）</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Dynamic Optimization</strong><strong class="jp">動的最適化</strong> — <span class="en">Ihori extends Musgrave by noting that governments must also consider intertemporal trade-offs: fiscal deficits today mean debt burden for future generations, and the productivity of public investment affects long-run growth.</span><span class="jp">井堀はマスグレイブを拡張し、政府が異時点間のトレードオフも考慮すべきと指摘。現在の財政赤字は将来世代の債務負担となり、公共投資の生産性は長期成長に影響する。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="0">
+      <h4><span class="q-num">Q6</span> <span class="en">Vertical equity is the basis for which tax policy?</span><span class="jp">垂直的公平はどの税制の基礎か？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Progressive taxation (higher rates for higher incomes)</span><span class="jp">累進課税（高所得者ほど高税率）</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Flat tax (same rate for everyone)</span><span class="jp">フラットタックス（全員同率）</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Poll tax (fixed amount per person)</span><span class="jp">人頭税（1人固定額）</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Consumption tax (same rate on purchases)</span><span class="jp">消費税（購入額に同率）</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Progressive taxation</strong><strong class="jp">累進課税</strong> — <span class="en">Vertical equity states that those with more resources should pay more. This is implemented through progressive income taxes where higher income brackets face higher marginal tax rates.</span><span class="jp">垂直的公平は「資源の多い人ほど多く払うべき」を意味する。累進所得税（高所得ほど高い限界税率）として実施される。</span></div>
+    </div>
+
+    <button class="quiz-submit">Submit All Answers</button>
+    <div class="quiz-result"></div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;justify-content:space-between;margin-top:24px;flex-wrap:wrap;gap:12px">
+    <a href="unit1.html" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:14px 24px;color:var(--text-primary);display:flex;align-items:center;gap:8px;font-weight:600;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+      ← <span class="en">Unit 1</span><span class="jp">Unit 1</span>
+    </a>
+    <a href="unit3.html" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:14px 24px;color:var(--text-primary);display:flex;align-items:center;gap:8px;font-weight:600;transition:border-color .2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+      <span class="en">Unit 3: Pareto Optimality</span><span class="jp">Unit 3：パレート最適</span> →
+    </a>
+  </div>
+</main>
+
+<footer>
+  <p class="en">Fiscal Issues on Social Security — Waseda University Spring 2026 · Unit 2</p>
+  <p class="jp">社会保障の財政問題 — 早稲田大学 2026年春学期 · Unit 2</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
