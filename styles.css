@@ -507,31 +507,40 @@ body.lang-jp .inline-en { display: none; }
    INTERACTIVE / QUIZ-CENTRIC ADDITIONS
    ══════════════════════════════════════════ */
 
-/* ── Hero quiz variant ── */
+/* ── Hero quiz variant (compact 2-col) ── */
 .hero-quiz {
   background: linear-gradient(135deg, #f7f4ee 0%, #ede5d4 50%, #f7f4ee 100%);
   border-bottom: 1px solid var(--border);
-  padding: 56px 24px 40px;
-  text-align: center;
+  padding: 18px 24px 16px;
   position: relative; overflow: hidden;
 }
 .hero-quiz::before {
   content: '';
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(200,134,10,0.10) 0%, transparent 70%);
+  background: radial-gradient(ellipse 80% 80% at 50% 0%, rgba(200,134,10,0.08) 0%, transparent 70%);
   pointer-events: none;
 }
-.hero-quiz h1 { margin-bottom: 10px; }
+/* Two-column row inside hero */
+.hero-quiz-row {
+  display: flex; align-items: center; gap: 32px;
+  max-width: 960px; margin: 0 auto;
+}
+.hero-quiz-left { flex: 1; min-width: 0; }
+.hero-quiz-right { flex: 0 0 auto; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+.hero-quiz h1 {
+  font-size: clamp(1.3rem, 2.8vw, 1.9rem);
+  margin-bottom: 4px; line-height: 1.15;
+}
 .hero-quiz h1 span { color: var(--accent); }
-.hero-quiz .hero-sub { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 28px; }
+.hero-quiz .hero-sub {
+  color: var(--text-muted); font-size: 0.78rem; margin: 0;
+}
 
 /* Total progress bar in hero */
-.hero-progress-wrap {
-  max-width: 380px; margin: 0 auto 28px;
-}
-.hero-progress-row { display: flex; align-items: center; gap: 10px; }
+.hero-progress-wrap { width: 260px; }
+.hero-progress-row { display: flex; align-items: center; gap: 8px; }
 .hero-progress-track {
-  flex: 1; height: 8px; background: var(--border);
+  flex: 1; height: 6px; background: var(--border);
   border-radius: 4px; overflow: hidden;
 }
 .hero-progress-fill {
@@ -539,29 +548,40 @@ body.lang-jp .inline-en { display: none; }
   border-radius: 4px; transition: width .8s ease; width: 0%;
 }
 .hero-progress-pct {
-  font-size: 0.78rem; font-weight: 700; color: var(--accent); min-width: 34px;
+  font-size: 0.72rem; font-weight: 700; color: var(--accent); min-width: 30px; text-align: right;
+}
+.hero-progress-label {
+  font-size: 0.65rem; color: var(--text-muted); margin-top: 3px; text-align: right;
 }
 
 /* ── Stats row ── */
 .stat-row {
-  display: flex; flex-wrap: wrap; gap: 14px;
-  justify-content: center; margin-bottom: 8px;
+  display: flex; flex-wrap: wrap; gap: 8px;
+  justify-content: flex-end;
 }
 .stat-chip {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 12px; padding: 12px 20px;
+  border-radius: 10px; padding: 7px 14px;
   text-align: center;
-  box-shadow: var(--shadow);
-  min-width: 100px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  min-width: 72px;
 }
 .stat-chip .stat-val {
-  font-size: 1.6rem; font-weight: 800;
+  font-size: 1.2rem; font-weight: 800;
   color: var(--accent); line-height: 1;
 }
 .stat-chip .stat-lbl {
-  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.07em;
-  color: var(--text-muted); text-transform: uppercase; margin-top: 3px;
+  font-size: 0.6rem; font-weight: 700; letter-spacing: 0.06em;
+  color: var(--text-muted); text-transform: uppercase; margin-top: 2px;
+}
+
+/* Mobile: stack hero vertically */
+@media (max-width: 600px) {
+  .hero-quiz-row { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .hero-quiz-right { align-items: flex-start; width: 100%; }
+  .hero-progress-wrap { width: 100%; }
+  .stat-row { justify-content: flex-start; }
 }
 
 /* ── Unit deck grid ── */
@@ -766,4 +786,56 @@ body.lang-jp .inline-en { display: none; }
 
 /* ── Quiz section sticky score badge ── */
 .quiz-section { scroll-margin-top: 72px; }
+
+/* ── Coming Soon unit cards ── */
+.udc.coming-soon { opacity: 0.62; pointer-events: none; }
+.udc.coming-soon .udc-top { background: var(--bg-card) !important; border: 2px dashed var(--border); }
+.udc.coming-soon .udc-num-badge { background: transparent; color: var(--text-muted); border: 1px solid var(--border); }
+.coming-soon-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--text-muted);
+  background: rgba(30,32,53,0.06); border: 1px solid var(--border);
+  border-radius: 8px; padding: 3px 10px; margin-top: 6px;
+}
+
+/* ── Overview page schedule table ── */
+.schedule-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+.schedule-table th {
+  background: var(--bg-card); border: 1px solid var(--border);
+  padding: 9px 12px; text-align: left; font-size: 0.75rem;
+  font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-muted);
+}
+.schedule-table td {
+  border: 1px solid var(--border); padding: 9px 12px;
+  vertical-align: top; color: var(--text-secondary);
+}
+.schedule-table tr:nth-child(even) td { background: rgba(30,32,53,0.02); }
+.schedule-table .week-num { font-weight: 700; color: var(--text-primary); white-space: nowrap; }
+.schedule-table .week-avail td { background: rgba(200,134,10,0.04); }
+.schedule-table .status-done {
+  color: var(--success); font-weight: 700; font-size: 0.8rem; white-space: nowrap;
+}
+.schedule-table .status-soon {
+  color: var(--text-muted); font-size: 0.8rem; white-space: nowrap;
+}
+
+/* ── Overview book card ── */
+.book-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 10px; padding: 16px 18px;
+  display: flex; gap: 14px; align-items: flex-start;
+}
+.book-icon { font-size: 2rem; flex-shrink: 0; }
+.book-info h4 { margin-bottom: 4px; font-size: 0.95rem; color: var(--text-primary); }
+.book-info p { font-size: 0.8rem; color: var(--text-muted); margin: 0; }
+
+/* ── Objective callout pills ── */
+.obj-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.obj-pill {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 20px; padding: 5px 14px;
+  font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);
+  display: flex; align-items: center; gap: 6px;
+}
 

@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (href === path || (path === '' && href === 'index.html')) a.classList.add('active');
   });
 
-  if (path === 'index.html' || path === '') initIndexPage();
+  if (path === 'index.html' || path === '' || path === 'overview.html') initIndexPage();
   initQuizzes();
   initKeyboard();
 });
