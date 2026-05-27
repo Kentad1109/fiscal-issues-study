@@ -37,7 +37,7 @@
 <main class="container section">
 
   <!-- Section 1: Definition -->
-  <div class="concept-section">
+  <div id="sec-definition" class="concept-section">
     <div class="section-header">
       <div class="section-num">1</div>
       <h2 class="en">Definition of Public Goods</h2>
@@ -98,7 +98,7 @@
   </div>
 
   <!-- Section 2: Taxonomy -->
-  <div class="concept-section">
+  <div id="sec-taxonomy" class="concept-section">
     <div class="section-header">
       <div class="section-num">2</div>
       <h2 class="en">A Taxonomy of Goods</h2>
@@ -164,7 +164,7 @@
   </div>
 
   <!-- Section 3: Free Rider Problem -->
-  <div class="concept-section">
+  <div id="sec-freerider" class="concept-section">
     <div class="section-header">
       <div class="section-num">3</div>
       <h2 class="en">The Free Rider Problem</h2>
@@ -227,7 +227,7 @@
   </div>
 
   <!-- Section 4: Optimal Provision -->
-  <div class="concept-section">
+  <div id="sec-optimal" class="concept-section">
     <div class="section-header">
       <div class="section-num">4</div>
       <h2 class="en">Optimal Provision of Public Goods</h2>
@@ -329,7 +329,7 @@
   </div>
 
   <!-- Section 5: Caveats -->
-  <div class="concept-section">
+  <div id="sec-caveats" class="concept-section">
     <div class="section-header">
       <div class="section-num">5</div>
       <h2 class="en">Caveats & Challenges</h2>
@@ -411,17 +411,17 @@
   </div>
 
   <!-- Quiz -->
-  <div class="quiz-section" data-quiz>
+  <div id="quiz-section" class="quiz-section" data-quiz>
     <div class="quiz-header">
       <h2 class="en">Unit 5 Quiz</h2>
       <h2 class="jp">Unit 5 クイズ</h2>
-      <span class="quiz-score">0 / 7 answered</span>
+      <span class="quiz-score">0 / 10 answered</span>
     </div>
     <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
     <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="en">Click to answer and reveal the explanation.</p>
     <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="jp">クリックして回答・解説を表示。</p>
 
-    <div class="question-block" data-correct="2">
+    <div class="question-block" data-correct="2" data-deep-link="unit5.html#sec-definition" data-deep-label="Definition of Public Goods">
       <h4><span class="q-num">Q1</span> <span class="en">Which two characteristics define a pure public good?</span><span class="jp">純粋公共財を定義する2つの特性は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">Rival + Excludable</span><span class="jp">競合＋排除可能</span></div>
@@ -432,7 +432,7 @@
       <div class="explanation"><strong class="en">Non-rival + Non-excludable</strong><strong class="jp">非競合＋非排除</strong> — <span class="en">Non-rivalness means zero marginal cost of an additional consumer. Non-excludability means you can't prevent anyone from consuming it. Together they create public goods that private markets under-provide.</span><span class="jp">非競合性は追加消費者の限界コストがゼロ。非排除性は誰かの消費を妨げられない。この組み合わせが私的市場で過少供給される公共財を生む。</span></div>
     </div>
 
-    <div class="question-block" data-correct="1">
+    <div class="question-block" data-correct="1" data-deep-link="unit5.html#sec-taxonomy" data-deep-label="Taxonomy of Goods (2×2 Matrix)">
       <h4><span class="q-num">Q2</span> <span class="en">Cable TV is an example of which type of good?</span><span class="jp">ケーブルテレビはどのタイプの財の例か？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">Pure public good</span><span class="jp">純粋公共財</span></div>
@@ -443,7 +443,7 @@
       <div class="explanation"><strong class="en">Club good</strong><strong class="jp">クラブ財</strong> — <span class="en">Cable TV is non-rival (one person's watching doesn't reduce others' ability to watch) but excludable (you can be cut off for non-payment). This combination = club good. Other examples: toll roads, Netflix, swimming pools.</span><span class="jp">ケーブルテレビは非競合（一人の視聴が他者の視聴を妨げない）だが排除可能（未払いで切断）。この組み合わせ＝クラブ財。他の例：有料道路・Netflix・プール。</span></div>
     </div>
 
-    <div class="question-block" data-correct="0">
+    <div class="question-block" data-correct="0" data-deep-link="unit5.html#sec-freerider" data-deep-label="The Free Rider Problem">
       <h4><span class="q-num">Q3</span> <span class="en">The free rider problem arises because of:</span><span class="jp">フリーライダー問題が生じる原因は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">Non-excludability — you can't prevent non-payers from benefiting</span><span class="jp">非排除性 — 非支払者の利益享受を妨げられない</span></div>
@@ -454,7 +454,7 @@
       <div class="explanation"><strong class="en">Non-excludability</strong><strong class="jp">非排除性</strong> — <span class="en">Because non-payers cannot be excluded, individuals have an incentive to free ride — letting others pay while enjoying the benefit for free. This leads to under-provision when provision is left to voluntary/private action.</span><span class="jp">非支払者を排除できないため、個人は他者に支払わせながら無料で利益を得るフリーライドのインセンティブを持つ。自発的・私的行動に委ねると過少供給につながる。</span></div>
     </div>
 
-    <div class="question-block" data-correct="3">
+    <div class="question-block" data-correct="3" data-deep-link="unit5.html#sec-optimal" data-deep-label="Optimal Provision: Horizontal vs Vertical Summation">
       <h4><span class="q-num">Q4</span> <span class="en">For private goods, the market equilibrium efficiency condition is:</span><span class="jp">私的財の市場均衡効率条件は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> MB<sub>A</sub> + MB<sub>B</sub> = MC</div>
@@ -465,7 +465,7 @@
       <div class="explanation"><strong>MB<sub>A</sub> = MB<sub>B</sub> = MC</strong> — <span class="en">For private goods, demand curves are horizontally summed. At equilibrium, every consumer's marginal benefit equals the common market price, which equals marginal cost. This is different from public goods where MBs are summed vertically (ΣMB = MC).</span><span class="jp">私的財では需要曲線は水平に合計。均衡では全消費者の限界便益が共通の市場価格（=限界費用）に等しい。公共財ではMBを垂直に合計（ΣMB = MC）する点が異なる。</span></div>
     </div>
 
-    <div class="question-block" data-correct="1">
+    <div class="question-block" data-correct="1" data-deep-link="unit5.html#sec-optimal" data-deep-label="Samuelson Condition">
       <h4><span class="q-num">Q5</span> <span class="en">The Samuelson condition for optimal public goods provision states:</span><span class="jp">最適公共財供給のサミュエルソン条件は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> MRS<sup>A</sup><sub>GX</sub> = MRS<sup>B</sup><sub>GX</sub> = MRT<sub>GX</sub></div>
@@ -476,7 +476,7 @@
       <div class="explanation"><strong>Σ MRS<sub>GX</sub> = MRT<sub>GX</sub></strong> (i.e. MRS<sup>A</sup> + MRS<sup>B</sup> = MRT) — <span class="en">Because all individuals consume the same quantity of the public good, the sum of their marginal rates of substitution (their individual valuations) must equal the MRT (the marginal cost). This is the general equilibrium version of ΣMB = MC.</span><span class="jp">すべての個人が同量の公共財を消費するため、個人の限界代替率（評価額）の合計がMRT（限界費用）に等しくなる必要がある。ΣMB = MCの一般均衡版。</span></div>
     </div>
 
-    <div class="question-block" data-correct="2">
+    <div class="question-block" data-correct="2" data-deep-link="unit5.html#sec-definition" data-deep-label="Non-Rivalness & Non-Excludability">
       <h4><span class="q-num">Q6</span> <span class="en">National defense is a classic public good because:</span><span class="jp">国防が典型的な公共財である理由は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">It is very expensive to produce</span><span class="jp">生産コストが非常に高い</span></div>
@@ -487,7 +487,7 @@
       <div class="explanation"><strong class="en">Non-rival + Non-excludable</strong><strong class="jp">非競合＋非排除</strong> — <span class="en">The two key characteristics: (1) Non-rival — one person being defended doesn't reduce defense for others; (2) Non-excludable — once a country is defended, all residents benefit regardless of whether they paid taxes. Together these create the free rider problem requiring government provision.</span><span class="jp">2つの特性：①非競合性 — ある人の防衛が他者の防衛を減らさない；②非排除性 — 一国が防衛されると、税を払ったかどうかに関わらず全居住者が恩恵を受ける。この組み合わせがフリーライダー問題を生み、政府供給が必要となる。</span></div>
     </div>
 
-    <div class="question-block" data-correct="0">
+    <div class="question-block" data-correct="0" data-deep-link="unit5.html#sec-caveats" data-deep-label="Government Expenditures in Japan">
       <h4><span class="q-num">Q7</span> <span class="en">In Japan's FY2025 general account, social security's share is approximately:</span><span class="jp">日本の2025年度一般会計に占める社会保障費の割合は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> 33.2%</div>
@@ -496,6 +496,39 @@
         <div class="option"><span class="option-marker">D</span> 7.5%</div>
       </div>
       <div class="explanation"><strong>33.2%</strong> — <span class="en">Social security is the single largest expenditure category in Japan's budget at 33.2%, reflecting the rapidly aging population. The second largest is national debt service at 24.5%. This is why this course focuses on the fiscal sustainability of social security.</span><span class="jp">社会保障費は33.2%で最大の歳出項目。急速な高齢化を反映。第2位は国債費の24.5%。本コースが社会保障の財政持続可能性に焦点を当てる理由でもある。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="2" data-deep-link="unit5.html#sec-taxonomy" data-deep-label="Taxonomy of Goods (2×2 Matrix)">
+      <h4><span class="q-num">Q8</span> <span class="en">Ocean fish (e.g. tuna in international waters) are classified as which type of good?</span><span class="jp">海洋の魚（例：公海上のマグロ）はどのタイプの財に分類されるか？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Pure public good</span><span class="jp">純粋公共財</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Club good</span><span class="jp">クラブ財</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Common resource (common pool resource)</span><span class="jp">コモンプール財（共有資源）</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Pure private good</span><span class="jp">純粋私的財</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Common resource</strong><strong class="jp">コモンプール財（共有資源）</strong> — <span class="en">Ocean fish are <em>rival</em> (one fisher catching a fish reduces the supply for others — depletes the stock) but <em>non-excludable</em> (it's very hard to exclude boats from international waters). This combination = common resource, leading to the "Tragedy of the Commons."</span><span class="jp">海洋の魚は<em>競合的</em>（一人が魚を捕ると他者の供給が減る — 資源が枯渇する）だが<em>非排除的</em>（公海上の漁船を排除することは困難）。この組み合わせ＝コモンプール財で、「共有地の悲劇」につながる。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="0" data-deep-link="unit5.html#sec-freerider" data-deep-label="The Free Rider Problem & Nash Equilibrium">
+      <h4><span class="q-num">Q9</span> <span class="en">In the free rider payoff matrix, the Nash equilibrium is:</span><span class="jp">フリーライダーのペイオフ表におけるナッシュ均衡は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Both free ride → public good is NOT provided</span><span class="jp">双方フリーライド → 公共財は供給されない</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Both contribute → public good is provided efficiently</span><span class="jp">双方拠出 → 公共財が効率的に供給される</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">One person contributes, the other free rides — depends on who moves first</span><span class="jp">一人が拠出し他方がフリーライド — 先手によって決まる</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">The government always steps in automatically</span><span class="jp">政府が自動的に介入する</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Both free ride → no public good</strong><strong class="jp">双方フリーライド → 公共財なし</strong> — <span class="en">Free riding is the dominant strategy for each individual: regardless of what the other person does, you're better off not contributing. So both end up free riding, the public good is not provided, and both get zero — a classic Prisoner's Dilemma outcome that justifies compulsory government provision through taxation.</span><span class="jp">フリーライドは各個人の支配戦略：相手がどうしようとも、拠出しない方が得。そのため双方フリーライドとなり、公共財は供給されず双方ゼロになる — 典型的な囚人のジレンマ。課税による強制的な政府供給を正当化する。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="1" data-deep-link="unit5.html#sec-optimal" data-deep-label="Vertical Summation of Demand">
+      <h4><span class="q-num">Q10</span> <span class="en">Vertical summation of demand curves for public goods means:</span><span class="jp">公共財の需要曲線の垂直方向の合計とは？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Adding up the quantities demanded by each person at every price</span><span class="jp">各価格でのすべての人の需要量を合計する</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Adding up each person's marginal benefit (willingness to pay) for the same quantity</span><span class="jp">同量に対する各人の限界便益（支払意思額）を合計する</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Multiplying each person's demand curve together</span><span class="jp">各人の需要曲線を掛け合わせる</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Taking the average of all individual marginal benefits</span><span class="jp">すべての個人の限界便益の平均を取る</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Sum MBs at each quantity level (vertical sum)</strong><strong class="jp">各数量水準でMBを合計（垂直方向の合計）</strong> — <span class="en">For public goods, everyone consumes the same quantity G simultaneously. So social valuation at any G = sum of all individuals' MB at that quantity. The social demand curve (ΣMB) is constructed by adding MB<sub>A</sub> + MB<sub>B</sub> vertically at each Q. Optimal provision: ΣMB = MC (Samuelson condition).</span><span class="jp">公共財では全員が同量Gを同時消費する。そのため任意のGでの社会的評価 = その量での全個人のMBの合計。社会的需要曲線（ΣMB）は各Qで垂直にMB<sub>A</sub>+MB<sub>B</sub>を足すことで構築。最適供給：ΣMB = MC（サミュエルソン条件）。</span></div>
     </div>
 
     <button class="quiz-submit">Submit All Answers</button>

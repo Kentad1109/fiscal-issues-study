@@ -37,7 +37,7 @@
 <main class="container section">
 
   <!-- Section 1: Three Growth Periods -->
-  <div class="concept-section">
+  <div id="sec-growth" class="concept-section">
     <div class="section-header">
       <div class="section-num">1</div>
       <h2 class="en">Three Growth Periods of Japan</h2>
@@ -110,7 +110,7 @@
   </div>
 
   <!-- Section 2: International Comparisons -->
-  <div class="concept-section">
+  <div id="sec-intl" class="concept-section">
     <div class="section-header">
       <div class="section-num">2</div>
       <h2 class="en">International Economic Comparisons</h2>
@@ -190,7 +190,7 @@
   </div>
 
   <!-- Section 3: National Debt -->
-  <div class="concept-section">
+  <div id="sec-debt" class="concept-section">
     <div class="section-header">
       <div class="section-num">3</div>
       <h2 class="en">National Debt & Fiscal Deterioration</h2>
@@ -405,17 +405,17 @@
   </div>
 
   <!-- Quiz -->
-  <div class="quiz-section" data-quiz>
+  <div id="quiz-section" class="quiz-section" data-quiz>
     <div class="quiz-header">
       <h2 class="en">Unit 1 Quiz</h2>
       <h2 class="jp">Unit 1 クイズ</h2>
-      <span class="quiz-score">0 / 6 answered</span>
+      <span class="quiz-score">0 / 9 answered</span>
     </div>
     <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
     <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="en">Click an option to answer. Explanations will appear after each answer.</p>
     <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="jp">選択肢をクリックして回答。解説はすぐ表示されます。</p>
 
-    <div class="question-block" data-correct="0">
+    <div class="question-block" data-correct="0" data-deep-link="unit1.html#sec-growth" data-deep-label="Japan's Three Growth Periods">
       <h4><span class="q-num">Q1</span> <span class="en">What was the average annual real GDP growth rate during Japan's "High Growth Period" (1956–1973)?</span><span class="jp">日本の「高度成長期」（1956〜1973年）における実質GDP年平均成長率は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> 9.1%</div>
@@ -426,7 +426,7 @@
       <div class="explanation"><strong class="en">Correct! 9.1%</strong><strong class="jp">正解！ 9.1%</strong> — <span class="en">Japan averaged 9.1% annual real GDP growth in the High Growth Period, driven by industrialization, exports, and post-war reconstruction.</span><span class="jp">戦後復興・工業化・輸出拡大を背景に、年平均9.1%の実質GDP成長を達成した。</span></div>
     </div>
 
-    <div class="question-block" data-correct="2">
+    <div class="question-block" data-correct="2" data-deep-link="unit1.html#sec-growth" data-deep-label="Japan's Three Growth Periods">
       <h4><span class="q-num">Q2</span> <span class="en">Japan's "Lost Growth Period" refers to the era starting from:</span><span class="jp">日本の「失われた成長期」が始まった年は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">1973 (First Oil Crisis)</span><span class="jp">1973年（第1次石油危機）</span></div>
@@ -437,7 +437,7 @@
       <div class="explanation"><strong class="en">Correct! 1991</strong><strong class="jp">正解！ 1991年</strong> — <span class="en">The burst of the asset bubble in 1991 triggered Japan's "Lost Growth Period" with average growth of only 0.7% per year through 2021.</span><span class="jp">1991年のバブル崩壊が「失われた成長期」を引き起こし、2021年まで年平均わずか0.7%の成長にとどまった。</span></div>
     </div>
 
-    <div class="question-block" data-correct="1">
+    <div class="question-block" data-correct="1" data-deep-link="unit1.html#sec-debt" data-deep-label="National Debt & BOJ Holdings">
       <h4><span class="q-num">Q3</span> <span class="en">What share of Japan's government bonds does the Bank of Japan hold (as of March 2023)?</span><span class="jp">日本銀行は2023年3月末時点で国債の何%を保有していたか？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">About 30%</span><span class="jp">約30%</span></div>
@@ -448,7 +448,7 @@
       <div class="explanation"><strong class="en">Correct! ~53.3%</strong><strong class="jp">正解！ 約53.3%</strong> — <span class="en">The BOJ holds over half of all government bonds, a result of aggressive Quantitative Easing (Abenomics) since 2013. Total national debt was ¥1,080.6 trillion at that time.</span><span class="jp">2013年以降のアベノミクス（量的緩和）により、日銀は国債の半分以上を保有。当時の国債残高は1,080.6兆円。</span></div>
     </div>
 
-    <div class="question-block" data-correct="3">
+    <div class="question-block" data-correct="3" data-deep-link="unit1.html#sec-debt" data-deep-label="G7 Debt Comparison Chart">
       <h4><span class="q-num">Q4</span> <span class="en">Which country had the LOWEST national debt as a percentage of GDP among G7 nations (approx. 2022)?</span><span class="jp">G7諸国でGDP比の国債残高が最も低かった国は（2022年頃）？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">United Kingdom</span><span class="jp">英国</span></div>
@@ -459,7 +459,7 @@
       <div class="explanation"><strong class="en">Correct! Germany</strong><strong class="jp">正解！ ドイツ</strong> — <span class="en">Germany has maintained relatively low debt (~69% of GDP), in contrast to Japan's ~261%. Germany enforced a "debt brake" constitutional rule to limit borrowing.</span><span class="jp">ドイツはGDP比約69%と比較的低水準を維持。日本の約261%と対照的。ドイツは憲法上の「債務ブレーキ」を設けている。</span></div>
     </div>
 
-    <div class="question-block" data-correct="0">
+    <div class="question-block" data-correct="0" data-deep-link="unit1.html#sec-debt" data-deep-label="FY2025 Budget Structure">
       <h4><span class="q-num">Q5</span> <span class="en">The Bond Dependency Ratio for FY2025 is projected at:</span><span class="jp">2025年度の公債依存度の見込みは？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> 24.9%</div>
@@ -470,7 +470,7 @@
       <div class="explanation"><strong>24.9%</strong> — <span class="en">In FY2025, approximately 1 in 4 yen of government spending is financed by bond issuance (debt), reflecting the structural gap between tax revenue and expenditure.</span><span class="jp">2025年度は歳出の約4分の1が国債で賄われる。税収と歳出の構造的なギャップを反映。</span></div>
     </div>
 
-    <div class="question-block" data-correct="2">
+    <div class="question-block" data-correct="2" data-deep-link="unit1.html#sec-debt" data-deep-label="FY2025 Budget Structure">
       <h4><span class="q-num">Q6</span> <span class="en">In FY2025, which expenditure category has the LARGEST share of Japan's general account budget?</span><span class="jp">2025年度の一般会計で最も大きな歳出項目は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">National Defense (7.5%)</span><span class="jp">防衛費（7.5%）</span></div>
@@ -479,6 +479,39 @@
         <div class="option"><span class="option-marker">D</span> <span class="en">Public Works (5.3%)</span><span class="jp">公共事業費（5.3%）</span></div>
       </div>
       <div class="explanation"><strong class="en">Social Security at 33.2%</strong><strong class="jp">社会保障費（33.2%）</strong> — <span class="en">Social security is the single largest expenditure, reflecting Japan's aging society. This is why the course focuses on fiscal issues related to social security.</span><span class="jp">社会保障費が最大項目。日本の高齢化を反映。本コースが社会保障の財政問題に焦点を当てる理由でもある。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="2" data-deep-link="unit1.html#sec-intl" data-deep-label="International Economic Comparisons">
+      <h4><span class="q-num">Q7</span> <span class="en">Japan's nominal GDP ranking has fallen in recent years. As of 2023, Japan is approximately the world's:</span><span class="jp">日本の名目GDPランキングは低下している。2023年現在、日本は世界約何位か？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">2nd largest economy</span><span class="jp">世界第2位</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">3rd largest economy</span><span class="jp">世界第3位</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">4th largest economy</span><span class="jp">世界第4位</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">5th largest economy</span><span class="jp">世界第5位</span></div>
+      </div>
+      <div class="explanation"><strong class="en">4th largest</strong><strong class="jp">世界第4位</strong> — <span class="en">Japan held the 2nd position for decades, but China overtook Japan in 2010, and Germany surpassed Japan in 2023 (partly due to yen depreciation). Japan fell from 2nd → 3rd → 4th place.</span><span class="jp">日本は長年世界第2位だったが、2010年に中国に抜かれ、2023年にはドイツにも追い越された（円安も影響）。2位→3位→4位と転落した。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="1" data-deep-link="unit1.html#sec-debt" data-deep-label="Two Types of Government Bonds">
+      <h4><span class="q-num">Q8</span> <span class="en">Special deficit-financing bonds (赤字国債) are prohibited in principle but have been issued continuously since which year?</span><span class="jp">赤字国債（特例国債）は原則禁止だが、何年以降継続的に発行されているか？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> 1965</div>
+        <div class="option"><span class="option-marker">B</span> 1975</div>
+        <div class="option"><span class="option-marker">C</span> 1985</div>
+        <div class="option"><span class="option-marker">D</span> 1991</div>
+      </div>
+      <div class="explanation"><strong>1975</strong> — <span class="en">Construction bonds (建設国債) are legal under the Public Finance Act, but special deficit-financing bonds require a special law each year. They were first issued in 1965 (temporary), then re-issued from 1975 onwards and have been issued every year since — reflecting structural fiscal deficits.</span><span class="jp">建設国債は財政法上認められているが、赤字国債（特例国債）は毎年特別立法が必要。1965年に一時的に発行、1975年以降は毎年発行が常態化 — 構造的な財政赤字を反映。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="0" data-deep-link="unit1.html#sec-intl" data-deep-label="Wage Stagnation Chart">
+      <h4><span class="q-num">Q9</span> <span class="en">In the wage comparison chart (1991 = 100), which of the following best describes Japan's wage trend through ~2024?</span><span class="jp">賃金比較グラフ（1991年=100）において、~2024年までの日本の賃金トレンドを最もよく表すのは？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Essentially flat — near 98–100, barely changed from 1991</span><span class="jp">ほぼ横ばい — 約98〜100で1991年からほとんど変化なし</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Moderate growth — reaching about 120–130</span><span class="jp">緩やかな成長 — 約120〜130に到達</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Strong growth — reaching about 150 or more</span><span class="jp">力強い成長 — 約150以上に到達</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Sharp decline — falling to around 70</span><span class="jp">急落 — 約70に低下</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Essentially flat (~98–100)</strong><strong class="jp">ほぼ横ばい（約98〜100）</strong> — <span class="en">While the USA (~160), Germany (~145), and Korea (~155) all saw major wage growth since 1991, Japan's real wages barely moved and even declined slightly. Japan is now below the OECD average — a sign of structural economic stagnation.</span><span class="jp">米国（約160）、ドイツ（約145）、韓国（約155）は1991年以降大幅な賃金成長を遂げたのに対し、日本の実質賃金はほぼ横ばいで若干低下。日本のOECD平均以下の状態は構造的な経済停滞のシグナル。</span></div>
     </div>
 
     <button class="quiz-submit">Submit All Answers</button>

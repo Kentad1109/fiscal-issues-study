@@ -21,237 +21,394 @@
   <button class="lang-toggle">🇯🇵 日本語</button>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
+<!-- ── HERO ── -->
+<section class="hero-quiz">
   <div class="hero-badge en">Waseda University — Spring 2026</div>
   <div class="hero-badge jp">早稲田大学 — 2026年春学期</div>
   <h1 class="en">Fiscal Issues on <span>Social Security</span></h1>
   <h1 class="jp">社会保障の<span>財政問題</span></h1>
-  <p class="subtitle en">A comprehensive interactive study guide covering public finance theory, market efficiency, social welfare, and the economics of public goods — Waseda University, Spring 2026.</p>
-  <p class="subtitle jp">公共財政理論、市場効率性、社会厚生、公共財の経済学を網羅した総合的なインタラクティブ学習ガイドです。早稲田大学 2026年春学期。</p>
-  <div class="hero-meta">
-<span>📅 <span class="en">April – July 2026</span><span class="jp">2026年4月〜7月</span></span>
-    <span>📖 <span class="en">5 Units Available</span><span class="jp">全5ユニット公開中</span></span>
+  <p class="hero-sub en">Quiz-first study guide · 5 units · 47 questions · Press <span class="kbd">1</span>–<span class="kbd">4</span> to answer</p>
+  <p class="hero-sub jp">クイズ中心の学習ガイド · 5ユニット · 47問 · <span class="kbd">1</span>〜<span class="kbd">4</span>キーで回答</p>
+
+  <!-- Global progress bar -->
+  <div class="hero-progress-wrap">
+    <div class="hero-progress-row">
+      <div class="hero-progress-track">
+        <div class="hero-progress-fill" id="hero-fill"></div>
+      </div>
+      <span class="hero-progress-pct" id="hero-pct">0%</span>
+    </div>
+    <p style="font-size:0.72rem;color:var(--text-muted);margin-top:6px" class="en">Overall quiz completion</p>
+    <p style="font-size:0.72rem;color:var(--text-muted);margin-top:6px" class="jp">全体クイズ進捗</p>
+  </div>
+
+  <!-- Stat chips -->
+  <div class="stat-row">
+    <div class="stat-chip">
+      <div class="stat-val" id="stat-answered">—</div>
+      <div class="stat-lbl en">Answered</div>
+      <div class="stat-lbl jp">回答済み</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-val" id="stat-correct">—</div>
+      <div class="stat-lbl en">Correct</div>
+      <div class="stat-lbl jp">正解</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-val" id="stat-units">0/5</div>
+      <div class="stat-lbl en">Units started</div>
+      <div class="stat-lbl jp">開始済みUnit</div>
+    </div>
   </div>
 </section>
 
-<!-- COURSE OVERVIEW -->
 <main class="container section">
 
-  <!-- Objectives -->
+  <!-- ── UNIT DECK ── -->
   <div class="concept-section">
     <div class="section-header">
-      <div class="section-num">0</div>
-      <h2 class="en">Course Overview</h2>
+      <div class="section-num">📝</div>
+      <h2 class="en">Choose a Unit — Start Quizzing</h2>
+      <h2 class="jp">ユニットを選ぶ — クイズを始める</h2>
+    </div>
+
+    <div class="unit-deck">
+
+      <!-- Unit 1 -->
+      <div class="udc unit-color-1" data-unit-id="unit1">
+        <div class="udc-top" style="background:var(--unit1)">
+          <span class="udc-num-badge">Unit 01</span>
+          <div class="udc-ring-wrap">
+            <svg class="udc-ring-svg" viewBox="0 0 52 52">
+              <circle class="ring-track" cx="26" cy="26" r="18"/>
+              <circle class="ring-fill"  cx="26" cy="26" r="18"/>
+            </svg>
+            <span class="udc-ring-label">?</span>
+          </div>
+        </div>
+        <div class="udc-body">
+          <h3 class="en">Economic & Fiscal Features in Japan</h3>
+          <h3 class="jp">日本の経済・財政の特徴</h3>
+          <p class="udc-desc en">GDP growth periods, debt crisis, BOJ policy, FY2025 budget</p>
+          <p class="udc-desc jp">GDP成長期、国債危機、日銀政策、2025年度予算</p>
+          <div class="udc-topics">
+            <span class="udc-tag">9.1% Growth</span>
+            <span class="udc-tag">Lost Decade</span>
+            <span class="udc-tag">Debt ¥1,129T</span>
+            <span class="udc-tag">BOJ 53%</span>
+          </div>
+          <div class="udc-score-row">
+            <div class="udc-bar-track"><div class="udc-bar-fill"></div></div>
+            <span class="udc-score-txt">Not started yet</span>
+          </div>
+        </div>
+        <div class="udc-actions">
+          <a href="unit1.html#quiz-section" class="btn-quiz">📝 <span class="en">Quiz</span><span class="jp">クイズ</span></a>
+          <a href="unit1.html" class="btn-study">📖 <span class="en">Study</span><span class="jp">学習</span></a>
+        </div>
+      </div>
+
+      <!-- Unit 2 -->
+      <div class="udc unit-color-2" data-unit-id="unit2">
+        <div class="udc-top" style="background:var(--unit2)">
+          <span class="udc-num-badge">Unit 02</span>
+          <div class="udc-ring-wrap">
+            <svg class="udc-ring-svg" viewBox="0 0 52 52">
+              <circle class="ring-track" cx="26" cy="26" r="18"/>
+              <circle class="ring-fill"  cx="26" cy="26" r="18"/>
+            </svg>
+            <span class="udc-ring-label">?</span>
+          </div>
+        </div>
+        <div class="udc-body">
+          <h3 class="en">Main Functions of Governments</h3>
+          <h3 class="jp">政府の主要機能</h3>
+          <p class="udc-desc en">Market failure, equity, Musgrave's 3 functions, Ihori's 4th</p>
+          <p class="udc-desc jp">市場の失敗、公平性、マスグレイブ3機能、井堀の第4機能</p>
+          <div class="udc-topics">
+            <span class="udc-tag">Market Failure</span>
+            <span class="udc-tag">Externalities</span>
+            <span class="udc-tag">Musgrave</span>
+            <span class="udc-tag">Equity</span>
+          </div>
+          <div class="udc-score-row">
+            <div class="udc-bar-track"><div class="udc-bar-fill"></div></div>
+            <span class="udc-score-txt">Not started yet</span>
+          </div>
+        </div>
+        <div class="udc-actions">
+          <a href="unit2.html#quiz-section" class="btn-quiz">📝 <span class="en">Quiz</span><span class="jp">クイズ</span></a>
+          <a href="unit2.html" class="btn-study">📖 <span class="en">Study</span><span class="jp">学習</span></a>
+        </div>
+      </div>
+
+      <!-- Unit 3 -->
+      <div class="udc unit-color-3" data-unit-id="unit3">
+        <div class="udc-top" style="background:var(--unit3)">
+          <span class="udc-num-badge">Unit 03</span>
+          <div class="udc-ring-wrap">
+            <svg class="udc-ring-svg" viewBox="0 0 52 52">
+              <circle class="ring-track" cx="26" cy="26" r="18"/>
+              <circle class="ring-fill"  cx="26" cy="26" r="18"/>
+            </svg>
+            <span class="udc-ring-label">?</span>
+          </div>
+        </div>
+        <div class="udc-body">
+          <h3 class="en">Pareto Optimality & Efficiency</h3>
+          <h3 class="jp">パレート最適と効率性</h3>
+          <p class="udc-desc en">MRTS/MRS/MRT, Edgeworth box, three conditions, Welfare Theorems</p>
+          <p class="udc-desc jp">MRTS/MRS/MRT、エッジワースボックス、3条件、厚生定理</p>
+          <div class="udc-topics">
+            <span class="udc-tag">MRTS</span>
+            <span class="udc-tag">MRS = MRT</span>
+            <span class="udc-tag">Contract Curve</span>
+            <span class="udc-tag">1st Theorem</span>
+          </div>
+          <div class="udc-score-row">
+            <div class="udc-bar-track"><div class="udc-bar-fill"></div></div>
+            <span class="udc-score-txt">Not started yet</span>
+          </div>
+        </div>
+        <div class="udc-actions">
+          <a href="unit3.html#quiz-section" class="btn-quiz">📝 <span class="en">Quiz</span><span class="jp">クイズ</span></a>
+          <a href="unit3.html" class="btn-study">📖 <span class="en">Study</span><span class="jp">学習</span></a>
+        </div>
+      </div>
+
+      <!-- Unit 4 -->
+      <div class="udc unit-color-4" data-unit-id="unit4">
+        <div class="udc-top" style="background:var(--unit4)">
+          <span class="udc-num-badge">Unit 04</span>
+          <div class="udc-ring-wrap">
+            <svg class="udc-ring-svg" viewBox="0 0 52 52">
+              <circle class="ring-track" cx="26" cy="26" r="18"/>
+              <circle class="ring-fill"  cx="26" cy="26" r="18"/>
+            </svg>
+            <span class="udc-ring-label">?</span>
+          </div>
+        </div>
+        <div class="udc-body">
+          <h3 class="en">Social Welfare & Equity</h3>
+          <h3 class="jp">社会厚生と公平性</h3>
+          <p class="udc-desc en">SWF types, Utilitarian vs Rawlsian, GUPF, social optimum W*</p>
+          <p class="udc-desc jp">SWFタイプ、功利主義 vs ロールズ型、GUPF、社会的最適W*</p>
+          <div class="udc-topics">
+            <span class="udc-tag">SWF</span>
+            <span class="udc-tag">Rawlsian</span>
+            <span class="udc-tag">GUPF</span>
+            <span class="udc-tag">Equity</span>
+          </div>
+          <div class="udc-score-row">
+            <div class="udc-bar-track"><div class="udc-bar-fill"></div></div>
+            <span class="udc-score-txt">Not started yet</span>
+          </div>
+        </div>
+        <div class="udc-actions">
+          <a href="unit4.html#quiz-section" class="btn-quiz">📝 <span class="en">Quiz</span><span class="jp">クイズ</span></a>
+          <a href="unit4.html" class="btn-study">📖 <span class="en">Study</span><span class="jp">学習</span></a>
+        </div>
+      </div>
+
+      <!-- Unit 5 -->
+      <div class="udc unit-color-5" data-unit-id="unit5">
+        <div class="udc-top" style="background:var(--unit5)">
+          <span class="udc-num-badge">Unit 05</span>
+          <div class="udc-ring-wrap">
+            <svg class="udc-ring-svg" viewBox="0 0 52 52">
+              <circle class="ring-track" cx="26" cy="26" r="18"/>
+              <circle class="ring-fill"  cx="26" cy="26" r="18"/>
+            </svg>
+            <span class="udc-ring-label">?</span>
+          </div>
+        </div>
+        <div class="udc-body">
+          <h3 class="en">Public Goods</h3>
+          <h3 class="jp">公共財</h3>
+          <p class="udc-desc en">Non-rival, non-excludable, free rider, Samuelson condition</p>
+          <p class="udc-desc jp">非競合性、非排除性、フリーライダー、サミュエルソン条件</p>
+          <div class="udc-topics">
+            <span class="udc-tag">Non-Rival</span>
+            <span class="udc-tag">Free Rider</span>
+            <span class="udc-tag">Samuelson</span>
+            <span class="udc-tag">4-cell grid</span>
+          </div>
+          <div class="udc-score-row">
+            <div class="udc-bar-track"><div class="udc-bar-fill"></div></div>
+            <span class="udc-score-txt">Not started yet</span>
+          </div>
+        </div>
+        <div class="udc-actions">
+          <a href="unit5.html#quiz-section" class="btn-quiz">📝 <span class="en">Quiz</span><span class="jp">クイズ</span></a>
+          <a href="unit5.html" class="btn-study">📖 <span class="en">Study</span><span class="jp">学習</span></a>
+        </div>
+      </div>
+
+    </div><!-- /unit-deck -->
+  </div>
+
+  <!-- ── QUICK PRACTICE ── -->
+  <div class="quick-drill" data-quiz>
+    <div class="quiz-header quick-drill-header">
+      <div>
+        <h2 class="en">⚡ Quick Practice</h2>
+        <h2 class="jp">⚡ クイックプラクティス</h2>
+        <p class="quick-drill-sub en">5 questions spanning all units. Press <span class="kbd">1</span>–<span class="kbd">4</span> to select.</p>
+        <p class="quick-drill-sub jp">全ユニットから5問。<span class="kbd">1</span>〜<span class="kbd">4</span>キーで選択。</p>
+      </div>
+      <span class="quiz-score">0 / 5 answered</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+
+    <!-- Q1 — Unit 1 -->
+    <div class="question-block" data-correct="2"
+         data-deep-link="unit1.html#sec-growth"
+         data-deep-label="Unit 1: Three Growth Periods">
+      <h4>
+        <span class="q-num">Q1</span>
+        <span class="unit-tag" style="background:rgba(37,99,235,0.1);color:#2563eb;font-size:0.7rem;font-weight:700;padding:2px 8px;border-radius:8px;margin-right:6px">Unit 1</span>
+        <span class="en">Japan's "Lost Growth Period" (1991–2021) average annual real GDP growth was:</span>
+        <span class="jp">日本の「失われた成長期」（1991〜2021年）の実質GDP平均成長率は？</span>
+      </h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> 5.3%</div>
+        <div class="option"><span class="option-marker">B</span> 9.1%</div>
+        <div class="option"><span class="option-marker">C</span> 0.7%</div>
+        <div class="option"><span class="option-marker">D</span> 2.1%</div>
+      </div>
+      <div class="explanation"><strong>0.7%</strong> — <span class="en">After the asset bubble burst in 1991, Japan stagnated for three decades. 0.7% vs the miracle-era 9.1% illustrates how dramatically growth collapsed.</span><span class="jp">1991年のバブル崩壊後、日本は30年間停滞。高度成長期の9.1%と比較すると成長の落ち込みの大きさがわかる。</span></div>
+    </div>
+
+    <!-- Q2 — Unit 2 -->
+    <div class="question-block" data-correct="2"
+         data-deep-link="unit2.html#sec-failure"
+         data-deep-label="Unit 2: Market Failure">
+      <h4>
+        <span class="q-num">Q2</span>
+        <span class="unit-tag" style="background:rgba(124,58,237,0.1);color:#7c3aed;font-size:0.7rem;font-weight:700;padding:2px 8px;border-radius:8px;margin-right:6px">Unit 2</span>
+        <span class="en">Which of the following is NOT a cause of market failure?</span>
+        <span class="jp">次のうち、市場の失敗の原因でないのはどれか？</span>
+      </h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Externalities</span><span class="jp">外部性</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Asymmetric information</span><span class="jp">情報の非対称性</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Perfect competition</span><span class="jp">完全競争</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Market power (monopoly)</span><span class="jp">市場支配力（独占）</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Perfect competition</strong><strong class="jp">完全競争</strong> — <span class="en">Perfect competition IS the benchmark that ensures efficiency. Market failures occur when competition breaks down (monopoly), prices omit social costs (externalities), information is asymmetric, or goods are non-excludable (public goods).</span><span class="jp">完全競争は効率性を保証するベンチマーク。市場の失敗は競争の崩壊（独占）、社会的費用の省略（外部性）、情報の非対称性、非排除性（公共財）のときに生じる。</span></div>
+    </div>
+
+    <!-- Q3 — Unit 3 -->
+    <div class="question-block" data-correct="2"
+         data-deep-link="unit3.html#sec-pareto"
+         data-deep-label="Unit 3: Three Pareto Conditions">
+      <h4>
+        <span class="q-num">Q3</span>
+        <span class="unit-tag" style="background:rgba(5,150,105,0.1);color:#059669;font-size:0.7rem;font-weight:700;padding:2px 8px;border-radius:8px;margin-right:6px">Unit 3</span>
+        <span class="en">Production efficiency (Pareto condition a) requires:</span>
+        <span class="jp">生産効率性（パレート条件a）の要件は？</span>
+      </h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> MRS<sup>A</sup> = MRS<sup>B</sup></div>
+        <div class="option"><span class="option-marker">B</span> MRS = MRT</div>
+        <div class="option"><span class="option-marker">C</span> MRTS<sup>X</sup><sub>LK</sub> = MRTS<sup>Y</sup><sub>LK</sub></div>
+        <div class="option"><span class="option-marker">D</span> MB = MC</div>
+      </div>
+      <div class="explanation"><strong>MRTS<sup>X</sup> = MRTS<sup>Y</sup></strong> — <span class="en">If the MRTS differs between goods X and Y, inputs can be reallocated to produce more of both — a Pareto improvement. Equality eliminates this opportunity.</span><span class="jp">XとYの生産でMRTSが異なれば、投入物の再配分で両財の産出増が可能（パレート改善）。等しくなれば改善余地なし。</span></div>
+    </div>
+
+    <!-- Q4 — Unit 4 -->
+    <div class="question-block" data-correct="1"
+         data-deep-link="unit4.html#sec-swf-types"
+         data-deep-label="Unit 4: Four SWF Types">
+      <h4>
+        <span class="q-num">Q4</span>
+        <span class="unit-tag" style="background:rgba(200,134,10,0.1);color:#c8860a;font-size:0.7rem;font-weight:700;padding:2px 8px;border-radius:8px;margin-right:6px">Unit 4</span>
+        <span class="en">The Rawlsian (Maximin) Social Welfare Function is:</span>
+        <span class="jp">ロールズ型（マキシミン）社会厚生関数は？</span>
+      </h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> W = U<sub>A</sub> + U<sub>B</sub></div>
+        <div class="option"><span class="option-marker">B</span> W = Min(U<sub>A</sub>, U<sub>B</sub>)</div>
+        <div class="option"><span class="option-marker">C</span> W = Max(U<sub>A</sub>, U<sub>B</sub>)</div>
+        <div class="option"><span class="option-marker">D</span> W = U<sub>A</sub> × U<sub>B</sub></div>
+      </div>
+      <div class="explanation"><strong>W = Min(U<sub>A</sub>, U<sub>B</sub>)</strong> — <span class="en">Rawls: maximize the utility of the worst-off person. Social welfare only improves when the least well-off improves. Comes from the "veil of ignorance" — you'd choose this not knowing which person you'd be.</span><span class="jp">ロールズ：最も不遇な人の効用を最大化。最も不遇な人が改善しない限り社会厚生は向上しない。「無知のヴェール」から — 自分がどの立場になるかわからなければこれを選ぶ。</span></div>
+    </div>
+
+    <!-- Q5 — Unit 5 -->
+    <div class="question-block" data-correct="1"
+         data-deep-link="unit5.html#sec-optimal"
+         data-deep-label="Unit 5: Optimal Provision">
+      <h4>
+        <span class="q-num">Q5</span>
+        <span class="unit-tag" style="background:rgba(220,38,38,0.1);color:#dc2626;font-size:0.7rem;font-weight:700;padding:2px 8px;border-radius:8px;margin-right:6px">Unit 5</span>
+        <span class="en">The Samuelson condition for optimal public goods provision states:</span>
+        <span class="jp">最適公共財供給のサミュエルソン条件は？</span>
+      </h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> MRS<sup>A</sup> = MRS<sup>B</sup> = MRT</div>
+        <div class="option"><span class="option-marker">B</span> Σ MRS<sub>GX</sub> = MRT<sub>GX</sub></div>
+        <div class="option"><span class="option-marker">C</span> MB<sub>A</sub> = MB<sub>B</sub> = MC</div>
+        <div class="option"><span class="option-marker">D</span> MRS<sup>A</sup> × MRS<sup>B</sup> = MRT</div>
+      </div>
+      <div class="explanation"><strong>Σ MRS = MRT</strong> — <span class="en">Because the same unit of a public good is consumed by ALL individuals simultaneously, its social value is the SUM of individual MRS. This contrasts with private goods where each unit goes to one person (MRS_A = MRS_B = MRT).</span><span class="jp">公共財の同じ単位が全員に同時に消費されるため、社会的価値は個人MRSの合計。私的財（1単位が1人へ）のMRS_A = MRS_B = MRTと対照的。</span></div>
+    </div>
+
+    <button class="quiz-submit en">Submit All</button>
+    <button class="quiz-submit jp">全問提出</button>
+    <div class="quiz-result"></div>
+  </div><!-- /quick-drill -->
+
+  <!-- ── COURSE OVERVIEW ── -->
+  <div class="concept-section" style="margin-top:56px">
+    <div class="section-header">
+      <div class="section-num">ℹ</div>
+      <h2 class="en">Course at a Glance</h2>
       <h2 class="jp">コース概要</h2>
     </div>
 
-    <div class="card-grid" style="margin-bottom:32px">
+    <div class="card-grid" style="margin-bottom:28px">
       <div class="card">
-        <h3 style="color:var(--accent);margin-bottom:10px">🎯 <span class="en">Main Objective</span><span class="jp">主な目的</span></h3>
-        <p class="en">Understand both the <strong style="color:var(--text-primary)">theory and practice</strong> of social securities as government spending, with emphasis on efficiency and equity criteria.</p>
-        <p class="jp"><strong style="color:var(--text-primary)">理論と実践</strong>の両面から社会保障（政府支出）を理解し、効率性と公平性の基準を重視して学ぶ。</p>
+        <h3 style="color:var(--accent);margin-bottom:8px">🎯 <span class="en">Main Objective</span><span class="jp">主な目的</span></h3>
+        <p class="en">Understand both theory and practice of social security as government spending — evaluating policies through the lens of <strong style="color:var(--text-primary)">efficiency</strong> and <strong style="color:var(--text-primary)">equity</strong>.</p>
+        <p class="jp">社会保障（政府支出）を理論・実践の両面から理解し、<strong style="color:var(--text-primary)">効率性</strong>と<strong style="color:var(--text-primary)">公平性</strong>の視点で政策を評価する。</p>
       </div>
       <div class="card">
-        <h3 style="color:var(--accent);margin-bottom:10px">⚖️ <span class="en">Two Core Criteria</span><span class="jp">2つの核心基準</span></h3>
-        <p class="en"><strong style="color:var(--text-primary)">Efficiency</strong>: Optimal resource allocation through markets and government. <strong style="color:var(--text-primary)">Equity</strong>: Fair distribution of income and wealth through redistribution.</p>
-        <p class="jp"><strong style="color:var(--text-primary)">効率性</strong>：市場と政府を通じた資源の最適配分。<strong style="color:var(--text-primary)">公平性</strong>：所得・富の再分配による公正な分配。</p>
+        <h3 style="color:var(--accent);margin-bottom:8px">🏛️ <span class="en">3 Government Functions</span><span class="jp">政府の3機能</span></h3>
+        <p class="en"><strong style="color:var(--text-primary)">① Resource Allocation</strong> · <strong style="color:var(--text-primary)">② Income Redistribution</strong> · <strong style="color:var(--text-primary)">③ Macroeconomic Stabilization</strong>. Social security primarily relates to ②. Ihori adds ④ Dynamic Optimization.</p>
+        <p class="jp"><strong style="color:var(--text-primary)">①資源配分</strong> · <strong style="color:var(--text-primary)">②所得再分配</strong> · <strong style="color:var(--text-primary)">③マクロ安定化</strong>。社会保障は主に②。井堀は④動的最適化を追加。</p>
       </div>
       <div class="card">
-        <h3 style="color:var(--accent);margin-bottom:10px">🏛️ <span class="en">3 Government Functions</span><span class="jp">政府の3機能</span></h3>
-        <p class="en"><strong style="color:var(--text-primary)">① Resource Allocation</strong> (efficiency) · <strong style="color:var(--text-primary)">② Income Redistribution</strong> (equity) · <strong style="color:var(--text-primary)">③ Macroeconomic Stabilization</strong>. Social security primarily relates to function ②.</p>
-        <p class="jp"><strong style="color:var(--text-primary)">①資源配分</strong>（効率）· <strong style="color:var(--text-primary)">②所得再分配</strong>（公平）· <strong style="color:var(--text-primary)">③マクロ経済安定化</strong>。社会保障は主に②に関連。</p>
+        <h3 style="color:var(--accent);margin-bottom:8px">📚 <span class="en">Key Textbooks</span><span class="jp">主要教科書</span></h3>
+        <p style="font-size:0.85rem"><strong style="color:var(--text-primary)">Cullis & Jones</strong> — Public Finance &amp; Public Choice, 3e (2009)<br><span style="color:var(--text-muted);font-size:0.8rem">Rosen &amp; Gayer · Musgrave &amp; Musgrave · Ihori (2017)</span></p>
       </div>
     </div>
 
-    <!-- 3 Functions Diagram -->
-    <div class="diagram-wrap">
-      <svg viewBox="0 0 700 240" width="700" height="240" style="max-width:100%">
-        <defs>
-          <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-            <path d="M0,0 L0,6 L6,3 Z" fill="#637a94"/>
-          </marker>
-          <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-            <path d="M0,0 L0,6 L6,3 Z" fill="#10b981"/>
-          </marker>
-        </defs>
-
-        <!-- Public Finance box (center y=120) -->
-        <rect x="10" y="90" width="150" height="60" rx="10" fill="#1e2d42" stroke="#f0a500" stroke-width="2"/>
-        <text x="85" y="116" text-anchor="middle" fill="#f0a500" font-size="13" font-weight="700">Public Finance</text>
-        <text x="85" y="136" text-anchor="middle" fill="#9db0c8" font-size="10">公共財政</text>
-
-        <!-- Arrows from PF right edge (x=160, y=120) -->
-        <line x1="160" y1="120" x2="203" y2="52" stroke="#637a94" stroke-width="1.5" marker-end="url(#arr)"/>
-        <line x1="160" y1="120" x2="203" y2="120" stroke="#637a94" stroke-width="1.5" marker-end="url(#arr)"/>
-        <line x1="160" y1="120" x2="203" y2="188" stroke="#637a94" stroke-width="1.5" marker-end="url(#arr)"/>
-
-        <!-- Function 1: y=20–84, center y=52 -->
-        <rect x="207" y="20" width="175" height="64" rx="10" fill="#1a3a5c" stroke="#3b82f6" stroke-width="2"/>
-        <text x="294" y="43" text-anchor="middle" fill="#60a5fa" font-size="11" font-weight="700">① Resource Allocation</text>
-        <text x="294" y="59" text-anchor="middle" fill="#9db0c8" font-size="10">資源配分（効率性）</text>
-        <text x="294" y="74" text-anchor="middle" fill="#637a94" font-size="9">Public goods, Externalities</text>
-
-        <!-- Function 2: y=88–152, center y=120 -->
-        <rect x="207" y="88" width="175" height="64" rx="10" fill="#1a3a3a" stroke="#10b981" stroke-width="2"/>
-        <text x="294" y="111" text-anchor="middle" fill="#34d399" font-size="11" font-weight="700">② Income Redistribution</text>
-        <text x="294" y="127" text-anchor="middle" fill="#9db0c8" font-size="10">所得再分配（公平性）</text>
-        <text x="294" y="142" text-anchor="middle" fill="#637a94" font-size="9">← Social Security focus</text>
-
-        <!-- Function 3: y=156–220, center y=188 -->
-        <rect x="207" y="156" width="175" height="64" rx="10" fill="#2a1a3a" stroke="#8b5cf6" stroke-width="2"/>
-        <text x="294" y="179" text-anchor="middle" fill="#a78bfa" font-size="11" font-weight="700">③ Macroeconomic</text>
-        <text x="294" y="195" text-anchor="middle" fill="#a78bfa" font-size="11" font-weight="700">Stabilization</text>
-        <text x="294" y="211" text-anchor="middle" fill="#9db0c8" font-size="10">マクロ安定化</text>
-
-        <!-- Dashed arrow from Function 2 → Social Security -->
-        <line x1="382" y1="120" x2="417" y2="120" stroke="#10b981" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arr2)"/>
-
-        <!-- Social Security box (center y=120) -->
-        <rect x="420" y="90" width="165" height="60" rx="10" fill="#1e2d42" stroke="#10b981" stroke-width="2"/>
-        <text x="502" y="116" text-anchor="middle" fill="#34d399" font-size="12" font-weight="700">Social Security</text>
-        <text x="502" y="133" text-anchor="middle" fill="#9db0c8" font-size="10">社会保障</text>
-      </svg>
-      <figcaption class="en">The three functions of government in public finance — Social Security is primarily linked to Income Redistribution</figcaption>
-      <figcaption class="jp">公共財政における政府の3機能 — 社会保障は主に「所得再分配」機能に関連</figcaption>
-    </div>
-  </div>
-
-  <!-- Unit cards -->
-  <div class="concept-section">
-    <div class="section-header">
-      <div class="section-num">→</div>
-      <h2 class="en">Study Units</h2>
-      <h2 class="jp">学習ユニット</h2>
-    </div>
-
-    <div class="card-grid">
-      <a href="unit1.html" class="unit-card unit-color-1">
-        <div class="unit-num">Unit 1</div>
-        <h3 class="en">Economic & Fiscal Features in Japan</h3>
-        <h3 class="jp">日本の経済・財政の特徴</h3>
-        <p class="en">Japan's economic history, GDP comparisons, national debt, and fiscal deterioration</p>
-        <p class="jp">日本の経済史、GDP比較、国債、財政悪化</p>
-        <div class="topics">
-          <span class="topic-tag">Growth Periods</span>
-          <span class="topic-tag">National Debt</span>
-          <span class="topic-tag">Lost Decade</span>
-          <span class="topic-tag">BOJ Policy</span>
-        </div>
-      </a>
-
-      <a href="unit2.html" class="unit-card unit-color-2">
-        <div class="unit-num">Unit 2</div>
-        <h3 class="en">Main Functions of Governments</h3>
-        <h3 class="jp">政府の主要機能</h3>
-        <p class="en">Market mechanism, market failure, equity principles, and the three Musgrave functions</p>
-        <p class="jp">市場メカニズム、市場の失敗、公平原則、マスグレイブの3機能</p>
-        <div class="topics">
-          <span class="topic-tag">Market Failure</span>
-          <span class="topic-tag">Equity</span>
-          <span class="topic-tag">Musgrave</span>
-          <span class="topic-tag">Ihori</span>
-        </div>
-      </a>
-
-      <a href="unit3.html" class="unit-card unit-color-3">
-        <div class="unit-num">Unit 3</div>
-        <h3 class="en">Pareto Optimality & Efficiency</h3>
-        <h3 class="jp">パレート最適と効率性</h3>
-        <p class="en">Production/consumption efficiency, Edgeworth box, Welfare Theorems</p>
-        <p class="jp">生産・消費の効率性、エッジワースボックス、厚生定理</p>
-        <div class="topics">
-          <span class="topic-tag">MRTS</span>
-          <span class="topic-tag">MRS</span>
-          <span class="topic-tag">MRT</span>
-          <span class="topic-tag">Welfare Theorems</span>
-        </div>
-      </a>
-
-      <a href="unit4.html" class="unit-card unit-color-4">
-        <div class="unit-num">Unit 4</div>
-        <h3 class="en">Social Welfare & Equity</h3>
-        <h3 class="jp">社会厚生と公平性</h3>
-        <p class="en">Social welfare functions, Utilitarian vs Rawlsian criteria, Grand Utility Possibility Frontier</p>
-        <p class="jp">社会厚生関数、功利主義 vs ロールズ基準、大効用可能性フロンティア</p>
-        <div class="topics">
-          <span class="topic-tag">SWF</span>
-          <span class="topic-tag">Utilitarian</span>
-          <span class="topic-tag">Rawlsian</span>
-          <span class="topic-tag">GUPF</span>
-        </div>
-      </a>
-
-      <a href="unit5.html" class="unit-card unit-color-5">
-        <div class="unit-num">Unit 5</div>
-        <h3 class="en">Public Goods</h3>
-        <h3 class="jp">公共財</h3>
-        <p class="en">Non-rivalness, non-excludability, free rider problem, Samuelson condition</p>
-        <p class="jp">非競合性、非排除性、フリーライダー問題、サミュエルソン条件</p>
-        <div class="topics">
-          <span class="topic-tag">Non-rival</span>
-          <span class="topic-tag">Non-excludable</span>
-          <span class="topic-tag">Free Rider</span>
-          <span class="topic-tag">Samuelson</span>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <!-- Course Schedule -->
-  <div class="concept-section">
-    <div class="section-header">
-      <div class="section-num">📅</div>
-      <h2 class="en">Full Course Schedule</h2>
-      <h2 class="jp">全授業スケジュール</h2>
-    </div>
-    <table class="styled-table">
-      <thead>
-        <tr>
-          <th style="width:60px">#</th>
-          <th class="en">Topic</th>
-          <th class="jp">テーマ</th>
-          <th style="width:120px" class="en">Status</th>
-          <th style="width:120px" class="jp">状況</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Ⅰ</td><td class="en">Introduction: Overview of the Course</td><td class="jp">イントロダクション：コース概要</td><td><span style="color:var(--success)">✓ <span class="en">Available</span><span class="jp">公開中</span></span></td></tr>
-        <tr><td>Ⅱ</td><td class="en">Economic and Fiscal Features in Japan & Main Functions</td><td class="jp">日本の経済・財政の特徴と政府の主要機能</td><td><span style="color:var(--success)">✓ <span class="en">Unit 1 & 2</span><span class="jp">Unit 1 & 2</span></span></td></tr>
-        <tr><td>Ⅲ</td><td class="en">The Concept of Pareto Optimality</td><td class="jp">パレート最適の概念</td><td><span style="color:var(--success)">✓ <span class="en">Unit 3</span><span class="jp">Unit 3</span></span></td></tr>
-        <tr><td>Ⅳ</td><td class="en">Social Welfare and Equity</td><td class="jp">社会厚生と公平性</td><td><span style="color:var(--success)">✓ <span class="en">Unit 4</span><span class="jp">Unit 4</span></span></td></tr>
-        <tr><td>Ⅴ</td><td class="en">Provision of Public Goods</td><td class="jp">公共財の供給</td><td><span style="color:var(--success)">✓ <span class="en">Unit 5</span><span class="jp">Unit 5</span></span></td></tr>
-        <tr><td>Ⅵ</td><td class="en">Pension Systems and Their Justifications</td><td class="jp">年金制度とその正当化</td><td><span style="color:var(--text-muted)"><span class="en">Coming soon</span><span class="jp">近日公開</span></span></td></tr>
-        <tr><td>Ⅶ</td><td class="en">Rationale for Income Redistribution</td><td class="jp">所得再分配の根拠</td><td><span style="color:var(--text-muted)"><span class="en">Coming soon</span><span class="jp">近日公開</span></span></td></tr>
-        <tr><td>Ⅷ</td><td class="en">Economic Effects of Public Pensions (1)</td><td class="jp">公的年金の経済効果（１）</td><td><span style="color:var(--text-muted)"><span class="en">Coming soon</span><span class="jp">近日公開</span></span></td></tr>
-        <tr><td>Ⅸ</td><td class="en">Economic Effects of Public Pensions (2)</td><td class="jp">公的年金の経済効果（２）</td><td><span style="color:var(--text-muted)"><span class="en">Coming soon</span><span class="jp">近日公開</span></span></td></tr>
-        <tr><td>Ⅹ</td><td class="en">Expenditure Programs for the Poor</td><td class="jp">貧困層向け支出プログラム</td><td><span style="color:var(--text-muted)"><span class="en">Coming soon</span><span class="jp">近日公開</span></span></td></tr>
-        <tr><td>Ⅺ</td><td class="en">Welfare Programs and Work Incentives</td><td class="jp">福祉プログラムと就労インセンティブ</td><td><span style="color:var(--text-muted)"><span class="en">Coming soon</span><span class="jp">近日公開</span></span></td></tr>
-        <tr><td>Ⅻ</td><td class="en">Intergovernmental Fiscal Relations</td><td class="jp">政府間財政関係</td><td><span style="color:var(--text-muted)"><span class="en">Coming soon</span><span class="jp">近日公開</span></span></td></tr>
-        <tr><td>ⅩⅢ</td><td class="en">Review and Final Exam</td><td class="jp">復習・期末試験</td><td><span style="color:var(--text-muted)"><span class="en">Coming soon</span><span class="jp">近日公開</span></span></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- Textbooks -->
-  <div class="concept-section">
-    <div class="section-header">
-      <div class="section-num">📚</div>
-      <h2 class="en">Key Textbooks</h2>
-      <h2 class="jp">主要教科書</h2>
-    </div>
-    <div class="card-grid">
-      <div class="card">
-        <h4 style="color:var(--accent-light);margin-bottom:6px" class="en">Main Textbook</h4>
-        <h4 style="color:var(--accent-light);margin-bottom:6px" class="jp">メインテキスト</h4>
-        <p style="font-size:0.88rem"><strong style="color:var(--text-primary)">Cullis & Jones</strong><br><em>Public Finance and Public Choice</em>, 3rd ed., Oxford Press, 2009.</p>
-      </div>
-      <div class="card">
-        <h4 style="color:var(--accent-light);margin-bottom:6px" class="en">References</h4>
-        <h4 style="color:var(--accent-light);margin-bottom:6px" class="jp">参考書</h4>
-        <p style="font-size:0.88rem">Rosen & Gayer (2010) · Gruber (2019) · Musgrave & Musgrave (1989) · Ihori (2017) · Atkinson & Stiglitz (2015)</p>
-      </div>
-    </div>
+    <!-- Compact schedule -->
+    <details style="margin-top:4px">
+      <summary style="cursor:pointer;font-weight:700;color:var(--text-primary);font-size:0.95rem;padding:10px 0;list-style:none;display:flex;align-items:center;gap:8px">
+        <span style="color:var(--accent)">📅</span>
+        <span class="en">Full Course Schedule</span>
+        <span class="jp">全授業スケジュール</span>
+        <span style="margin-left:auto;color:var(--text-muted);font-size:0.8rem;font-weight:400" class="en">(click to expand)</span>
+        <span style="margin-left:auto;color:var(--text-muted);font-size:0.8rem;font-weight:400" class="jp">（クリックで展開）</span>
+      </summary>
+      <table class="styled-table" style="margin-top:12px">
+        <thead><tr>
+          <th style="width:48px">#</th>
+          <th class="en">Topic</th><th class="jp">テーマ</th>
+          <th style="width:110px" class="en">Status</th><th style="width:110px" class="jp">状況</th>
+        </tr></thead>
+        <tbody>
+          <tr><td>Ⅱ</td><td class="en">Economic & Fiscal Features · Main Functions</td><td class="jp">経済・財政の特徴・主要機能</td><td><a href="unit1.html" style="color:var(--success);font-weight:600">✓ Unit 1&2</a></td></tr>
+          <tr><td>Ⅲ</td><td class="en">Pareto Optimality</td><td class="jp">パレート最適</td><td><a href="unit3.html" style="color:var(--success);font-weight:600">✓ Unit 3</a></td></tr>
+          <tr><td>Ⅳ</td><td class="en">Social Welfare & Equity</td><td class="jp">社会厚生・公平性</td><td><a href="unit4.html" style="color:var(--success);font-weight:600">✓ Unit 4</a></td></tr>
+          <tr><td>Ⅴ</td><td class="en">Public Goods</td><td class="jp">公共財</td><td><a href="unit5.html" style="color:var(--success);font-weight:600">✓ Unit 5</a></td></tr>
+          <tr><td>Ⅵ–ⅩⅢ</td><td class="en">Pensions, Redistribution, Welfare Programs…</td><td class="jp">年金・再分配・福祉プログラム…</td><td><span style="color:var(--text-muted);font-size:0.85rem" class="en">Coming soon</span><span style="color:var(--text-muted);font-size:0.85rem" class="jp">近日公開</span></td></tr>
+        </tbody>
+      </table>
+    </details>
   </div>
 
 </main>

@@ -37,7 +37,7 @@
 <main class="container section">
 
   <!-- Model Setup -->
-  <div class="concept-section">
+  <div id="sec-model" class="concept-section">
     <div class="section-header">
       <div class="section-num">0</div>
       <h2 class="en">The 2×2×2 Model</h2>
@@ -59,7 +59,7 @@
   </div>
 
   <!-- Section 1: Production Concepts -->
-  <div class="concept-section">
+  <div id="sec-production" class="concept-section">
     <div class="section-header">
       <div class="section-num">1</div>
       <h2 class="en">Production: Isoquant Curves & MRTS</h2>
@@ -125,7 +125,7 @@
   </div>
 
   <!-- Section 2: Consumption -->
-  <div class="concept-section">
+  <div id="sec-consumption" class="concept-section">
     <div class="section-header">
       <div class="section-num">2</div>
       <h2 class="en">Consumption: Indifference Curves & MRS</h2>
@@ -155,7 +155,7 @@
   </div>
 
   <!-- Section 3: Three Pareto Conditions -->
-  <div class="concept-section">
+  <div id="sec-pareto" class="concept-section">
     <div class="section-header">
       <div class="section-num">3</div>
       <h2 class="en">Three Conditions for Pareto Optimality</h2>
@@ -303,7 +303,7 @@
   </div>
 
   <!-- Section 4: Welfare Theorems -->
-  <div class="concept-section">
+  <div id="sec-theorems" class="concept-section">
     <div class="section-header">
       <div class="section-num">4</div>
       <h2 class="en">The Two Fundamental Welfare Theorems</h2>
@@ -403,17 +403,17 @@
   </div>
 
   <!-- Quiz -->
-  <div class="quiz-section" data-quiz>
+  <div id="quiz-section" class="quiz-section" data-quiz>
     <div class="quiz-header">
       <h2 class="en">Unit 3 Quiz</h2>
       <h2 class="jp">Unit 3 クイズ</h2>
-      <span class="quiz-score">0 / 7 answered</span>
+      <span class="quiz-score">0 / 10 answered</span>
     </div>
     <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
     <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="en">Click an option to see the answer and explanation.</p>
     <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="jp">選択肢をクリックして答えと解説を確認。</p>
 
-    <div class="question-block" data-correct="1">
+    <div class="question-block" data-correct="1" data-deep-link="unit3.html#sec-production" data-deep-label="Isoquant Curves & MRTS">
       <h4><span class="q-num">Q1</span> <span class="en">The Marginal Rate of Technical Substitution (MRTS<sub>LK</sub>) equals:</span><span class="jp">限界技術代替率(MRTS<sub>LK</sub>)は何に等しいか？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> MU<sub>X</sub> / MU<sub>Y</sub></div>
@@ -424,7 +424,7 @@
       <div class="explanation"><strong>MP<sub>L</sub>/MP<sub>K</sub></strong> — <span class="en">MRTS<sub>LK</sub> = −ΔK/ΔL = MP<sub>L</sub>/MP<sub>K</sub>. It represents how much capital K can be replaced by labor L while keeping output constant, reflecting the relative productivities of inputs.</span><span class="jp">MRTS<sub>LK</sub> = −ΔK/ΔL = MP<sub>L</sub>/MP<sub>K</sub>。産出量一定でLとKを代替する比率で、投入物の相対的生産性を反映。</span></div>
     </div>
 
-    <div class="question-block" data-correct="2">
+    <div class="question-block" data-correct="2" data-deep-link="unit3.html#sec-pareto" data-deep-label="Three Pareto Conditions">
       <h4><span class="q-num">Q2</span> <span class="en">Production efficiency (Pareto condition a) requires:</span><span class="jp">生産効率性（パレート条件a）の要件は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> MRS<sup>A</sup> = MRS<sup>B</sup></div>
@@ -435,7 +435,7 @@
       <div class="explanation"><strong>MRTS<sup>X</sup><sub>LK</sub> = MRTS<sup>Y</sup><sub>LK</sub></strong> — <span class="en">Condition (a) requires that the rate at which L and K can be substituted is equal in the production of X and Y. If not, output could be increased by reallocating inputs.</span><span class="jp">条件(a)はXとYの生産でLとKの代替率が等しいことを要求。等しくなければ投入物の再配分で産出を増加できる。</span></div>
     </div>
 
-    <div class="question-block" data-correct="0">
+    <div class="question-block" data-correct="0" data-deep-link="unit3.html#sec-pareto" data-deep-label="Condition (c): MRS = MRT">
       <h4><span class="q-num">Q3</span> <span class="en">The key production-consumption efficiency condition (Pareto condition c) states:</span><span class="jp">生産消費効率性（パレート条件c）は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> MRS<sub>XY</sub> = MRT<sub>XY</sub></div>
@@ -446,7 +446,7 @@
       <div class="explanation"><strong>MRS<sub>XY</sub> = MRT<sub>XY</sub></strong> — <span class="en">This is the grand condition linking consumption (MRS = rate consumers are willing to trade X for Y) with production (MRT = rate the economy can transform X into Y). It's satisfied at the tangency of an IC with the PPF.</span><span class="jp">消費（MRS=消費者がXとYを交換する意思比率）と生産（MRT=経済がXをYに転換する比率）を結ぶ大条件。ICとPPFの接点で満たされる。</span></div>
     </div>
 
-    <div class="question-block" data-correct="0">
+    <div class="question-block" data-correct="0" data-deep-link="unit3.html#sec-theorems" data-deep-label="The Two Welfare Theorems">
       <h4><span class="q-num">Q4</span> <span class="en">What does the First Fundamental Theorem of Welfare Economics state?</span><span class="jp">第1基本厚生定理の主張は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">A perfectly competitive equilibrium achieves Pareto optimality</span><span class="jp">完全競争均衡はパレート最適を達成する</span></div>
@@ -457,7 +457,7 @@
       <div class="explanation"><strong class="en">A perfectly competitive equilibrium achieves Pareto optimality</strong><strong class="jp">完全競争均衡はパレート最適を達成</strong> — <span class="en">This formalizes Adam Smith's "invisible hand." The decentralized price mechanism, without any central planning, leads to all three Pareto conditions being satisfied simultaneously.</span><span class="jp">アダム・スミスの「見えざる手」を形式化。分散した価格メカニズムにより、中央計画なしに3つのパレート条件が同時に満たされる。</span></div>
     </div>
 
-    <div class="question-block" data-correct="1">
+    <div class="question-block" data-correct="1" data-deep-link="unit3.html#sec-pareto" data-deep-label="Edgeworth Box & Contract Curve">
       <h4><span class="q-num">Q5</span> <span class="en">In an Edgeworth Box, the Contract Curve is:</span><span class="jp">エッジワースボックスにおける契約曲線とは？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">A straight line from one origin to the other</span><span class="jp">一方の原点から他方への直線</span></div>
@@ -468,7 +468,7 @@
       <div class="explanation"><strong class="en">Locus of tangency points</strong><strong class="jp">接点の軌跡</strong> — <span class="en">At each point on the Contract Curve, the IQs (in production box) or ICs (in consumption box) of the two firms/consumers are tangent. This means MRTS<sup>X</sup>=MRTS<sup>Y</sup> or MRS<sup>A</sup>=MRS<sup>B</sup> — Pareto efficient.</span><span class="jp">契約曲線の各点で2つのIQ（生産）またはIC（消費）が接する。MRTS<sup>X</sup>=MRTS<sup>Y</sup>またはMRS<sup>A</sup>=MRS<sup>B</sup>が成立 — パレート効率的。</span></div>
     </div>
 
-    <div class="question-block" data-correct="3">
+    <div class="question-block" data-correct="3" data-deep-link="unit3.html#sec-theorems" data-deep-label="The Two Welfare Theorems">
       <h4><span class="q-num">Q6</span> <span class="en">The Second Welfare Theorem implies that equity concerns:</span><span class="jp">第2厚生定理が意味する公平性への含意は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">Cannot be addressed without destroying efficiency</span><span class="jp">効率性を破壊せずには対処できない</span></div>
@@ -479,7 +479,7 @@
       <div class="explanation"><strong class="en">Separate equity from efficiency (in principle)</strong><strong class="jp">原理的に効率性と分離可能</strong> — <span class="en">The 2nd theorem says: choose the desired distribution, redistribute initial endowments as lump sums, then let competitive markets achieve Pareto optimality at that distribution. Equity and efficiency can theoretically coexist.</span><span class="jp">第2定理は「望ましい分配を選択し、初期賦存量を一括移転した後、競争市場にパレート最適を達成させる」ことを示す。公平性と効率性は理論上共存できる。</span></div>
     </div>
 
-    <div class="question-block" data-correct="2">
+    <div class="question-block" data-correct="2" data-deep-link="unit3.html#sec-pareto" data-deep-label="Edgeworth Box & Contract Curve">
       <h4><span class="q-num">Q7</span> <span class="en">Point J is inside the Edgeworth box but off the contract curve. This means:</span><span class="jp">点JはEdgeworth box内だが契約曲線外にある。これは何を意味するか？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">J is Pareto optimal</span><span class="jp">JはPareto最適</span></div>
@@ -488,6 +488,39 @@
         <div class="option"><span class="option-marker">D</span> <span class="en">J is outside the feasible set</span><span class="jp">Jは実現可能集合の外にある</span></div>
       </div>
       <div class="explanation"><strong class="en">Pareto improvement is possible from J</strong><strong class="jp">JからPareto改善が可能</strong> — <span class="en">Off the contract curve, the lens-shaped region between the two tangent IQ (or IC) curves at J contains all allocations that are better for at least one party. Moving to the contract curve within this lens is a Pareto improvement.</span><span class="jp">契約曲線外の点Jでは、2つのIQまたはIC曲線の間のレンズ形領域内に少なくとも一方にとってより良い配分が存在。このレンズ内で契約曲線に移動することがPareto改善。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="2" data-deep-link="unit3.html#sec-pareto" data-deep-label="MRT & PPF">
+      <h4><span class="q-num">Q8</span> <span class="en">The Marginal Rate of Transformation (MRT<sub>XY</sub>) equals:</span><span class="jp">限界変換率（MRT<sub>XY</sub>）は何に等しいか？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> MU<sub>X</sub> / MU<sub>Y</sub></div>
+        <div class="option"><span class="option-marker">B</span> MP<sub>L</sub> / MP<sub>K</sub></div>
+        <div class="option"><span class="option-marker">C</span> MC<sub>X</sub> / MC<sub>Y</sub></div>
+        <div class="option"><span class="option-marker">D</span> P<sub>X</sub> / P<sub>Y</sub></div>
+      </div>
+      <div class="explanation"><strong>MC<sub>X</sub>/MC<sub>Y</sub></strong> — <span class="en">MRT<sub>XY</sub> is the slope of the Production Possibilities Frontier (PPF). It represents the opportunity cost of producing one more unit of X in terms of Y foregone. Since producing more X requires reallocating resources, MRT = MC<sub>X</sub>/MC<sub>Y</sub>.</span><span class="jp">MRT<sub>XY</sub>は生産可能性フロンティア（PPF）の傾き。Xをもう1単位生産する機会費用をY単位で表したもの。Xを増産するには資源を再配分する必要があるため、MRT = MC<sub>X</sub>/MC<sub>Y</sub>。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="1" data-deep-link="unit3.html#sec-pareto" data-deep-label="PPF Shape">
+      <h4><span class="q-num">Q9</span> <span class="en">The Production Possibilities Frontier (PPF) is typically concave (bowed outward). This is because:</span><span class="jp">生産可能性フロンティア（PPF）は通常、原点から外側に凸（凹型）になる。その理由は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">All resources are identical and equally suitable for both goods</span><span class="jp">すべての資源が同一でどちらの財にも同等に適している</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Increasing opportunity cost — as more X is produced, each additional unit requires giving up increasingly more Y</span><span class="jp">機会費用逓増 — Xを増産するにつれ、追加の1単位ごとにより多くのYを犠牲にする必要がある</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Decreasing returns to scale in all production</span><span class="jp">あらゆる生産における規模収益逓減</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">The Pareto condition MRS = MRT must hold</span><span class="jp">パレート条件MRS = MRTが成立する必要があるため</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Increasing opportunity cost</strong><strong class="jp">機会費用逓増</strong> — <span class="en">Resources are not perfectly interchangeable between goods. As we shift more resources toward X, we must use inputs that are increasingly suited to Y — making each additional unit of X more costly in terms of Y. This gives the PPF its concave shape.</span><span class="jp">資源は財間で完全に代替可能ではない。X生産に資源をシフトするにつれ、Yに適した投入物を使わざるを得ず、XのY単位での機会費用が逓増する。これがPPFの凹型の形状の理由。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="3" data-deep-link="unit3.html#sec-theorems" data-deep-label="First Welfare Theorem">
+      <h4><span class="q-num">Q10</span> <span class="en">The First Welfare Theorem (competitive equilibrium → Pareto optimality) holds under which key assumption?</span><span class="jp">第1厚生定理（競争均衡→パレート最適）が成立する重要な仮定は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">The government provides all public goods</span><span class="jp">政府がすべての公共財を供給する</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">All individuals have the same utility function</span><span class="jp">すべての個人が同じ効用関数を持つ</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Income is distributed equally</span><span class="jp">所得が均等に分配されている</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">No externalities, no public goods, no asymmetric information — i.e. perfect competition conditions hold</span><span class="jp">外部性・公共財・情報の非対称性がない — 完全競争の条件が成立</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Perfect competition conditions hold</strong><strong class="jp">完全競争の条件が成立</strong> — <span class="en">The First Welfare Theorem requires conditions for perfect competition: no market power, no externalities, no public goods, no asymmetric information, and complete markets. When any of these fails — i.e. market failure occurs — the theorem breaks down and government intervention may be justified.</span><span class="jp">第1厚生定理は完全競争の条件を要求：市場支配力なし・外部性なし・公共財なし・情報の非対称性なし・完全な市場。これらのいずれかが失敗する場合（=市場の失敗）、定理は成立せず政府介入が正当化されうる。</span></div>
     </div>
 
     <button class="quiz-submit">Submit All Answers</button>

@@ -37,7 +37,7 @@
 <main class="container section">
 
   <!-- Section 1: Market Mechanism -->
-  <div class="concept-section">
+  <div id="sec-market" class="concept-section">
     <div class="section-header">
       <div class="section-num">1</div>
       <h2 class="en">The Market Mechanism</h2>
@@ -121,7 +121,7 @@
   </div>
 
   <!-- Section 2: Market Failure -->
-  <div class="concept-section">
+  <div id="sec-failure" class="concept-section">
     <div class="section-header">
       <div class="section-num">2</div>
       <h2 class="en">Market Failure & Inefficiency</h2>
@@ -166,7 +166,7 @@
   </div>
 
   <!-- Section 3: Equity -->
-  <div class="concept-section">
+  <div id="sec-equity" class="concept-section">
     <div class="section-header">
       <div class="section-num">3</div>
       <h2 class="en">The Equity Principle</h2>
@@ -225,7 +225,7 @@
   </div>
 
   <!-- Section 4: Macroeconomic Stabilization -->
-  <div class="concept-section">
+  <div id="sec-stabilization" class="concept-section">
     <div class="section-header">
       <div class="section-num">4</div>
       <h2 class="en">Macroeconomic Stabilization</h2>
@@ -264,7 +264,7 @@
   </div>
 
   <!-- Section 5: The 3 Functions -->
-  <div class="concept-section">
+  <div id="sec-musgrave" class="concept-section">
     <div class="section-header">
       <div class="section-num">5</div>
       <h2 class="en">Musgrave's Three Functions + Ihori's Fourth</h2>
@@ -358,17 +358,17 @@
   </div>
 
   <!-- Quiz -->
-  <div class="quiz-section" data-quiz>
+  <div id="quiz-section" class="quiz-section" data-quiz>
     <div class="quiz-header">
       <h2 class="en">Unit 2 Quiz</h2>
       <h2 class="jp">Unit 2 クイズ</h2>
-      <span class="quiz-score">0 / 6 answered</span>
+      <span class="quiz-score">0 / 9 answered</span>
     </div>
     <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
     <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="en">Select your answer to see the explanation.</p>
     <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:24px" class="jp">回答を選択すると解説が表示されます。</p>
 
-    <div class="question-block" data-correct="1">
+    <div class="question-block" data-correct="1" data-deep-link="unit2.html#sec-market" data-deep-label="Market Mechanism & Social Surplus">
       <h4><span class="q-num">Q1</span> <span class="en">At competitive equilibrium, Social Surplus (SS) equals:</span><span class="jp">競争均衡における社会余剰(SS)は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">Consumer Surplus only</span><span class="jp">消費者余剰のみ</span></div>
@@ -379,7 +379,7 @@
       <div class="explanation"><strong>SS = CS + PS</strong> — <span class="en">Social surplus is the sum of consumer and producer surplus. At competitive equilibrium E (where MB = MC), this is maximized — demonstrating allocative efficiency.</span><span class="jp">社会余剰は消費者余剰と生産者余剰の合計。競争均衡E（MB=MC）で最大化される — 配分効率性を示す。</span></div>
     </div>
 
-    <div class="question-block" data-correct="2">
+    <div class="question-block" data-correct="2" data-deep-link="unit2.html#sec-failure" data-deep-label="Causes of Market Failure">
       <h4><span class="q-num">Q2</span> <span class="en">Which of the following is NOT a cause of market failure?</span><span class="jp">次のうち、市場の失敗の原因でないものは？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">Monopoly power</span><span class="jp">独占力</span></div>
@@ -390,7 +390,7 @@
       <div class="explanation"><strong class="en">Perfect competition does NOT cause market failure</strong><strong class="jp">完全競争は市場の失敗の原因ではない</strong> — <span class="en">In fact, perfect competition leads to efficient allocation (as shown by the First Welfare Theorem). Market failures occur when the conditions for perfect competition break down.</span><span class="jp">完全競争は効率的な資源配分をもたらす（第1厚生定理）。市場の失敗は完全競争の条件が崩れる時に起きる。</span></div>
     </div>
 
-    <div class="question-block" data-correct="0">
+    <div class="question-block" data-correct="0" data-deep-link="unit2.html#sec-equity" data-deep-label="The Equity Principle">
       <h4><span class="q-num">Q3</span> <span class="en">Horizontal equity means:</span><span class="jp">水平的公平とは？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">Equal treatment of people in equal positions</span><span class="jp">同等の立場にある人への同等の扱い</span></div>
@@ -401,7 +401,7 @@
       <div class="explanation"><strong class="en">Horizontal equity</strong><strong class="jp">水平的公平</strong> — <span class="en">"Equal treatment for equals." People in the same economic position should pay the same taxes. Vertical equity (B) addresses the different-treatment-for-different-positions principle.</span><span class="jp">「同じ立場には同じ扱い」。同じ経済状況の人は同じ税を払うべき。垂直的公平（B）は異なる立場への異なる扱いを扱う。</span></div>
     </div>
 
-    <div class="question-block" data-correct="1">
+    <div class="question-block" data-correct="1" data-deep-link="unit2.html#sec-musgrave" data-deep-label="Musgrave's Three Functions">
       <h4><span class="q-num">Q4</span> <span class="en">Which function of government does social security PRIMARILY relate to?</span><span class="jp">社会保障が主に関連する政府の機能は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">Resource Allocation</span><span class="jp">資源配分</span></div>
@@ -412,7 +412,7 @@
       <div class="explanation"><strong class="en">Income Redistribution (②)</strong><strong class="jp">所得再分配（②）</strong> — <span class="en">Social security systems (pensions, health care, welfare) are the primary policy tool for income redistribution, transferring resources from working-age earners to the elderly, disabled, and poor.</span><span class="jp">社会保障制度（年金・医療・福祉）は所得再分配の主要な政策手段。現役世代から高齢者・障害者・貧困層への資源移転。</span></div>
     </div>
 
-    <div class="question-block" data-correct="3">
+    <div class="question-block" data-correct="3" data-deep-link="unit2.html#sec-musgrave" data-deep-label="Musgrave's Three Functions + Ihori's Fourth">
       <h4><span class="q-num">Q5</span> <span class="en">What did Ihori (2017) add as a fourth function of public finance beyond Musgrave's three?</span><span class="jp">井堀（2017年）がマスグレイブの3機能に追加した第4の機能は？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">Environmental protection</span><span class="jp">環境保護</span></div>
@@ -423,7 +423,7 @@
       <div class="explanation"><strong class="en">Dynamic Optimization</strong><strong class="jp">動的最適化</strong> — <span class="en">Ihori extends Musgrave by noting that governments must also consider intertemporal trade-offs: fiscal deficits today mean debt burden for future generations, and the productivity of public investment affects long-run growth.</span><span class="jp">井堀はマスグレイブを拡張し、政府が異時点間のトレードオフも考慮すべきと指摘。現在の財政赤字は将来世代の債務負担となり、公共投資の生産性は長期成長に影響する。</span></div>
     </div>
 
-    <div class="question-block" data-correct="0">
+    <div class="question-block" data-correct="0" data-deep-link="unit2.html#sec-equity" data-deep-label="The Equity Principle">
       <h4><span class="q-num">Q6</span> <span class="en">Vertical equity is the basis for which tax policy?</span><span class="jp">垂直的公平はどの税制の基礎か？</span></h4>
       <div class="options">
         <div class="option"><span class="option-marker">A</span> <span class="en">Progressive taxation (higher rates for higher incomes)</span><span class="jp">累進課税（高所得者ほど高税率）</span></div>
@@ -432,6 +432,39 @@
         <div class="option"><span class="option-marker">D</span> <span class="en">Consumption tax (same rate on purchases)</span><span class="jp">消費税（購入額に同率）</span></div>
       </div>
       <div class="explanation"><strong class="en">Progressive taxation</strong><strong class="jp">累進課税</strong> — <span class="en">Vertical equity states that those with more resources should pay more. This is implemented through progressive income taxes where higher income brackets face higher marginal tax rates.</span><span class="jp">垂直的公平は「資源の多い人ほど多く払うべき」を意味する。累進所得税（高所得ほど高い限界税率）として実施される。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="0" data-deep-link="unit2.html#sec-market" data-deep-label="The Market Mechanism">
+      <h4><span class="q-num">Q7</span> <span class="en">Adam Smith's "invisible hand" metaphor describes:</span><span class="jp">アダム・スミスの「見えざる手」の比喩が表すものは？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">The price mechanism guiding self-interested individuals to produce socially efficient outcomes</span><span class="jp">自己利益を追求する個人を価格メカニズムが社会的効率的な結果へ導くこと</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Government's hidden power to control markets</span><span class="jp">政府の市場を支配する隠れた力</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Monopoly's ability to manipulate prices secretly</span><span class="jp">独占が価格を密かに操作する能力</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Redistribution policy that helps the poor invisibly</span><span class="jp">貧困層を目に見えない形で助ける再分配政策</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Price mechanism → social efficiency</strong><strong class="jp">価格メカニズム → 社会的効率性</strong> — <span class="en">Adam Smith argued that individuals pursuing their own self-interest are led by an "invisible hand" to promote the public good. This intuition was formally proven by the First Welfare Theorem: competitive equilibrium → Pareto optimality.</span><span class="jp">アダム・スミスは自己利益を追求する個人が「見えざる手」によって公共の利益を促進すると論じた。この直観は第1厚生定理によって形式的に証明された：競争均衡→パレート最適。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="2" data-deep-link="unit2.html#sec-failure" data-deep-label="Asymmetric Information & Market Failure">
+      <h4><span class="q-num">Q8</span> <span class="en">Moral hazard is a problem caused by:</span><span class="jp">モラルハザードの原因は？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Monopoly power in markets</span><span class="jp">市場における独占力</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Negative externalities like pollution</span><span class="jp">公害などの負の外部性</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Asymmetric information — one party changes behavior after a contract is formed</span><span class="jp">情報の非対称性 — 契約締結後に一方が行動を変える</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Excessive government regulation</span><span class="jp">過度な政府規制</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Asymmetric information (post-contract behavioral change)</strong><strong class="jp">情報の非対称性（契約後の行動変化）</strong> — <span class="en">Moral hazard occurs when one party takes on more risk because they don't bear the full cost (e.g. insured person drives recklessly). Unlike adverse selection (pre-contract information gap), moral hazard is a post-contract problem. Both are caused by asymmetric information.</span><span class="jp">モラルハザードは、一方が全コストを負担しないためにリスクを取りすぎる状況（例：保険加入者が無謀な運転をする）。逆選択（契約前の情報格差）と異なり、モラルハザードは契約後の問題。どちらも情報の非対称性が原因。</span></div>
+    </div>
+
+    <div class="question-block" data-correct="1" data-deep-link="unit2.html#sec-failure" data-deep-label="Externalities & Market Failure">
+      <h4><span class="q-num">Q9</span> <span class="en">A Pigouvian tax (e.g. carbon tax) is a government tool designed to correct:</span><span class="jp">ピグー税（例：炭素税）は何を是正するための政府手段か？</span></h4>
+      <div class="options">
+        <div class="option"><span class="option-marker">A</span> <span class="en">Market power of monopolies</span><span class="jp">独占の市場支配力</span></div>
+        <div class="option"><span class="option-marker">B</span> <span class="en">Negative externalities — making producers internalize the full social cost</span><span class="jp">負の外部性 — 生産者に完全な社会的コストを内部化させる</span></div>
+        <div class="option"><span class="option-marker">C</span> <span class="en">Income inequality through redistribution</span><span class="jp">再分配による所得不平等</span></div>
+        <div class="option"><span class="option-marker">D</span> <span class="en">Macroeconomic recession</span><span class="jp">マクロ経済的不況</span></div>
+      </div>
+      <div class="explanation"><strong class="en">Negative externalities</strong><strong class="jp">負の外部性</strong> — <span class="en">A Pigouvian tax (named after Arthur Pigou) is set equal to the marginal external cost, making the producer internalize the damage caused to third parties (e.g. pollution). By raising the private cost to equal the social cost, it restores the Pareto-efficient output level.</span><span class="jp">ピグー税（アーサー・ピグーにちなむ）は限界外部費用と等しく設定され、生産者が第三者への損害（例：公害）を内部化させる。私的費用を社会的費用に一致させることで、パレート効率的な産出水準を回復する。</span></div>
     </div>
 
     <button class="quiz-submit">Submit All Answers</button>
