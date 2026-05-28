@@ -494,7 +494,8 @@ body.lang-jp .inline-en { display: none; }
   nav.topnav { gap: 4px; flex-wrap: wrap; height: auto; padding: 10px 16px; }
   nav.topnav a { font-size: 0.78rem; padding: 5px 8px; }
   .hero { padding: 56px 16px 48px; }
-  .section { padding: 48px 0; }
+  .section { padding-top: 48px; padding-bottom: 48px; }
+  .container { padding-left: 20px; padding-right: 20px; }
   .card-grid { grid-template-columns: 1fr; }
   .quiz-section { padding: 24px 20px; }
   .diagram-wrap { padding: 20px 12px; }
