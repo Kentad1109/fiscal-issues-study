@@ -290,7 +290,7 @@ function initPanels() {
 
   function apply() {
     root.style.setProperty('--left-w',  (st.lo ? st.lw : 0) + 'px');
-    root.style.setProperty('--right-w', (st.ro ? st.rw : 0) + 'px');
+    root.style.setProperty('--right-w', (termsPanel && st.ro ? st.rw : 0) + 'px');
     if (sidebar)    sidebar.querySelector('.panel-toggle-btn').textContent    = st.lo ? '‹' : '›';
     if (termsPanel) termsPanel.querySelector('.panel-toggle-btn').textContent = st.ro ? '›' : '‹';
   }

@@ -854,7 +854,7 @@ body.lang-jp .inline-en { display: none; }
   nav.topnav { display: none; }
 
   /* Shift page body to clear both sidebars (JS overrides via CSS vars) */
-  body { padding-left: var(--left-w, 220px); padding-right: var(--right-w, 200px); transition: padding .22s ease; }
+  body { padding-left: var(--left-w, 220px); padding-right: var(--right-w, 0px); }
 
   .terms-panel {
     display: flex;
