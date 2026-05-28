@@ -7,8 +7,9 @@ const RING_CIRC = 113; // 2π × 18
 // ─── Language Toggle ─────────────────────────────────────────
 function setLang(lang) {
   document.body.classList.toggle('lang-jp', lang === 'jp');
-  const btn = document.querySelector('.lang-toggle');
-  if (btn) btn.textContent = lang === 'jp' ? '🇺🇸 English' : '🇯🇵 日本語';
+  document.querySelectorAll('.lang-toggle').forEach(btn => {
+    btn.textContent = lang === 'jp' ? '🇺🇸 English' : '🇯🇵 日本語';
+  });
   localStorage.setItem(LANG_KEY, lang);
 }
 function initLang() {
@@ -242,15 +243,16 @@ function initKeyboard() {
 document.addEventListener('DOMContentLoaded', () => {
   initLang();
 
-  const langBtn = document.querySelector('.lang-toggle');
-  if (langBtn) langBtn.addEventListener('click', () => {
-    const cur = document.body.classList.contains('lang-jp') ? 'jp' : 'en';
-    setLang(cur === 'jp' ? 'en' : 'jp');
+  document.querySelectorAll('.lang-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cur = document.body.classList.contains('lang-jp') ? 'jp' : 'en';
+      setLang(cur === 'jp' ? 'en' : 'jp');
+    });
   });
 
-  // Active nav highlight
+  // Active nav highlight (topnav + sidebar)
   const path = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('nav.topnav a').forEach(a => {
+  document.querySelectorAll('nav.topnav a, .sidebar-nav a').forEach(a => {
     const href = a.getAttribute('href');
     if (href === path || (path === '' && href === 'index.html')) a.classList.add('active');
   });
