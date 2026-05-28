@@ -852,19 +852,21 @@ body.lang-jp .inline-en { display: none; }
   /* Hide top nav, show sidebar */
   nav.topnav { display: none; }
 
-  /* Shift page body to clear both sidebars */
-  body { padding-left: 220px; padding-right: 200px; }
+  /* Shift page body to clear both sidebars (JS overrides via CSS vars) */
+  body { padding-left: var(--left-w, 220px); padding-right: var(--right-w, 200px); transition: padding .22s ease; }
 
   .terms-panel {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: var(--right-w, 200px);
     position: fixed;
     right: 0; top: 0; bottom: 0;
     background: var(--bg-secondary);
     border-left: 1px solid var(--border);
     z-index: 200;
+    overflow-x: hidden;
     overflow-y: auto;
+    transition: width .22s ease;
   }
 
   .terms-panel-title {
@@ -905,17 +907,63 @@ body.lang-jp .inline-en { display: none; }
   .sidebar {
     display: flex;
     flex-direction: column;
-    width: 220px;
+    width: var(--left-w, 220px);
     position: fixed;
     left: 0; top: 0; bottom: 0;
     background: var(--bg-secondary);
     border-right: 1px solid var(--border);
     z-index: 200;
+    overflow-x: hidden;
     overflow-y: auto;
+    transition: width .22s ease;
   }
 
   /* Compensate scroll-margin now that there's no sticky topnav */
   .quiz-section { scroll-margin-top: 24px; }
+
+  /* ── Panel toggle button ── */
+  .panel-toggle-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px; height: 44px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.65rem; color: var(--text-muted);
+    z-index: 210;
+    padding: 0;
+    transition: background .15s, color .15s;
+    line-height: 1;
+  }
+  .panel-toggle-btn:hover { background: var(--accent-subtle); color: var(--accent); }
+
+  .sidebar .panel-toggle-btn {
+    right: -16px;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+  }
+  .terms-panel .panel-toggle-btn {
+    left: -16px;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+  }
+
+  /* ── Drag resize handle ── */
+  .resize-handle {
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 4px;
+    cursor: col-resize;
+    z-index: 205;
+    transition: background .15s;
+  }
+  .resize-handle:hover, .resize-handle.active {
+    background: rgba(200,134,10,0.35);
+  }
+  .sidebar .resize-handle { right: 0; }
+  .terms-panel .resize-handle { left: 0; }
 }
 
 /* ── Brand ── */

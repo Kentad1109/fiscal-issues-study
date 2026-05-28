@@ -260,4 +260,90 @@ document.addEventListener('DOMContentLoaded', () => {
   if (path === 'index.html' || path === '' || path === 'overview.html') initIndexPage();
   initQuizzes();
   initKeyboard();
+  initPanels();
 });
+
+// ─── Panel resize & toggle ────────────────────────────────────
+function initPanels() {
+  if (window.innerWidth < 769) return;
+
+  const KEYS = { lw: 'panel_lw', rw: 'panel_rw', lo: 'panel_lo', ro: 'panel_ro' };
+  const DEFAULT = { lw: 220, rw: 200 };
+  const MIN = 120, MAX_L = 400, MAX_R = 360;
+
+  const sidebar    = document.querySelector('.sidebar');
+  const termsPanel = document.querySelector('.terms-panel');
+  const root       = document.documentElement;
+
+  let st = {
+    lw: parseInt(localStorage.getItem(KEYS.lw)) || DEFAULT.lw,
+    rw: parseInt(localStorage.getItem(KEYS.rw)) || DEFAULT.rw,
+    lo: localStorage.getItem(KEYS.lo) !== 'false',
+    ro: localStorage.getItem(KEYS.ro) !== 'false',
+  };
+
+  function save() {
+    Object.entries({ [KEYS.lw]: st.lw, [KEYS.rw]: st.rw,
+                     [KEYS.lo]: st.lo, [KEYS.ro]: st.ro })
+      .forEach(([k, v]) => localStorage.setItem(k, v));
+  }
+
+  function apply() {
+    root.style.setProperty('--left-w',  (st.lo ? st.lw : 0) + 'px');
+    root.style.setProperty('--right-w', (st.ro ? st.rw : 0) + 'px');
+    if (sidebar)    sidebar.querySelector('.panel-toggle-btn').textContent    = st.lo ? '‹' : '›';
+    if (termsPanel) termsPanel.querySelector('.panel-toggle-btn').textContent = st.ro ? '›' : '‹';
+  }
+
+  function addToggle(panel, isLeft) {
+    const btn = document.createElement('button');
+    btn.className = 'panel-toggle-btn';
+    btn.title = isLeft ? 'サイドバーを開閉' : 'タームパネルを開閉';
+    btn.addEventListener('click', () => {
+      if (isLeft) st.lo = !st.lo; else st.ro = !st.ro;
+      apply(); save();
+    });
+    panel.appendChild(btn);
+  }
+
+  function addResizeHandle(panel, isLeft) {
+    const handle = document.createElement('div');
+    handle.className = 'resize-handle';
+    let dragging = false, startX = 0, startW = 0;
+
+    handle.addEventListener('mousedown', e => {
+      dragging = true;
+      startX = e.clientX;
+      startW = isLeft ? st.lw : st.rw;
+      handle.classList.add('active');
+      document.body.style.userSelect = 'none';
+      document.body.style.cursor = 'col-resize';
+      e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', e => {
+      if (!dragging) return;
+      const dx = e.clientX - startX;
+      const newW = Math.min(isLeft ? MAX_L : MAX_R,
+                            Math.max(MIN, isLeft ? startW + dx : startW - dx));
+      if (isLeft) { st.lw = newW; if (st.lo) root.style.setProperty('--left-w',  newW + 'px'); }
+      else        { st.rw = newW; if (st.ro) root.style.setProperty('--right-w', newW + 'px'); }
+    });
+
+    document.addEventListener('mouseup', () => {
+      if (!dragging) return;
+      dragging = false;
+      handle.classList.remove('active');
+      document.body.style.userSelect = '';
+      document.body.style.cursor = '';
+      save();
+    });
+
+    panel.appendChild(handle);
+  }
+
+  if (sidebar)    { addToggle(sidebar, true);    addResizeHandle(sidebar, true); }
+  if (termsPanel) { addToggle(termsPanel, false); addResizeHandle(termsPanel, false); }
+
+  apply();
+}
