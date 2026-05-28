@@ -48,7 +48,11 @@ a { color: var(--accent); text-decoration: none; transition: color .2s; }
 a:hover { color: var(--accent-light); }
 
 /* ── Layout ── */
-.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.container { max-width: 640px; margin: 0 auto; padding: 0 24px; }
+
+@media (min-width: 769px) {
+  .container { padding: 0 40px; }
+}
 .section { padding: 72px 0; }
 .section + .section { padding-top: 0; }
 
@@ -845,12 +849,62 @@ body.lang-jp .inline-en { display: none; }
 
 .sidebar { display: none; }
 
+/* ── Terms panel (right) ── */
+.terms-panel { display: none; }
+
 @media (min-width: 769px) {
   /* Hide top nav, show sidebar */
   nav.topnav { display: none; }
 
-  /* Shift page body right to clear sidebar */
-  body { padding-left: 220px; }
+  /* Shift page body to clear both sidebars */
+  body { padding-left: 220px; padding-right: 200px; }
+
+  .terms-panel {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: fixed;
+    right: 0; top: 0; bottom: 0;
+    background: var(--bg-secondary);
+    border-left: 1px solid var(--border);
+    z-index: 200;
+    overflow-y: auto;
+  }
+
+  .terms-panel-title {
+    padding: 18px 16px 12px;
+    font-size: 0.62rem; font-weight: 800;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  .terms-list {
+    flex: 1;
+    list-style: none;
+    padding: 8px 0;
+  }
+
+  .term-item {
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(30,32,53,0.06);
+  }
+
+  .term-name {
+    display: block;
+    font-size: 0.78rem; font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 3px;
+    line-height: 1.3;
+  }
+
+  .term-def {
+    display: block;
+    font-size: 0.71rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+  }
 
   .sidebar {
     display: flex;
